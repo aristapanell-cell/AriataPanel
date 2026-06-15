@@ -100,11 +100,69 @@ class ConfigCombiner:
         tier_cache[cache_key] = result
         return result
     
+    def generate_tiered_outputs(self, configs_list, source_name, base_path, timestamp):
+        for category in self.categories:
+            category_configs = []
+            category_key = f"{source_name}_{category}"
+            
+            if source_name == "combined":
+                category_configs = configs_list.get(category, [])
+            elif source_name == "telegram":
+                category_configs = self.read_configs(f'configs/telegram/{category}.txt')
+            elif source_name == "github":
+                category_configs = self.read_configs(f'configs/github/{category}.txt')
+            
+            if not category_configs:
+                continue
+            
+            unique_configs = self.deduplicate(category_configs)
+            cat_dir = os.path.join(base_path, category)
+            os.makedirs(cat_dir, exist_ok=True)
+            
+            tier_cache = {}
+            
+            for i, tier in enumerate(self.tiers):
+                selected = self.build_tier_with_overlap(unique_configs, i, tier, tier_cache)
+                
+                if not selected:
+                    continue
+                
+                filename = os.path.join(cat_dir, f"{tier}.txt")
+                title = f"{source_name.upper()} - Tier {tier} - {category.upper()}"
+                self.write_config_file(filename, title, selected, len(selected), timestamp)
+        
+        all_configs = []
+        if source_name == "combined":
+            for category in self.categories:
+                all_configs.extend(configs_list.get(category, []))
+        elif source_name == "telegram":
+            all_configs = self.read_configs('configs/telegram/all.txt')
+        elif source_name == "github":
+            all_configs = self.read_configs('configs/github/all.txt')
+        
+        if all_configs:
+            unique_all = self.deduplicate(all_configs)
+            all_dir = os.path.join(base_path, "ALL")
+            os.makedirs(all_dir, exist_ok=True)
+            
+            tier_cache_all = {}
+            
+            for i, tier in enumerate(self.tiers):
+                selected = self.build_tier_with_overlap(unique_all, i, tier, tier_cache_all)
+                
+                if not selected:
+                    continue
+                
+                filename = os.path.join(all_dir, f"{tier}.txt")
+                title = f"{source_name.upper()} - Tier {tier} - ALL"
+                self.write_config_file(filename, title, selected, len(selected), timestamp)
+    
     def combine(self):
         os.makedirs('configs/combined', exist_ok=True)
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         
-        all_combined = []
+        all_combined_dict = {}
+        all_combined_list = []
         
         for category in self.categories:
             telegram_configs = self.read_configs(f'configs/telegram/{category}.txt')
@@ -117,10 +175,11 @@ class ConfigCombiner:
                 filename = f"configs/combined/{category}.txt"
                 title = f"Combined {category.upper()} Configurations"
                 self.write_config_file(filename, title, unique_configs, len(unique_configs), timestamp, len(telegram_configs), len(github_configs))
-                all_combined.extend(unique_configs)
+                all_combined_dict[category] = unique_configs
+                all_combined_list.extend(unique_configs)
         
-        if all_combined:
-            all_unique = self.deduplicate(all_combined)
+        if all_combined_list:
+            all_unique = self.deduplicate(all_combined_list)
             filename = "configs/combined/all.txt"
             title = "All Combined Configurations"
             self.write_config_file(filename, title, all_unique, len(all_unique), timestamp)
@@ -130,7 +189,7 @@ class ConfigCombiner:
         
         total_telegram = len(all_telegram)
         total_github = len(all_github)
-        total_combined = len(self.deduplicate(all_combined))
+        total_combined = len(self.deduplicate(all_combined_list))
         
         print("=" * 60)
         print("CONFIG COMBINER")
@@ -152,75 +211,46 @@ class ConfigCombiner:
             print(f"  all.txt: {len(lines)} configs")
         
         print("=" * 60)
-        return all_combined
-    
-    def generate_tiers(self, all_combined=None):
-        os.makedirs('configs/tiers', exist_ok=True)
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         
-        self.tier_cache = {}
-        
-        for category in self.categories:
-            base_configs = self.read_configs(f'configs/combined/{category}.txt')
-            unique_configs = self.deduplicate(base_configs)
-            
-            if not unique_configs:
-                continue
-            
-            cat_dir = f'configs/tiers/{category}'
-            os.makedirs(cat_dir, exist_ok=True)
-            
-            for i, tier in enumerate(self.tiers):
-                selected = self.build_tier_with_overlap(unique_configs, i, tier, self.tier_cache)
-                
-                if not selected:
-                    continue
-                
-                filename = f"{cat_dir}/{tier}.txt"
-                title = f"Tier {tier} - {category.upper()}"
-                self.write_config_file(filename, title, selected, len(selected), timestamp)
-        
-        if all_combined is None:
-            all_unique = []
-            for category in self.categories:
-                base_configs = self.read_configs(f'configs/combined/{category}.txt')
-                all_unique.extend(base_configs)
-            all_unique = self.deduplicate(all_unique)
-        else:
-            all_unique = self.deduplicate(all_combined)
-        
-        all_tiers_dir = 'configs/tiers/ALL'
-        os.makedirs(all_tiers_dir, exist_ok=True)
-        filename = f"{all_tiers_dir}/all.txt"
-        title = "All Tiers Combined Configurations"
-        self.write_config_file(filename, title, all_unique, len(all_unique), timestamp)
+        self.generate_tiered_outputs(all_combined_dict, "combined", "configs/combined", timestamp)
+        self.generate_tiered_outputs({}, "telegram", "configs/telegram", timestamp)
+        self.generate_tiered_outputs({}, "github", "configs/github", timestamp)
         
         print("\n" + "=" * 60)
-        print("TIERS GENERATOR")
+        print("TIERED STRUCTURE GENERATED")
         print("=" * 60)
         
-        for category in self.categories:
-            cat_dir = f'configs/tiers/{category}'
-            if os.path.exists(cat_dir):
-                print(f"\n📁 {category}/:")
+        for source in ["combined", "telegram", "github"]:
+            print(f"\n📁 {source.upper()}/:")
+            base_dir = f"configs/{source}"
+            
+            for category in self.categories:
+                cat_dir = os.path.join(base_dir, category)
+                if os.path.exists(cat_dir):
+                    print(f"  📁 {category}/:")
+                    for tier in self.tiers:
+                        tier_file = os.path.join(cat_dir, f"{tier}.txt")
+                        if os.path.exists(tier_file):
+                            with open(tier_file, 'r', encoding='utf-8') as f:
+                                lines = [line for line in f if line.strip() and not line.startswith('#')]
+                            print(f"      {tier}.txt: {len(lines)} configs")
+            
+            all_dir = os.path.join(base_dir, "ALL")
+            if os.path.exists(all_dir):
+                print(f"  📁 ALL/:")
                 for tier in self.tiers:
-                    tier_file = f"{cat_dir}/{tier}.txt"
+                    tier_file = os.path.join(all_dir, f"{tier}.txt")
                     if os.path.exists(tier_file):
                         with open(tier_file, 'r', encoding='utf-8') as f:
                             lines = [line for line in f if line.strip() and not line.startswith('#')]
-                        print(f"  {tier}.txt: {len(lines)} configs")
+                        print(f"      {tier}.txt: {len(lines)} configs")
         
-        if os.path.exists('configs/tiers/ALL/all.txt'):
-            with open('configs/tiers/ALL/all.txt', 'r', encoding='utf-8') as f:
-                lines = [line for line in f if line.strip() and not line.startswith('#')]
-            print(f"\n📁 ALL/all.txt: {len(lines)} configs")
-        
-        print("=" * 60)
+        print("\n" + "=" * 60)
+        return all_combined_list
 
 def main():
     combiner = ConfigCombiner()
-    all_combined = combiner.combine()
-    combiner.generate_tiers(all_combined)
+    combiner.combine()
 
 if __name__ == "__main__":
     main()
