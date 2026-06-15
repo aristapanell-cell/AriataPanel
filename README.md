@@ -46,6 +46,7 @@ AristaPanel یک pipeline تماماً خودکار است که هر ۶ ساعت
 | بلاک دائم | پس از ۷ روز تعلیق بدون فعالیت | حذف از چرخه | دائم |
 
 فایل‌های وضعیت در مسیر configs/telegram/ ذخیره می‌شوند:
+
 - dead_cache.json
 - permanent_blacklist.json
 - temp_suspend.json
@@ -90,24 +91,13 @@ configs/
 
 ---
 
-## تگ‌گذاری
-
-تمام کانفیگ‌های خروجی با تگ زیر نشانه‌گذاری می‌شوند:
-
-منبع تلگرام: ARISTA  
-منبع گیت‌هاب: T.ME: @aristapanel
-
-این تگ در فیلد ps (برای vmess) یا انتهای لینک (سایر پروتکل‌ها) درج می‌گردد.
-
----
-
 ## کانال تلگرام
 
 تمامی لینک‌های سابسکریپشن، پروکسی‌های تلگرام (MTProto)، آیپی‌های تمیز کلادفلر اسکن شده از صدها میلیون آیپی، و کانفیگ‌های به‌روز روزانه فقط در کانال تلگرام ارائه می‌شوند.
 
 لینک سابسکریپشن در این مخزن گیت‌هاب قرار ندارد.
 
-[https://t.me/aristapanel](https://t.me/aristapanel)
+https://t.me/aristapanel
 
 ---
 
@@ -115,31 +105,12 @@ configs/
 
 برای شخصی‌سازی خروجی، فیلتر بر اساس پروتکل، دریافت سابسکریپشن اختصاصی و بهینه‌سازی کانفیگ‌ها می‌توانید از پنل عمومی استفاده کنید. این پنل روی Cloudflare Workers پیاده‌سازی شده و کاملاً رایگان است.
 
-[https://arista-panel.arista-panel.workers.dev/](https://arista-panel.arista-panel.workers.dev/)
-
----
-
-## اجرای دستی
-
-برای اجرای محلی:
-
-git clone https://github.com/yourusername/AristaPanel.git
-cd AristaPanel
-pip install requests beautifulsoup4
-python telegram_extractor.py
-python github_extractor.py
-python combine_configs.py
-
-یا از دکمه Run workflow در GitHub Actions استفاده کنید.
-
----
-
-## مجوز
-
-MIT License
+https://arista-panel.arista-panel.workers.dev/
 
 ---
 
 <div dir="rtl" align="center">
-ساخته شده برای جامعه اوپن سورس
+
+ساخته شده توسط تیم آریستا (🇲‌🇲‌🇩‌)❤️
+
 </div>
