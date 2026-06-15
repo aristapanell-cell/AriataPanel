@@ -116,12 +116,16 @@ class ConfigCombiner:
                 continue
             
             unique_configs = self.deduplicate(category_configs)
+            total_count = len(unique_configs)
             cat_dir = os.path.join(base_path, category)
             os.makedirs(cat_dir, exist_ok=True)
             
             tier_cache = {}
             
             for i, tier in enumerate(self.tiers):
+                if tier != "ALL" and tier > total_count:
+                    continue
+                
                 selected = self.build_tier_with_overlap(unique_configs, i, tier, tier_cache)
                 
                 if not selected:
@@ -130,6 +134,11 @@ class ConfigCombiner:
                 filename = os.path.join(cat_dir, f"{tier}.txt")
                 title = f"{source_name.upper()} - Tier {tier} - {category.upper()}"
                 self.write_config_file(filename, title, selected, len(selected), timestamp)
+            
+            if total_count > 0 and total_count <= 200:
+                all_filename = os.path.join(cat_dir, "ALL.txt")
+                title = f"{source_name.upper()} - ALL - {category.upper()}"
+                self.write_config_file(all_filename, title, unique_configs, total_count, timestamp)
         
         all_configs = []
         if source_name == "combined":
@@ -142,12 +151,16 @@ class ConfigCombiner:
         
         if all_configs:
             unique_all = self.deduplicate(all_configs)
+            total_all_count = len(unique_all)
             all_dir = os.path.join(base_path, "ALL")
             os.makedirs(all_dir, exist_ok=True)
             
             tier_cache_all = {}
             
             for i, tier in enumerate(self.tiers):
+                if tier != "ALL" and tier > total_all_count:
+                    continue
+                
                 selected = self.build_tier_with_overlap(unique_all, i, tier, tier_cache_all)
                 
                 if not selected:
@@ -156,6 +169,11 @@ class ConfigCombiner:
                 filename = os.path.join(all_dir, f"{tier}.txt")
                 title = f"{source_name.upper()} - Tier {tier} - ALL"
                 self.write_config_file(filename, title, selected, len(selected), timestamp)
+            
+            if total_all_count > 0 and total_all_count <= 200:
+                all_filename = os.path.join(all_dir, "ALL.txt")
+                title = f"{source_name.upper()} - ALL - ALL"
+                self.write_config_file(all_filename, title, unique_all, total_all_count, timestamp)
     
     def combine(self):
         os.makedirs('configs/combined', exist_ok=True)
@@ -246,6 +264,11 @@ class ConfigCombiner:
                             with open(tier_file, 'r', encoding='utf-8') as f:
                                 lines = [line for line in f if line.strip() and not line.startswith('#')]
                             print(f"      {tier}.txt: {len(lines)} configs")
+                    all_file = os.path.join(cat_dir, "ALL.txt")
+                    if os.path.exists(all_file):
+                        with open(all_file, 'r', encoding='utf-8') as f:
+                            lines = [line for line in f if line.strip() and not line.startswith('#')]
+                        print(f"      ALL.txt: {len(lines)} configs")
             
             all_dir = os.path.join(base_dir, "ALL")
             if os.path.exists(all_dir) and os.path.isdir(all_dir):
@@ -256,6 +279,11 @@ class ConfigCombiner:
                         with open(tier_file, 'r', encoding='utf-8') as f:
                             lines = [line for line in f if line.strip() and not line.startswith('#')]
                         print(f"      {tier}.txt: {len(lines)} configs")
+                all_file = os.path.join(all_dir, "ALL.txt")
+                if os.path.exists(all_file):
+                    with open(all_file, 'r', encoding='utf-8') as f:
+                        lines = [line for line in f if line.strip() and not line.startswith('#')]
+                    print(f"      ALL.txt: {len(lines)} configs")
         
         print("\n" + "=" * 60)
         return all_combined_list
