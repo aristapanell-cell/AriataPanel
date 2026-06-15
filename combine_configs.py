@@ -100,6 +100,76 @@ class ConfigCombiner:
         tier_cache[cache_key] = result
         return result
     
+    def build_balanced_tier(self, category_configs_dict, tier_size, source_name, base_path, timestamp):
+        available_configs = {}
+        for category in self.categories:
+            if category in category_configs_dict and category_configs_dict[category]:
+                available_configs[category] = category_configs_dict[category][:]
+        
+        if not available_configs:
+            return []
+        
+        num_categories = len([c for c in self.categories if c in available_configs and available_configs[c]])
+        if num_categories == 0:
+            return []
+        
+        base_per_category = tier_size // num_categories
+        remainder = tier_size % num_categories
+        
+        selected_configs = []
+        
+        category_order = ['trojan', 'hysteria2', 'ss', 'vmess']
+        other_categories = [c for c in self.categories if c not in category_order and c in available_configs]
+        ordered_categories = [c for c in category_order if c in available_configs] + other_categories
+        
+        per_category_allocation = {}
+        
+        for cat in ordered_categories:
+            per_category_allocation[cat] = base_per_category
+        
+        for i in range(remainder):
+            if i < len(ordered_categories):
+                per_category_allocation[ordered_categories[i]] += 1
+        
+        total_shortage = 0
+        for cat, needed in per_category_allocation.items():
+            available = len(available_configs[cat])
+            if needed > available:
+                total_shortage += (needed - available)
+                per_category_allocation[cat] = available
+        
+        if total_shortage > 0:
+            categories_with_extra = [cat for cat in ordered_categories if per_category_allocation[cat] < len(available_configs[cat])]
+            if categories_with_extra:
+                extra_per_category = total_shortage // len(categories_with_extra)
+                extra_remainder = total_shortage % len(categories_with_extra)
+                for idx, cat in enumerate(categories_with_extra):
+                    per_category_allocation[cat] += extra_per_category
+                    if idx < extra_remainder:
+                        per_category_allocation[cat] += 1
+        
+        for cat in ordered_categories:
+            if cat not in available_configs:
+                continue
+            take_count = min(per_category_allocation.get(cat, 0), len(available_configs[cat]))
+            if take_count > 0:
+                selected_configs.extend(available_configs[cat][:take_count])
+        
+        if len(selected_configs) > tier_size:
+            selected_configs = selected_configs[:tier_size]
+        elif len(selected_configs) < tier_size:
+            for cat in ordered_categories:
+                if len(selected_configs) >= tier_size:
+                    break
+                if cat in available_configs:
+                    remaining_in_cat = available_configs[cat][per_category_allocation.get(cat, 0):]
+                    needed = tier_size - len(selected_configs)
+                    take_extra = min(needed, len(remaining_in_cat))
+                    if take_extra > 0:
+                        selected_configs.extend(remaining_in_cat[:take_extra])
+        
+        return self.deduplicate(selected_configs)
+    
     def generate_tiered_outputs(self, configs_list, source_name, base_path, timestamp):
         for category in self.categories:
             category_configs = []
@@ -140,35 +210,44 @@ class ConfigCombiner:
                 title = f"{source_name.upper()} - ALL - {category.upper()}"
                 self.write_config_file(all_filename, title, unique_configs, total_count, timestamp)
         
-        all_configs = []
+        all_configs = {}
         if source_name == "combined":
             for category in self.categories:
-                all_configs.extend(configs_list.get(category, []))
+                if category in configs_list and configs_list[category]:
+                    all_configs[category] = configs_list[category][:]
         elif source_name == "telegram":
-            all_configs = self.read_configs('configs/telegram/all.txt')
+            for category in self.categories:
+                cat_configs = self.read_configs(f'configs/telegram/{category}.txt')
+                if cat_configs:
+                    all_configs[category] = cat_configs
         elif source_name == "github":
-            all_configs = self.read_configs('configs/github/all.txt')
+            for category in self.categories:
+                cat_configs = self.read_configs(f'configs/github/{category}.txt')
+                if cat_configs:
+                    all_configs[category] = cat_configs
         
         if all_configs:
-            unique_all = self.deduplicate(all_configs)
-            total_all_count = len(unique_all)
             all_dir = os.path.join(base_path, "ALL")
             os.makedirs(all_dir, exist_ok=True)
             
-            tier_cache_all = {}
-            
-            for i, tier in enumerate(self.tiers):
-                if tier != "ALL" and tier > total_all_count:
+            for tier in self.tiers:
+                if tier == "ALL":
                     continue
                 
-                selected = self.build_tier_with_overlap(unique_all, i, tier, tier_cache_all)
+                balanced_configs = self.build_balanced_tier(all_configs, tier, source_name, base_path, timestamp)
                 
-                if not selected:
+                if not balanced_configs:
                     continue
                 
                 filename = os.path.join(all_dir, f"{tier}.txt")
-                title = f"{source_name.upper()} - Tier {tier} - ALL"
-                self.write_config_file(filename, title, selected, len(selected), timestamp)
+                title = f"{source_name.upper()} - Balanced Tier {tier} - ALL"
+                self.write_config_file(filename, title, balanced_configs, len(balanced_configs), timestamp)
+            
+            all_flat_configs = []
+            for cat_configs in all_configs.values():
+                all_flat_configs.extend(cat_configs)
+            unique_all = self.deduplicate(all_flat_configs)
+            total_all_count = len(unique_all)
             
             if total_all_count > 0 and total_all_count <= 200:
                 all_filename = os.path.join(all_dir, "ALL.txt")
@@ -274,6 +353,8 @@ class ConfigCombiner:
             if os.path.exists(all_dir) and os.path.isdir(all_dir):
                 print(f"  📁 ALL/:")
                 for tier in self.tiers:
+                    if tier == "ALL":
+                        continue
                     tier_file = os.path.join(all_dir, f"{tier}.txt")
                     if os.path.exists(tier_file):
                         with open(tier_file, 'r', encoding='utf-8') as f:
