@@ -1,11 +1,13 @@
+```markdown
 <div dir="rtl" align="center">
 
 # AristaPanel
 
-[![فارسی](https://img.shields.io/badge/فارسی-292e33?style=for-the-badge)](README.md)
+[![فارسی](https://img.shields.io/badge/فارسی-005F99?style=for-the-badge&logo=googletranslate&logoColor=white)](README.md)
 [![English](https://img.shields.io/badge/English-292e33?style=for-the-badge)](README.en.md)
 [![Telegram](https://img.shields.io/badge/@aristapanel-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/aristapanel)
 [![Web Panel](https://img.shields.io/badge/Web_Panel-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://arista-panel.arista-panel.workers.dev/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aristapanell-cell/AriataPanel)
 
 ---
 
@@ -57,6 +59,8 @@ AristaPanel یک pipeline تماماً خودکار است که هر ۶ ساعت
 
 پس از هر اجرا، فایل‌های زیر تولید می‌شوند:
 
+```
+
 configs/
 ├── telegram/
 │   ├── vmess.txt
@@ -66,12 +70,21 @@ configs/
 │   ├── hysteria2.txt
 │   ├── tuic.txt
 │   ├── all.txt
-│   ├── vmess/50.txt, 100.txt, ...
-│   └── ALL/50.txt, 100.txt, ...
+│   ├── vmess/
+│   │   ├── 50.txt
+│   │   ├── 100.txt
+│   │   ├── 150.txt
+│   │   └── ...
+│   └── ALL/
+│       ├── 50.txt
+│       ├── 100.txt
+│       └── ...
 ├── github/
 │   └── (همان ساختار)
 └── combined/
-    └── (ادغام دو منبع با ذکر تعداد هرکدام در هدر فایل)
+└── (ادغام دو منبع با ذکر تعداد هرکدام در هدر فایل)
+
+```
 
 هر فایل تیربندی شامل همپوشانی ۱۰ تایی با تیر قبلی است. مثال: فایل ۱۰۰ تایی شامل ۱۰ کانفیگ انتهایی فایل ۵۰ تایی به اضافه ۹۰ کانفیگ جدید.
 
@@ -81,23 +94,52 @@ configs/
 
 سیستم قبل از ذخیره هر کانفیگ، موارد زیر را بررسی می‌کند:
 
-- پروتکل vmess: وجود فیلدهای v, ps, add, port, id, aid + اعتبار UUID + محدوده پورت ۱-۶۵۵۳۵
-- پروتکل vless/trojan: وجود کاراکترهای @ و # در رشته
-- پروتکل ss: اعتبار base64 encoding + وجود : پس از دیکد + اعتبار پورت
-- سایر پروتکل‌ها: تطابق با الگوی پروتکل و عدم وجود کاراکترهای مخرب
+| پروتکل | بررسی‌ها |
+|--------|----------|
+| vmess | وجود فیلدهای v, ps, add, port, id, aid + اعتبار UUID + محدوده پورت ۱-۶۵۵۳۵ |
+| vless / trojan | وجود کاراکترهای @ و # در رشته |
+| ss | اعتبار base64 encoding + وجود : پس از دیکد + اعتبار پورت |
+| سایر پروتکل‌ها | تطابق با الگوی پروتکل و عدم وجود کاراکترهای مخرب |
 
 کانفیگ‌های نامعتبر حذف می‌شوند. تعداد آنها در لاگ نهایی گزارش می‌گردد.
 
 ---
 
-## تگ‌گذاری
+## نقشه راه پروژه
 
-تمام کانفیگ‌های خروجی با تگ زیر نشانه‌گذاری می‌شوند:
+```
 
-منبع تلگرام: ARISTA  
-منبع گیت‌هاب: T.ME: @aristapanel
+📌 فاز ۱ – پیاده‌سازی اولیه
+├── استخراج‌کننده تلگرام
+├── استخراج‌کننده گیت‌هاب
+└── ترکیب‌کننده اولیه
 
-این تگ در فیلد ps (برای vmess) یا انتهای لینک (سایر پروتکل‌ها) درج می‌گردد.
+📌 فاز ۲ – بهینه‌سازی و اعتبارسنجی
+├── افزودن کش هوشمند کانال‌های مرده
+├── بهبود regex برای شناسایی پروتکل‌ها
+└── استانداردسازی لینک‌های ss://
+
+📌 فاز ۳ – ساختار تیربندی
+├── پیاده‌سازی همپوشانی ۱۰ تایی
+├── تولید تیرهای ۵۰ تا ۵۰۰
+└── فایل ALL جامع
+
+📌 فاز ۴ – خودکارسازی و پایداری
+├── راه‌اندازی GitHub Actions
+├── تاخیر تصادفی و مدیریت rate limit
+└── کامیت و پوش خودکار
+
+📌 فاز ۵ – پنل عمومی و سرویس‌دهی
+├── پیاده‌سازی Cloudflare Worker
+├── فیلتر بر اساس پروتکل
+└── تولید سابسکریپشن اختصاصی
+
+📌 فاز ۶ – مقیاس‌پذیری
+├── افزایش تعداد کانال‌های تلگرام به ۱۰۰۰+
+├── افزودن سورس‌های جدید گیت‌هاب
+└── بهینه‌سازی زمان اجرا
+
+```
 
 ---
 
@@ -107,7 +149,7 @@ configs/
 
 لینک سابسکریپشن در این مخزن گیت‌هاب قرار ندارد.
 
-[https://t.me/aristapanel](https://t.me/aristapanel)
+🔗 **[https://t.me/aristapanel](https://t.me/aristapanel)**
 
 ---
 
@@ -115,22 +157,17 @@ configs/
 
 برای شخصی‌سازی خروجی، فیلتر بر اساس پروتکل، دریافت سابسکریپشن اختصاصی و بهینه‌سازی کانفیگ‌ها می‌توانید از پنل عمومی استفاده کنید. این پنل روی Cloudflare Workers پیاده‌سازی شده و کاملاً رایگان است.
 
-[https://arista-panel.arista-panel.workers.dev/](https://arista-panel.arista-panel.workers.dev/)
+🔗 **[https://arista-panel.arista-panel.workers.dev/](https://arista-panel.arista-panel.workers.dev/)**
 
 ---
 
-## اجرای دستی
+## حمایت از پروژه
 
-برای اجرای محلی:
+اگر AristaPanel برای شما مفید بوده، با یک **Star** ⭐ در گیت‌هاب از ما حمایت کنید. این کار به دیده شدن پروژه و ادامه توسعه آن کمک می‌کند.
 
-git clone https://github.com/yourusername/AristaPanel.git
-cd AristaPanel
-pip install requests beautifulsoup4
-python telegram_extractor.py
-python github_extractor.py
-python combine_configs.py
+برای دریافت **خدمات بیشتر**، **لینک سابسکریپشن اختصاصی**، **پروکسی‌های تلگرام** و **آیپی‌های تمیز**، حتماً به کانال تلگرام بپیوندید.
 
-یا از دکمه Run workflow در GitHub Actions استفاده کنید.
+🔗 **[https://github.com/aristapanell-cell/AriataPanel](https://github.com/aristapanell-cell/AriataPanel)**
 
 ---
 
@@ -141,5 +178,9 @@ MIT License
 ---
 
 <div dir="rtl" align="center">
-ساخته شده برای جامعه اوپن سورس
+
+**ساخته شده با ❤️ توسط تیم آریستا**  
+(🇲‌🇲‌🇩‌)
+
 </div>
+```
