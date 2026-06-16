@@ -2,8 +2,7 @@
 
 # AristaPanel
 
-[![فارسی](https://img.shields.io/badge/فارسی-292e33?style=for-the-badge)](README.md)
-[![English](https://img.shields.io/badge/English-292e33?style=for-the-badge)](README.en.md)
+
 [![Telegram](https://img.shields.io/badge/@aristapanel-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/aristapanel)
 [![Web Panel](https://img.shields.io/badge/Web_Panel-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://arista-panel.arista-panel.workers.dev/)
 
