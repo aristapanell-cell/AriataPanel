@@ -11,8 +11,6 @@
 
 سیستم خودکار استخراج، اعتبارسنجی، دسته‌بندی و ترکیب کانفیگ‌های پروکسی از منابع عمومی تلگرام و گیت‌هاب.
 
-</div>
-
 ---
 
 ## معماری سیستم
@@ -109,8 +107,60 @@ https://arista-panel.arista-panel.workers.dev/
 
 ---
 
+## 📥 لینک‌های دسترسی به کانفیگ‌ها و قابل استفاده در کلاینت‌های محبوب: V2rayNG, Hiddify, NekoBox , ...
+
+### 🚀 مجموعه کانفیگ‌های تلگرام | پنل آریستا
+
+| تعداد | لینک دانلود |
+|-------|------------|
+| 📌 ۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/50.txt) |
+| 📌 ۱۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/100.txt) |
+| 📌 ۱۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/150.txt) |
+| 📌 ۲۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/200.txt) |
+| 📌 ۲۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/250.txt) |
+| 📌 ۳۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/300.txt) |
+| 📌 ۴۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/400.txt) |
+| 📌 ۵۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/500.txt) |
+| 🌍 تمامی کانفیگ‌ها | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/telegram/ALL/ALL.txt) |
+
+---
+
+### 🚀 مجموعه کانفیگ‌های گیت‌هاب | پنل آریستا
+
+| تعداد | لینک دانلود |
+|-------|------------|
+| 📌 ۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/50.txt) |
+| 📌 ۱۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/100.txt) |
+| 📌 ۱۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/150.txt) |
+| 📌 ۲۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/200.txt) |
+| 📌 ۲۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/250.txt) |
+| 📌 ۳۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/300.txt) |
+| 📌 ۴۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/400.txt) |
+| 📌 ۵۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/500.txt) |
+| 🌍 تمامی کانفیگ‌ها | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/github/ALL/ALL.txt) |
+
+---
+
+### 🚀 مجموعه کانفیگ‌های ترکیبی تلگرام + گیت‌هاب | پنل آریستا
+
+| تعداد | لینک دانلود |
+|-------|------------|
+| 📌 ۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/50.txt) |
+| 📌 ۱۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/100.txt) |
+| 📌 ۱۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/150.txt) |
+| 📌 ۲۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/200.txt) |
+| 📌 ۲۵۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/250.txt) |
+| 📌 ۳۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/300.txt) |
+| 📌 ۴۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/400.txt) |
+| 📌 ۵۰۰ کانفیگ | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/500.txt) |
+| 🌍 تمامی کانفیگ‌ها | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/configs/combined/ALL/ALL.txt) |
+
+</div>
+
+---
+
 <div dir="rtl" align="center">
 
 ساخته شده توسط تیم آریستا (🇲‌🇲‌🇩‌)❤️
 
-</div>
+---
