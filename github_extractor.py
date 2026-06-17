@@ -160,7 +160,7 @@ class GitHubConfigExtractor:
             return True
         return False
     
-    def tag_config(self, config, tag="T.ME: @aristapnel"):
+    def tag_config(self, config, tag="T.ME: @aristapanel"):
         if isinstance(config, dict):
             config['ps'] = tag
             json_str = json.dumps(config, separators=(',', ':'), ensure_ascii=False)
