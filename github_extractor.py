@@ -160,7 +160,7 @@ class GitHubConfigExtractor:
             return True
         return False
     
-    def tag_config(self, config, tag="T.ME: @aristapanel"):
+    def tag_config(self, config, tag="T.ME: @aristapnel"):
         if isinstance(config, dict):
             config['ps'] = tag
             json_str = json.dumps(config, separators=(',', ':'), ensure_ascii=False)
@@ -277,11 +277,11 @@ class GitHubConfigExtractor:
     
     def save_results(self, categories, total_count):
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        os.makedirs('configs/github', exist_ok=True)
+        os.makedirs('configs.txt/github', exist_ok=True)
         
         for category, configs in categories.items():
             if configs:
-                filename = f"configs/github/{category}.txt"
+                filename = f"configs.txt/github/{category}.txt"
                 content = f"# GitHub {category.upper()} Configurations\n"
                 content += f"# Updated: {timestamp}\n"
                 content += f"# Count: {len(configs)}\n"
@@ -296,7 +296,7 @@ class GitHubConfigExtractor:
             all_configs.extend(configs)
         
         if all_configs:
-            filename = "configs/github/all.txt"
+            filename = "configs.txt/github/all.txt"
             content = f"# All GitHub Configurations\n"
             content += f"# Updated: {timestamp}\n"
             content += f"# Total Count: {len(all_configs)}\n"
