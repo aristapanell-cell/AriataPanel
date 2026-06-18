@@ -32,12 +32,22 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests beautifulsoup4
+        pip install requests beautifulsoup4 pyyaml
 
     - name: Clean old config files
       run: |
-        rm -rf configs/
-        mkdir -p configs/telegram configs/github configs/combined
+        rm -rf configs.txt/
+        mkdir -p configs.txt/telegram configs.txt/github configs.txt/combined
+
+    - name: Clean old yaml files
+      run: |
+        rm -rf config.yaml/
+        mkdir -p config.yaml
+
+    - name: Clean old json files
+      run: |
+        rm -rf config.json/
+        mkdir -p config.json
 
     - name: Run Telegram Config Extractor
       run: python telegram_extractor.py
@@ -49,6 +59,12 @@ jobs:
 
     - name: Combine Configs
       run: python combine_configs.py
+
+    - name: Convert to YAML (Clash Meta)
+      run: python convert_to_yaml.py
+
+    - name: Convert to JSON (Sing-Box)
+      run: python convert_to_json.py
 
     - name: Create summary
       run: |
