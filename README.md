@@ -200,6 +200,24 @@
 | تمامی کانفیگ‌ها | [دانلود](https://cdn.jsdelivr.net/gh/aristapanell-cell/AriataPanel@main/config.yaml/combined/ALL/ALL.yaml) |
 
 ---
+## 📱 کلاینت‌های پشتیبانی‌شده
+
+| نام کلاینت | سیستم‌عامل | لینک دانلود |
+|-----------|-----------|------------|
+| **V2rayNG** | Android | [دانلود](https://github.com/2dust/v2rayNG/releases) |
+| **Hiddify** | Android / iOS / Windows / macOS / Linux | [دانلود](https://github.com/hiddify/hiddify-app/releases) |
+| **NekoBox** | Android | [دانلود](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases) |
+| **SingBox** | Android / iOS / Windows / macOS / Linux | [دانلود](https://github.com/SagerNet/sing-box/releases) |
+| **ClashMeta** | Android / iOS / Windows / macOS / Linux | [دانلود](https://github.com/MetaCubeX/Clash.Meta/releases) |
+| **v2rayN** | Windows | [دانلود](https://github.com/2dust/v2rayN/releases) |
+| **Nekoray** | Windows / macOS / Linux | [دانلود](https://github.com/MatsuriDayo/nekoray/releases) |
+| **Streisand** | Windows / macOS / Linux | [دانلود](https://github.com/SagerNet/Streisand/releases) |
+| **Shadowrocket** | iOS | [دانلود](https://apps.apple.com/app/shadowrocket/id932747118) |
+| **FairVPN** | iOS / macOS | [دانلود](https://apps.apple.com/app/fairvpn/id1533888676) |
+| **V2Box** | iOS | [دانلود](https://apps.apple.com/app/v2box-v2ray-client/id6446814690) |
+| **FoXray** | iOS | [دانلود](https://apps.apple.com/app/foxray/id6448898396) |
+
+---
 
 ❤️ ساخته شده توسط تیم آریستا (🇲‌🇲‌🇩‌) ❤️
 
