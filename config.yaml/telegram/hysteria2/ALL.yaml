@@ -1,6 +1,6 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-06-20 02:23:38
-# Count: 6
+# Updated: 2026-06-20 08:52:59
+# Count: 5
 
 proxies:
 - name: 'ARISTA #1'
@@ -16,6 +16,17 @@ proxies:
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 'ARISTA #2'
   type: hysteria2
+  server: 80.66.81.78
+  port: 9443
+  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
+  sni: 80.66.81.78
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
+- name: 'ARISTA #3'
+  type: hysteria2
   server: 70.34.205.15
   port: 443
   password: T%24me%24V2RayyNGvpn
@@ -25,7 +36,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%24V2RayyNGvpn
-- name: 'ARISTA #3'
+- name: 'ARISTA #4'
   type: hysteria2
   server: 70.34.206.217
   port: 443
@@ -36,39 +47,15 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T%24me%24V2RayyNGVpn%40V2RayyNGvpn
-- name: 'ARISTA #4'
-  type: hysteria2
-  server: 80.66.81.78
-  port: 9443
-  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-  sni: 80.66.81.78
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
 - name: 'ARISTA #5'
   type: hysteria2
-  server: 207.154.242.160
+  server: vpn-de-002.fastervpn.world
   port: 443
-  password: Masir_Sefid
-  sni: 207.154.242.160
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-de-002.fastervpn.world
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: Masir_Sefid
-- name: 'ARISTA #6'
-  type: hysteria2
-  server: 206.189.58.246
-  port: 443
-  password: Masir_Sefid
-  sni: 206.189.58.246
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: Masir_Sefid
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -83,7 +70,6 @@ proxy-groups:
   - 'ARISTA #3'
   - 'ARISTA #4'
   - 'ARISTA #5'
-  - 'ARISTA #6'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
