@@ -1,6 +1,6 @@
 # GITHUB - VLESS - Tier 50
-# Updated: 2026-06-20 13:38:33
-# Count: 46
+# Updated: 2026-06-20 15:02:57
+# Count: 47
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -731,6 +731,25 @@ proxies:
   reality-opts:
     public-key: YYaCVY336aMluO0Q7kXOTzpMqZ5Yegb_kDBaXG_VNig
     short-id: 26e7
+- name: 'T.ME: @aristapnel #43'
+  type: vless
+  server: nl4.panel11.ru
+  port: 443
+  uuid: 039a1658-e86e-475f-a3a4-67cc249acada
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: nl4.panel11.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: n4TFeuXAigmWJ9sXqnyicRkw3vcXy27ARfvhhsA61kI
+    short-id: 0bd0285f0c4f8f05
 - name: 'T.ME: @aristapnel #44'
   type: vless
   server: italy.mymarzban.com
@@ -753,13 +772,19 @@ proxies:
   server: newus.mmrknight.app
   port: 80
   uuid: 5a802fbb-00ed-4447-bece-3e0faf45e213
-  network: tcp
+  network: ws
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: newus.mmrknight.app
+  servername: play.google.com
   client-fingerprint: chrome
+  ws-opts:
+    path: '%2FTelegram-Raiv2mmr.php'
+    headers:
+      Host: play.google.com
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
 - name: 'T.ME: @aristapnel #46'
   type: vless
   server: 178.236.17.86
@@ -793,6 +818,24 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #49'
   type: vless
+  server: sv2.azparadox.ir
+  port: 8880
+  uuid: d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: azsv2.ir5ive.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: '%2F'
+    headers:
+      Host: azsv2.ir5ive.ir
+    max-early-data: 2048
+    early-data-header-name: Sec-WebSocket-Protocol
+- name: 'T.ME: @aristapnel #50'
+  type: vless
   server: 95.133.245.133
   port: 443
   uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
@@ -810,27 +853,6 @@ proxies:
   reality-opts:
     public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
     short-id: 7e77e7e2cf2b7a79
-- name: 'T.ME: @aristapnel #50'
-  type: vless
-  server: www.speedtest.org
-  port: 443
-  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: shegeftihaaa.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /rsedgws
-    headers:
-      Host: shegeftihaaa.net
-    max-early-data: 2048
-    early-data-header-name: Sec-WebSocket-Protocol
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -880,6 +902,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #40'
   - 'T.ME: @aristapnel #41'
   - 'T.ME: @aristapnel #42'
+  - 'T.ME: @aristapnel #43'
   - 'T.ME: @aristapnel #44'
   - 'T.ME: @aristapnel #45'
   - 'T.ME: @aristapnel #46'

@@ -1,6 +1,6 @@
 // COMBINED - SS - Tier 50
-// Updated: 2026-06-20 13:40:51
-// Count: 2
+// Updated: 2026-06-20 15:05:31
+// Count: 3
 
 {
   "log": {
@@ -52,19 +52,27 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #26",
-      "server": "82.38.31.7",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "ARISTA #40",
+      "tag": "ARISTA #20",
       "server": "38.135.24.131",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "hbGrpfvNrJsUmKmPbR3iY2"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ARISTA #38",
+      "server": "3.8.48.222",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "dada1203"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ARISTA #42",
+      "server": "82.38.31.7",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
     },
     {
       "type": "direct",
@@ -78,8 +86,9 @@
       "type": "urltest",
       "tag": "🚀 ARISTA AUTO BEST",
       "outbounds": [
-        "ARISTA #26",
-        "ARISTA #40"
+        "ARISTA #20",
+        "ARISTA #38",
+        "ARISTA #42"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",
@@ -91,8 +100,9 @@
       "type": "urltest",
       "tag": "🎯 ARISTA MANUAL TESTED",
       "outbounds": [
-        "ARISTA #26",
-        "ARISTA #40"
+        "ARISTA #20",
+        "ARISTA #38",
+        "ARISTA #42"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
