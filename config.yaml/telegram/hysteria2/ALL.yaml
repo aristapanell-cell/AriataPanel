@@ -1,9 +1,20 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-06-20 19:12:36
-# Count: 9
+# Updated: 2026-06-21 02:36:23
+# Count: 10
 
 proxies:
 - name: 'ARISTA #1'
+  type: hysteria2
+  server: 130.49.161.70
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: 130.49.161.70
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 'ARISTA #2'
   type: hysteria2
   server: atts5vkx96ec.dxdx5.com
   port: 5426
@@ -14,26 +25,17 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: lmzo7ebpr6m8theh
-- name: 'ARISTA #2'
-  type: hysteria2
-  server: vpn-de-002.fastervpn.world
-  port: 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
 - name: 'ARISTA #3'
   type: hysteria2
-  server: 70.34.205.15
-  port: 443
-  password: T%24me%24V2RayyNGvpn
-  sni: 70.34.205.15
+  server: 80.66.81.78
+  port: 9443
+  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
+  sni: 80.66.81.78
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
   obfs: salamander
-  obfs-password: T.me%24V2RayyNGvpn
+  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
 - name: 'ARISTA #4'
   type: hysteria2
   server: 70.34.206.217
@@ -91,15 +93,24 @@ proxies:
   obfs-password: T.me%2FV2RayyNGvpn
 - name: 'ARISTA #9'
   type: hysteria2
-  server: 130.49.161.70
+  server: 185.250.41.245
   port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: 130.49.161.70
+  password: rQRuZ8nFbC
+  sni: 185.250.41.245
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
   obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  obfs-password: T.me%2FV2RayyNGvpn
+- name: 'ARISTA #10'
+  type: hysteria2
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -118,6 +129,7 @@ proxy-groups:
   - 'ARISTA #7'
   - 'ARISTA #8'
   - 'ARISTA #9'
+  - 'ARISTA #10'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204

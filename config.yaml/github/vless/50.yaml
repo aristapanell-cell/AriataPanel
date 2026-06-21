@@ -1,5 +1,5 @@
 # GITHUB - VLESS - Tier 50
-# Updated: 2026-06-20 19:12:39
+# Updated: 2026-06-21 02:36:26
 # Count: 48
 
 proxies:
@@ -820,34 +820,35 @@ proxies:
   - http/1.1
 - name: 'T.ME: @aristapnel #48'
   type: vless
-  server: 18.153.81.34
-  port: 443
-  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 18.153.81.34
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #50'
-  type: vless
-  server: 83.97.78.13
-  port: 443
-  uuid: 612c872d-1370-4109-8644-f0755f97e33f
+  server: 1.sdwan.realm-sync.com
+  port: 54387
+  uuid: da4f61d1-8ca2-4bbf-a79a-1dfff04073e6
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.samsung.com
+  servername: swcdn.apple.com
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs
-    short-id: '16'
+    public-key: qqb-vrDIPSrFIithw497zM-LmGUEcTo-dqAjhHi6kyY
+    short-id: f810
+- name: 'T.ME: @aristapnel #50'
+  type: vless
+  server: 45.81.35.125
+  port: 80
+  uuid: 5f3b432c-1e4d-4aef-bf55-394ed64eaa6a
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 45.81.35.125
+  client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
