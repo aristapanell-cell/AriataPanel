@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 100
-# Updated: 2026-06-21 09:37:44
+# Updated: 2026-06-21 13:47:38
 # Count: 99
 
 proxies:
@@ -281,17 +281,6 @@ proxies:
   servername: 130.94.94.15
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #24'
-  type: trojan
-  server: 54.65.32.119
-  port: 5408
-  password: BxceQaOe
-  network: tcp
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: t.me%252Fripaojiedian
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #25'
   type: hysteria2
   server: hy2.aspidnet.xyz
   port: 443
@@ -302,6 +291,15 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 'T.ME: @aristapnel #25'
+  type: hysteria2
+  server: 46.254.18.107
+  port: 443
+  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
+  sni: 46.254.18.107
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #26'
   type: hysteria2
   server: 46.254.18.107
@@ -313,10 +311,10 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #27'
   type: hysteria2
-  server: 46.254.18.107
-  port: 443
-  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
-  sni: 46.254.18.107
+  server: 89.251.26.111
+  port: 55555
+  password: e3a5bb40be52de65
+  sni: 89.251.26.111
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
@@ -331,24 +329,24 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #29'
   type: hysteria2
-  server: 89.251.26.111
-  port: 55555
-  password: e3a5bb40be52de65
-  sni: 89.251.26.111
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #30'
-  type: hysteria2
   server: 185.250.41.245
   port: 443
-  password: rQRuZ8nFbC
+  password: cFihfSrWtH
   sni: 185.250.41.245
   skip-cert-verify: false
   fast-open: true
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
+- name: 'T.ME: @aristapnel #30'
+  type: hysteria2
+  server: 192.9.165.40
+  port: 51000
+  password: d1db0080-669a-4357-ab9f-ab16719ed736
+  sni: 192.9.165.40
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #31'
   type: hysteria2
   server: 80.66.81.78
@@ -693,27 +691,6 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #65'
   type: vmess
-  server: 93.93.89.99
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 93.93.89.99
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #66'
-  type: vmess
   server: 195.209.88.113
   port: 443
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
@@ -733,11 +710,32 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-1-411.mirra.now
+- name: 'T.ME: @aristapnel #66'
+  type: vmess
+  server: renderer-stream-1-411.mirra.now
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: renderer-stream-1-411.mirra.now
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-1-411.mirra.now
 - name: 'T.ME: @aristapnel #67'
   type: vmess
-  server: 93.93.88.22
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  server: ct2.ainivp.com
+  port: 33207
+  uuid: 9217afcd-026e-781f-1abc-c06efabd2328
   alterId: 0
   cipher: auto
   network: ws
@@ -745,20 +743,20 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 93.93.88.22
+  servername: ct2.ainivp.com
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /ray
     headers:
-      Host: renderer-stream-1-411.mirra.now
+      Host: ct2.ainivp.com
 - name: 'T.ME: @aristapnel #68'
   type: vmess
-  server: 93.93.89.118
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  server: yd3.ainivp.com
+  port: 33404
+  uuid: 9217afcd-026e-781f-1abc-c06efabd2328
   alterId: 0
   cipher: auto
   network: ws
@@ -766,20 +764,20 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 93.93.89.118
+  servername: yd3.ainivp.com
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /ray
     headers:
-      Host: renderer-stream-1-411.mirra.now
+      Host: yd3.ainivp.com
 - name: 'T.ME: @aristapnel #69'
   type: vmess
-  server: 37.220.161.247
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  server: yd3.ainivp.com
+  port: 33405
+  uuid: 9217afcd-026e-781f-1abc-c06efabd2328
   alterId: 0
   cipher: auto
   network: ws
@@ -787,121 +785,16 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
+  servername: yd3.ainivp.com
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /ray
     headers:
-      Host: 37.220.161.247
+      Host: yd3.ainivp.com
 - name: 'T.ME: @aristapnel #70'
-  type: vmess
-  server: renderer-stream-1-411.mirra.now
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #71'
-  type: vmess
-  server: 93.93.88.22
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #72'
-  type: vmess
-  server: 93.93.89.117
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 93.93.89.117
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #73'
-  type: vmess
-  server: 93.93.89.118
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #74'
-  type: vmess
-  server: renderer-stream-1-411.mirra.now
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #75'
   type: vmess
   server: athins.com.tr
   port: 443
@@ -918,7 +811,7 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'T.ME: @aristapnel #76'
+- name: 'T.ME: @aristapnel #71'
   type: vmess
   server: kilime.xubi.org
   port: 21870
@@ -932,7 +825,7 @@ proxies:
   tcp-fast-open: true
   servername: kilime.xubi.org
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #77'
+- name: 'T.ME: @aristapnel #72'
   type: vmess
   server: pro.sanaiehdasti.com
   port: 1546
@@ -945,6 +838,90 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: pro.sanaiehdasti.com
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #73'
+  type: vmess
+  server: pro.sanaiehdasti.com
+  port: 1546
+  uuid: 6c5fcae3-16e8-4a93-b28e-05588d5d9342
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: pro.sanaiehdasti.com
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #74'
+  type: vmess
+  server: vip3.sanaiehdasti.com
+  port: 1546
+  uuid: 6c5fcae3-16e8-4a93-b28e-05588d5d9342
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: vip3.sanaiehdasti.com
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #75'
+  type: vmess
+  server: 104.17.121.43
+  port: 443
+  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: omkuzygiv.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: omkuzygiv.com
+- name: 'T.ME: @aristapnel #76'
+  type: vmess
+  server: 104.17.121.43
+  port: 443
+  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: omkuzygiv.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: omkuzygiv.com
+- name: 'T.ME: @aristapnel #77'
+  type: vmess
+  server: 160.250.247.70
+  port: 49178
+  uuid: d7c13e10-2ba9-4677-a877-d9e9d1738394
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 160.250.247.70
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #78'
   type: vless
