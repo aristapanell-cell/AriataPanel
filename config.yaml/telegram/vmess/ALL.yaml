@@ -1,141 +1,9 @@
 # TELEGRAM - VMESS - Tier ALL
-# Updated: 2026-06-22 11:34:21
-# Count: 14
+# Updated: 2026-06-22 16:29:18
+# Count: 16
 
 proxies:
 - name: 'ARISTA #1'
-  type: vmess
-  server: 104.17.121.43
-  port: 443
-  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: omkuzygiv.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: omkuzygiv.com
-- name: 'ARISTA #2'
-  type: vmess
-  server: ca.connfull.org
-  port: 2053
-  uuid: 4b433ddd-fb7d-41e7-b499-ce76af562512
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ca.connfull.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #3'
-  type: vmess
-  server: digi21.ez0535.com
-  port: 443
-  uuid: b5406cd3-1a11-4c78-b346-7763fcc9e476
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: digi21.ez0535.com
-  client-fingerprint: chrome
-- name: 'ARISTA #4'
-  type: vmess
-  server: www.speedtest.net
-  port: 443
-  uuid: 46d9820f-4585-4687-82b1-13ab23d9187e
-  alterId: 0
-  cipher: auto
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: gErtOw1.lOolOolOolOo.cOM
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #5'
-  type: vmess
-  server: 65.109.221.245
-  port: 33366
-  uuid: 2ee7eb26-8118-4d0a-a300-8d0edcfde6e5
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 65.109.221.245
-  client-fingerprint: chrome
-- name: 'ARISTA #6'
-  type: vmess
-  server: vip3.sanaiehdasti.com
-  port: 1546
-  uuid: 6c5fcae3-16e8-4a93-b28e-05588d5d9342
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vip3.sanaiehdasti.com
-  client-fingerprint: chrome
-- name: 'ARISTA #7'
-  type: vmess
-  server: 148.113.176.192
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fapeng.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: 148.113.176.192
-- name: 'ARISTA #8'
-  type: vmess
-  server: 172.233.17.76
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 172.233.17.76
-  client-fingerprint: chrome
-- name: 'ARISTA #9'
   type: vmess
   server: panel.cpanel.10ofbest.ir
   port: 2053
@@ -156,6 +24,139 @@ proxies:
     path: /
     headers:
       Host: nl.chellservice.ir
+- name: 'ARISTA #2'
+  type: vmess
+  server: digi21.ez0535.com
+  port: 443
+  uuid: b5406cd3-1a11-4c78-b346-7763fcc9e476
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: digi21.ez0535.com
+  client-fingerprint: chrome
+- name: 'ARISTA #3'
+  type: vmess
+  server: vip3.sanaiehdasti.com
+  port: 1546
+  uuid: 6c5fcae3-16e8-4a93-b28e-05588d5d9342
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: vip3.sanaiehdasti.com
+  client-fingerprint: chrome
+- name: 'ARISTA #4'
+  type: vmess
+  server: 104.17.121.43
+  port: 443
+  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: omkuzygiv.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: omkuzygiv.com
+- name: 'ARISTA #5'
+  type: vmess
+  server: 172.233.17.76
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 172.233.17.76
+  client-fingerprint: chrome
+- name: 'ARISTA #6'
+  type: vmess
+  server: 65.109.221.245
+  port: 33366
+  uuid: 2ee7eb26-8118-4d0a-a300-8d0edcfde6e5
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 65.109.221.245
+  client-fingerprint: chrome
+- name: 'ARISTA #7'
+  type: vmess
+  server: uservpn1.freedlmovies.tk
+  port: 443
+  uuid: 7d422fe5-eca7-4e37-89d5-1b71f656759a
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: uservpn1.freedlmovies.tk
+  client-fingerprint: chrome
+- name: 'ARISTA #8'
+  type: vmess
+  server: 104.17.121.43
+  port: 443
+  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: omkuzygiv.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: omkuzygiv.com
+- name: 'ARISTA #9'
+  type: vmess
+  server: cf.scpnb.top
+  port: 443
+  uuid: 7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: vienna-bread-threats-amendment.trycloudflare.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
+    headers:
+      Host: vienna-bread-threats-amendment.trycloudflare.com
 - name: 'ARISTA #10'
   type: vmess
   server: 31.56.178.107
@@ -186,53 +187,91 @@ proxies:
   client-fingerprint: chrome
 - name: 'ARISTA #12'
   type: vmess
-  server: cf.scpnb.top
+  server: 51.75.62.33
   port: 443
-  uuid: 7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed
+  uuid: 41cb0ca6-9d28-449f-aa2b-4312157135f9
   alterId: 0
   cipher: auto
   network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 51.75.62.33
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: 51.75.62.33
+- name: 'ARISTA #13'
+  type: vmess
+  server: Malavang.hardvezoo.ir
+  port: 9318
+  uuid: 1e076c9b-b846-4b21-b73d-49c2b9cd88ca
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Malavang.hardvezoo.ir
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: Malavang.hardvezoo.ir
+- name: 'ARISTA #14'
+  type: vmess
+  server: ca.connfull.org
+  port: 2053
+  uuid: 4b433ddd-fb7d-41e7-b499-ce76af562512
+  alterId: 0
+  cipher: auto
+  network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: vienna-bread-threats-amendment.trycloudflare.com
+  servername: ca.connfull.org
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
-  ws-opts:
-    path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
-    headers:
-      Host: vienna-bread-threats-amendment.trycloudflare.com
-- name: 'ARISTA #13'
+- name: 'ARISTA #15'
   type: vmess
-  server: uservpn1.freedlmovies.tk
+  server: fr.connfull.org
+  port: 2053
+  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: fr.connfull.org
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'ARISTA #16'
+  type: vmess
+  server: www.speedtest.net
   port: 443
-  uuid: 7d422fe5-eca7-4e37-89d5-1b71f656759a
+  uuid: 46d9820f-4585-4687-82b1-13ab23d9187e
   alterId: 0
   cipher: auto
-  network: tcp
-  tls: false
+  network: xhttp
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: uservpn1.freedlmovies.tk
+  servername: gErtOw1.lOolOolOolOo.cOM
   client-fingerprint: chrome
-- name: 'ARISTA #14'
-  type: vmess
-  server: vip3.sanaiehdasti.com
-  port: 1546
-  uuid: 6c5fcae3-16e8-4a93-b28e-05588d5d9342
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vip3.sanaiehdasti.com
-  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -256,6 +295,8 @@ proxy-groups:
   - 'ARISTA #12'
   - 'ARISTA #13'
   - 'ARISTA #14'
+  - 'ARISTA #15'
+  - 'ARISTA #16'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
