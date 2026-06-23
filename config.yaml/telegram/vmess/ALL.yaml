@@ -1,68 +1,9 @@
 # TELEGRAM - VMESS - Tier ALL
-# Updated: 2026-06-22 20:37:06
-# Count: 14
+# Updated: 2026-06-23 02:05:59
+# Count: 19
 
 proxies:
 - name: 'ARISTA #1'
-  type: vmess
-  server: 31.56.178.107
-  port: 443
-  uuid: 185a3bb6-a1a7-4a43-da37-659026c79aea
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 31.56.178.107
-  client-fingerprint: chrome
-- name: 'ARISTA #2'
-  type: vmess
-  server: 78.141.215.62
-  port: 443
-  uuid: afd45419-cffa-4f1b-990a-511aab6ee9ab
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 78.141.215.62
-  client-fingerprint: chrome
-- name: 'ARISTA #3'
-  type: vmess
-  server: 2.26.231.87
-  port: 110
-  uuid: f35f1bc8-a39f-4ab9-a20f-613cc6e860c3
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 2.26.231.87
-  client-fingerprint: chrome
-- name: 'ARISTA #4'
-  type: vmess
-  server: fr.connfull.org
-  port: 2053
-  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fr.connfull.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #5'
   type: vmess
   server: panel.cpanel.10ofbest.ir
   port: 2053
@@ -83,28 +24,11 @@ proxies:
     path: /
     headers:
       Host: nl.chellservice.ir
-- name: 'ARISTA #6'
+- name: 'ARISTA #2'
   type: vmess
-  server: ca.connfull.org
-  port: 2053
-  uuid: 4b433ddd-fb7d-41e7-b499-ce76af562512
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ca.connfull.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'ARISTA #7'
-  type: vmess
-  server: digi21.ez0535.com
-  port: 443
-  uuid: b5406cd3-1a11-4c78-b346-7763fcc9e476
+  server: 65.109.221.245
+  port: 33366
+  uuid: 2ee7eb26-8118-4d0a-a300-8d0edcfde6e5
   alterId: 0
   cipher: auto
   network: tcp
@@ -112,9 +36,9 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: digi21.ez0535.com
+  servername: 65.109.221.245
   client-fingerprint: chrome
-- name: 'ARISTA #8'
+- name: 'ARISTA #3'
   type: vmess
   server: www.speedtest.net
   port: 443
@@ -131,7 +55,21 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'ARISTA #9'
+- name: 'ARISTA #4'
+  type: vmess
+  server: 2.26.231.87
+  port: 110
+  uuid: f35f1bc8-a39f-4ab9-a20f-613cc6e860c3
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 2.26.231.87
+  client-fingerprint: chrome
+- name: 'ARISTA #5'
   type: vmess
   server: vip3.sanaiehdasti.com
   port: 1546
@@ -145,7 +83,7 @@ proxies:
   tcp-fast-open: true
   servername: vip3.sanaiehdasti.com
   client-fingerprint: chrome
-- name: 'ARISTA #10'
+- name: 'ARISTA #6'
   type: vmess
   server: 104.17.121.43
   port: 443
@@ -166,7 +104,107 @@ proxies:
     path: /
     headers:
       Host: omkuzygiv.com
+- name: 'ARISTA #7'
+  type: vmess
+  server: 104.17.121.43
+  port: 443
+  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: omkuzygiv.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /
+    headers:
+      Host: omkuzygiv.com
+- name: 'ARISTA #8'
+  type: vmess
+  server: digi21.ez0535.com
+  port: 443
+  uuid: b5406cd3-1a11-4c78-b346-7763fcc9e476
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: digi21.ez0535.com
+  client-fingerprint: chrome
+- name: 'ARISTA #9'
+  type: vmess
+  server: 81.12.34.222
+  port: 443
+  uuid: 78cc237d-e9a1-400a-be89-c38db037b911
+  alterId: 0
+  cipher: auto
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: Em89VtEPfy06EhEQnxNA.zynaras.ir
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'ARISTA #10'
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 165.140.216.141
+  client-fingerprint: chrome
 - name: 'ARISTA #11'
+  type: vmess
+  server: ca.connfull.org
+  port: 2053
+  uuid: 4b433ddd-fb7d-41e7-b499-ce76af562512
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ca.connfull.org
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'ARISTA #12'
+  type: vmess
+  server: fr.connfull.org
+  port: 2053
+  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: fr.connfull.org
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'ARISTA #13'
   type: vmess
   server: uservpn1.freedlmovies.tk
   port: 443
@@ -180,42 +218,24 @@ proxies:
   tcp-fast-open: true
   servername: uservpn1.freedlmovies.tk
   client-fingerprint: chrome
-- name: 'ARISTA #12'
+- name: 'ARISTA #14'
   type: vmess
-  server: 65.109.221.245
-  port: 33366
-  uuid: 2ee7eb26-8118-4d0a-a300-8d0edcfde6e5
+  server: chatgpt.com
+  port: 8443
+  uuid: e946992b-c4a2-4741-8f65-c60997a042f0
   alterId: 0
   cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 65.109.221.245
-  client-fingerprint: chrome
-- name: 'ARISTA #13'
-  type: vmess
-  server: 104.17.121.43
-  port: 443
-  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
-  alterId: 0
-  cipher: auto
-  network: ws
+  network: httpupgrade
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: omkuzygiv.com
+  servername: 51dfdb066e65b8cf.iranpuls.ir
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
-  ws-opts:
-    path: /
-    headers:
-      Host: omkuzygiv.com
-- name: 'ARISTA #14'
+- name: 'ARISTA #15'
   type: vmess
   server: 172.233.17.76
   port: 22324
@@ -228,6 +248,69 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 172.233.17.76
+  client-fingerprint: chrome
+- name: 'ARISTA #16'
+  type: vmess
+  server: 31.56.178.107
+  port: 443
+  uuid: 185a3bb6-a1a7-4a43-da37-659026c79aea
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 31.56.178.107
+  client-fingerprint: chrome
+- name: 'ARISTA #17'
+  type: vmess
+  server: 78.141.215.62
+  port: 443
+  uuid: afd45419-cffa-4f1b-990a-511aab6ee9ab
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 78.141.215.62
+  client-fingerprint: chrome
+- name: 'ARISTA #18'
+  type: vmess
+  server: 104.16.0.0
+  port: 443
+  uuid: 95d2c461-61f5-4dae-bc74-4d10ce1f6236
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: gongyilm.dpdns.org
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /ws-gongyi
+    headers:
+      Host: 104.16.0.0
+- name: 'ARISTA #19'
+  type: vmess
+  server: 95.179.142.241
+  port: 433
+  uuid: 79866643-2b00-401c-9424-1bff8ce9925a
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 95.179.142.241
   client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
@@ -252,6 +335,11 @@ proxy-groups:
   - 'ARISTA #12'
   - 'ARISTA #13'
   - 'ARISTA #14'
+  - 'ARISTA #15'
+  - 'ARISTA #16'
+  - 'ARISTA #17'
+  - 'ARISTA #18'
+  - 'ARISTA #19'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
