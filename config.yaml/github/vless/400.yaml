@@ -1,5 +1,5 @@
 # GITHUB - VLESS - Tier 400
-# Updated: 2026-06-23 02:06:03
+# Updated: 2026-06-23 09:00:05
 # Count: 381
 
 proxies:
@@ -6747,16 +6747,20 @@ proxies:
   - http/1.1
 - name: 'T.ME: @aristapnel #400'
   type: vless
-  server: 146.0.75.144
-  port: 443
-  uuid: adeb09fd-871c-4785-8067-aec6ebfcbe78
+  server: 89.208.231.191
+  port: 52006
+  uuid: 90339f8f-10c1-07d0-aa15-03e37bc40203
   network: tcp
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 146.0.75.144
+  servername: 89.208.231.191
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
