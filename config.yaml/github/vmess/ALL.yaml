@@ -1,6 +1,6 @@
 # GITHUB - VMESS - Tier ALL
-# Updated: 2026-06-24 02:08:43
-# Count: 28
+# Updated: 2026-06-24 08:53:33
+# Count: 31
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -71,6 +71,34 @@ proxies:
   - http/1.1
 - name: 'T.ME: @aristapnel #5'
   type: vmess
+  server: sinavip3.cnavippanel.com
+  port: 1516
+  uuid: 0aca35ee-b845-45d7-9b52-379a2984378a
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sinavip3.cnavippanel.com
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #6'
+  type: vmess
+  server: sinavip.cnavippanel.com
+  port: 1514
+  uuid: 0aca35ee-b845-45d7-9b52-379a2984378a
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sinavip.cnavippanel.com
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #7'
+  type: vmess
   server: 107.173.27.219
   port: 6666
   uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
@@ -87,25 +115,7 @@ proxies:
     path: /youtube
     headers:
       Host: 107.173.27.219
-- name: 'T.ME: @aristapnel #6'
-  type: vmess
-  server: 69.84.182.49
-  port: 80
-  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 69.84.182.49
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-- name: 'T.ME: @aristapnel #7'
+- name: 'T.ME: @aristapnel #8'
   type: vmess
   server: 160.250.247.70
   port: 49178
@@ -119,7 +129,7 @@ proxies:
   tcp-fast-open: true
   servername: 160.250.247.70
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #8'
+- name: 'T.ME: @aristapnel #9'
   type: vmess
   server: 186.244.208.78
   port: 30022
@@ -133,25 +143,28 @@ proxies:
   tcp-fast-open: true
   servername: 186.244.208.78
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #9'
+- name: 'T.ME: @aristapnel #10'
   type: vmess
-  server: myvpshosting.name.ng
-  port: 80
-  uuid: 96408f9a-df03-448b-b7e4-ec8e2c216682
+  server: 37.220.161.247
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   alterId: 0
   cipher: auto
   network: ws
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: myvpshosting.name.ng
+  servername: renderer-stream-1-411.mirra.now
   client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
   ws-opts:
-    path: /vmess
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: myvpshosting.name.ng
-- name: 'T.ME: @aristapnel #10'
+      Host: renderer-stream-1-411.mirra.now
+- name: 'T.ME: @aristapnel #11'
   type: vmess
   server: 93.93.89.99
   port: 443
@@ -164,27 +177,6 @@ proxies:
   skip-cert-verify: false
   tcp-fast-open: true
   servername: 93.93.89.99
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #11'
-  type: vmess
-  server: renderer-stream-1-411.mirra.now
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: renderer-stream-1-411.mirra.now
   client-fingerprint: chrome
   alpn:
   - h2
@@ -216,7 +208,7 @@ proxies:
       Host: renderer-stream-1-411.mirra.now
 - name: 'T.ME: @aristapnel #13'
   type: vmess
-  server: 93.93.88.22
+  server: 195.209.88.113
   port: 443
   uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
   alterId: 0
@@ -226,7 +218,7 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 93.93.88.22
+  servername: 195.209.88.113
   client-fingerprint: chrome
   alpn:
   - h2
@@ -297,7 +289,7 @@ proxies:
   ws-opts:
     path: /api/v1/gpu-stream/socket
     headers:
-      Host: renderer-stream-1-411.mirra.now
+      Host: 37.220.161.247
 - name: 'T.ME: @aristapnel #17'
   type: vmess
   server: 93.93.88.22
@@ -426,65 +418,55 @@ proxies:
       Host: renderer-stream-1-411.mirra.now
 - name: 'T.ME: @aristapnel #23'
   type: vmess
-  server: 195.209.88.113
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  network: ws
-  tls: true
+  network: tcp
+  tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 195.209.88.113
+  servername: 82.198.246.250
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
 - name: 'T.ME: @aristapnel #24'
   type: vmess
-  server: 93.93.89.117
-  port: 443
-  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  server: 154.37.223.105
+  port: 52080
+  uuid: 12513325-4464-4334-b811-7b047ebf40e7
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 154.37.223.105
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #25'
+  type: vmess
+  server: 47.250.149.51
+  port: 50018
+  uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
   alterId: 0
   cipher: auto
   network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 93.93.89.117
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-411.mirra.now
-- name: 'T.ME: @aristapnel #25'
-  type: vmess
-  server: 154.37.223.105
-  port: 52080
-  uuid: 12513325-4464-4334-b811-7b047ebf40e7
-  alterId: 0
-  cipher: auto
-  network: tcp
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 154.37.223.105
+  servername: 47.250.149.51
   client-fingerprint: chrome
+  ws-opts:
+    path: /9665280c
+    headers:
+      Host: 47.250.149.51
 - name: 'T.ME: @aristapnel #26'
   type: vmess
-  server: 154.37.223.105
-  port: 52080
-  uuid: 12513325-4464-4334-b811-7b047ebf40e7
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   network: tcp
@@ -492,9 +474,37 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 154.37.223.105
+  servername: 66.163.117.58
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #27'
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 82.198.246.97
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #28'
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 84.17.41.2
+  client-fingerprint: chrome
+- name: 'T.ME: @aristapnel #29'
   type: vmess
   server: 51.75.62.33
   port: 443
@@ -512,7 +522,7 @@ proxies:
     path: /
     headers:
       Host: 51.75.62.33
-- name: 'T.ME: @aristapnel #28'
+- name: 'T.ME: @aristapnel #30'
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -530,6 +540,20 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+- name: 'T.ME: @aristapnel #31'
+  type: vmess
+  server: 154.37.223.105
+  port: 52080
+  uuid: 12513325-4464-4334-b811-7b047ebf40e7
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 154.37.223.105
+  client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -567,6 +591,9 @@ proxy-groups:
   - 'T.ME: @aristapnel #26'
   - 'T.ME: @aristapnel #27'
   - 'T.ME: @aristapnel #28'
+  - 'T.ME: @aristapnel #29'
+  - 'T.ME: @aristapnel #30'
+  - 'T.ME: @aristapnel #31'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
