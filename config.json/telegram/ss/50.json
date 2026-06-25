@@ -1,6 +1,6 @@
 // TELEGRAM - SS - Tier 50
-// Updated: 2026-06-25 13:33:32
-// Count: 6
+// Updated: 2026-06-25 13:56:10
+// Count: 5
 
 {
   "log": {
@@ -52,7 +52,15 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #10",
+      "tag": "ARISTA #14",
+      "server": "3.8.48.222",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "dada1203"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ARISTA #18",
       "server": "188.121.123.189",
       "server_port": 4050,
       "method": "chacha20-ietf-poly1305",
@@ -60,7 +68,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #28",
+      "tag": "ARISTA #46",
       "server": "$*@14.29.124.168",
       "server_port": 25267,
       "method": "aes-128-cfb",
@@ -68,7 +76,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #30",
+      "tag": "ARISTA #48",
       "server": "85.208.108.60",
       "server_port": 8119,
       "method": "aes-256-gcm",
@@ -76,27 +84,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #32",
+      "tag": "ARISTA #50",
       "server": "3.1.211.223",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "ARISTA #36",
-      "server": "$*@14.29.124.168",
-      "server_port": 25294,
-      "method": "aes-128-cfb",
-      "password": "QazEdcTgb159"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "ARISTA #37",
-      "server": "85.208.108.18",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "direct",
@@ -110,12 +102,11 @@
       "type": "urltest",
       "tag": "🚀 ARISTA AUTO BEST",
       "outbounds": [
-        "ARISTA #10",
-        "ARISTA #28",
-        "ARISTA #30",
-        "ARISTA #32",
-        "ARISTA #36",
-        "ARISTA #37"
+        "ARISTA #14",
+        "ARISTA #18",
+        "ARISTA #46",
+        "ARISTA #48",
+        "ARISTA #50"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",
@@ -127,12 +118,11 @@
       "type": "urltest",
       "tag": "🎯 ARISTA MANUAL TESTED",
       "outbounds": [
-        "ARISTA #10",
-        "ARISTA #28",
-        "ARISTA #30",
-        "ARISTA #32",
-        "ARISTA #36",
-        "ARISTA #37"
+        "ARISTA #14",
+        "ARISTA #18",
+        "ARISTA #46",
+        "ARISTA #48",
+        "ARISTA #50"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
