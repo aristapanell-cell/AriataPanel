@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 50
-# Updated: 2026-06-25 15:48:33
+# Updated: 2026-06-25 16:13:11
 # Count: 49
 
 proxies:
@@ -437,46 +437,35 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #39'
   type: vmess
-  server: 34.124.160.94
-  port: 443
-  uuid: d54e3357-ff54-42e7-d8a0-8ea5cdcaefd4
+  server: ca.connfull.org
+  port: 2053
+  uuid: 4b433ddd-fb7d-41e7-b499-ce76af562512
   alterId: 0
   cipher: auto
-  network: ws
+  network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 34.124.160.94
+  servername: ca.connfull.org
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
-  ws-opts:
-    path: /bing
-    headers:
-      Host: do.hterre.me
 - name: 'T.ME: @aristapnel #40'
   type: vmess
-  server: 34.124.160.94
-  port: 443
-  uuid: d54e3357-ff54-42e7-d8a0-8ea5cdcaefd4
+  server: sinavip.cnavippanel.com
+  port: 1514
+  uuid: 4e9ea535-d9cf-40f3-9de6-bff8abe273f8
   alterId: 0
   cipher: auto
-  network: ws
-  tls: true
+  network: tcp
+  tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: do.hterre.me
+  servername: sinavip.cnavippanel.com
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /bing
-    headers:
-      Host: do.hterre.me
 - name: 'T.ME: @aristapnel #41'
   type: vless
   server: 83.168.71.216
