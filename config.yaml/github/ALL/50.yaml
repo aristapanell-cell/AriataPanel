@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 50
-# Updated: 2026-06-25 08:50:48
+# Updated: 2026-06-25 13:31:42
 # Count: 49
 
 proxies:
@@ -437,39 +437,46 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #39'
   type: vmess
-  server: 154.37.223.105
-  port: 52080
-  uuid: 12513325-4464-4334-b811-7b047ebf40e7
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 154.37.223.105
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #40'
-  type: vmess
-  server: 172.67.207.114
+  server: 34.124.160.94
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
+  uuid: d54e3357-ff54-42e7-d8a0-8ea5cdcaefd4
+  alterId: 0
   cipher: auto
   network: ws
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: ophelia.mom
+  servername: 34.124.160.94
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   ws-opts:
-    path: linkvws
+    path: /bing
     headers:
-      Host: ophelia.mom
+      Host: do.hterre.me
+- name: 'T.ME: @aristapnel #40'
+  type: vmess
+  server: 34.124.160.94
+  port: 443
+  uuid: d54e3357-ff54-42e7-d8a0-8ea5cdcaefd4
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: do.hterre.me
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /bing
+    headers:
+      Host: do.hterre.me
 - name: 'T.ME: @aristapnel #41'
   type: vless
   server: 83.168.71.216

@@ -1,5 +1,5 @@
 // GITHUB - ALL - Tier 50
-// Updated: 2026-06-25 08:53:07
+// Updated: 2026-06-25 13:33:32
 // Count: 40
 
 {
@@ -464,25 +464,13 @@
     {
       "type": "vmess",
       "tag": "T.ME: @aristapnel #39",
-      "server": "154.37.223.105",
-      "server_port": 52080,
-      "uuid": "12513325-4464-4334-b811-7b047ebf40e7",
-      "security": "auto",
-      "tls": {
-        "enabled": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "T.ME: @aristapnel #40",
-      "server": "172.67.207.114",
+      "server": "34.124.160.94",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "uuid": "d54e3357-ff54-42e7-d8a0-8ea5cdcaefd4",
       "security": "auto",
-      "alter_id": 1,
       "tls": {
         "enabled": true,
-        "server_name": "ophelia.mom",
+        "server_name": "34.124.160.94",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -491,9 +479,33 @@
       },
       "transport": {
         "type": "ws",
-        "path": "linkvws",
+        "path": "/bing",
         "headers": {
-          "Host": "ophelia.mom"
+          "Host": "do.hterre.me"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "T.ME: @aristapnel #40",
+      "server": "34.124.160.94",
+      "server_port": 443,
+      "uuid": "d54e3357-ff54-42e7-d8a0-8ea5cdcaefd4",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "do.hterre.me",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bing",
+        "headers": {
+          "Host": "do.hterre.me"
         }
       }
     },

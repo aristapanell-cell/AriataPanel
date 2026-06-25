@@ -1,6 +1,6 @@
 # GITHUB - VMESS - Tier ALL
-# Updated: 2026-06-25 08:50:46
-# Count: 15
+# Updated: 2026-06-25 13:31:40
+# Count: 14
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -131,6 +131,48 @@ proxies:
   client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #9'
   type: vmess
+  server: 34.124.160.94
+  port: 443
+  uuid: d54e3357-ff54-42e7-d8a0-8ea5cdcaefd4
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 34.124.160.94
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /bing
+    headers:
+      Host: do.hterre.me
+- name: 'T.ME: @aristapnel #10'
+  type: vmess
+  server: 34.124.160.94
+  port: 443
+  uuid: d54e3357-ff54-42e7-d8a0-8ea5cdcaefd4
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: do.hterre.me
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /bing
+    headers:
+      Host: do.hterre.me
+- name: 'T.ME: @aristapnel #11'
+  type: vmess
   server: 154.37.223.105
   port: 52080
   uuid: 12513325-4464-4334-b811-7b047ebf40e7
@@ -143,56 +185,7 @@ proxies:
   tcp-fast-open: true
   servername: 154.37.223.105
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #10'
-  type: vmess
-  server: 172.67.207.114
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: ophelia.mom
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: ophelia.mom
-- name: 'T.ME: @aristapnel #11'
-  type: vmess
-  server: iran.iraniannimdown.ir
-  port: 52645
-  uuid: 80d385d3-4fe7-43d0-b61e-7437f82f5d2c
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: iran.iraniannimdown.ir
-  client-fingerprint: chrome
 - name: 'T.ME: @aristapnel #12'
-  type: vmess
-  server: 57.151.100.27
-  port: 10086
-  uuid: 550e8400-e29b-41d4-a716-446655440000
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 57.151.100.27
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #13'
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -210,7 +203,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-- name: 'T.ME: @aristapnel #14'
+- name: 'T.ME: @aristapnel #13'
   type: vmess
   server: 154.37.223.105
   port: 52080
@@ -224,7 +217,7 @@ proxies:
   tcp-fast-open: true
   servername: 154.37.223.105
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #15'
+- name: 'T.ME: @aristapnel #14'
   type: vmess
   server: 185.153.231.167
   port: 49946
@@ -261,7 +254,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #12'
   - 'T.ME: @aristapnel #13'
   - 'T.ME: @aristapnel #14'
-  - 'T.ME: @aristapnel #15'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
