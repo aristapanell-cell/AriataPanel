@@ -1,9 +1,20 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-06-25 19:50:57
+# Updated: 2026-06-26 02:10:55
 # Count: 6
 
 proxies:
 - name: 'ARISTA #1'
+  type: hysteria2
+  server: 191.101.238.183
+  port: 54040
+  password: q3tf4lsdoqpgpo4x
+  sni: 191.101.238.183
+  skip-cert-verify: false
+  fast-open: true
+  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: '%40JynMarket'
+- name: 'ARISTA #3'
   type: hysteria2
   server: 185.250.41.245
   port: 443
@@ -14,7 +25,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #2'
+- name: 'ARISTA #4'
   type: hysteria2
   server: 185.250.41.245
   port: 443
@@ -25,7 +36,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #3'
+- name: 'ARISTA #5'
   type: hysteria2
   server: 185.250.41.245
   port: 443
@@ -36,7 +47,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #4'
+- name: 'ARISTA #6'
   type: hysteria2
   server: 87.120.106.36
   port: 443
@@ -47,7 +58,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T-me-V2RayyNGvpn-ioSniper
-- name: 'ARISTA #5'
+- name: 'ARISTA #7'
   type: hysteria2
   server: 185.250.41.245
   port: 443
@@ -58,17 +69,6 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: T.me%2FV2RayyNGvpn
-- name: 'ARISTA #6'
-  type: hysteria2
-  server: 130.49.161.70
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: 130.49.161.70
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -79,11 +79,11 @@ proxy-groups:
   timeout: 3000
   proxies: &id001
   - 'ARISTA #1'
-  - 'ARISTA #2'
   - 'ARISTA #3'
   - 'ARISTA #4'
   - 'ARISTA #5'
   - 'ARISTA #6'
+  - 'ARISTA #7'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
