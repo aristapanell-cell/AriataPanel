@@ -1,25 +1,22 @@
 # TELEGRAM - VMESS - Tier ALL
-# Updated: 2026-06-27 13:12:14
-# Count: 23
+# Updated: 2026-06-27 19:03:59
+# Count: 19
 
 proxies:
 - name: 'ARISTA #1'
   type: vmess
-  server: www.speedtest.net
+  server: 78.141.215.62
   port: 443
-  uuid: 46d9820f-4585-4687-82b1-13ab23d9187e
+  uuid: afd45419-cffa-4f1b-990a-511aab6ee9ab
   alterId: 0
   cipher: auto
-  network: xhttp
-  tls: true
+  network: tcp
+  tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: gErtOw1.lOolOolOolOo.cOM
+  servername: 78.141.215.62
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 - name: 'ARISTA #2'
   type: vmess
   server: site.hooracoffee.ir
@@ -43,47 +40,23 @@ proxies:
       Host: site.hooracoffee.ir
 - name: 'ARISTA #3'
   type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  server: 47.250.149.51
+  port: 50018
+  uuid: 9665280c-a3d1-4aab-ef9f-a3a497337d91
   alterId: 0
   cipher: auto
   network: ws
-  tls: true
+  tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: v2ray1.dozapp.xyz
+  servername: 47.250.149.51
   client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
   ws-opts:
-    path: /lMnsZUN4/
+    path: /9665280c
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: 47.250.149.51
 - name: 'ARISTA #4'
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: v2ray1.dozapp.xyz
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 'ARISTA #5'
   type: vmess
   server: 158.51.121.63
   port: 443
@@ -104,7 +77,7 @@ proxies:
     path: linkvws
     headers:
       Host: 158.51.121.63
-- name: 'ARISTA #6'
+- name: 'ARISTA #5'
   type: vmess
   server: 158.51.121.63
   port: 443
@@ -125,7 +98,7 @@ proxies:
     path: linkvws
     headers:
       Host: seribus.org
-- name: 'ARISTA #7'
+- name: 'ARISTA #6'
   type: vmess
   server: 57.151.100.27
   port: 10086
@@ -139,7 +112,7 @@ proxies:
   tcp-fast-open: true
   servername: 57.151.100.27
   client-fingerprint: chrome
-- name: 'ARISTA #8'
+- name: 'ARISTA #7'
   type: vmess
   server: 18.184.156.126
   port: 1002
@@ -153,7 +126,38 @@ proxies:
   tcp-fast-open: true
   servername: 18.184.156.126
   client-fingerprint: chrome
+- name: 'ARISTA #8'
+  type: vmess
+  server: www.speedtest.net
+  port: 443
+  uuid: 46d9820f-4585-4687-82b1-13ab23d9187e
+  alterId: 0
+  cipher: auto
+  network: xhttp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: gErtOw1.lOolOolOolOo.cOM
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
 - name: 'ARISTA #9'
+  type: vmess
+  server: 9ada43675a77ad70.ssdhdd.fun
+  port: 23698
+  uuid: 5d840438-8bce-4048-9307-b8c1d7880bb9
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 9ada43675a77ad70.ssdhdd.fun
+  client-fingerprint: chrome
+- name: 'ARISTA #10'
   type: vmess
   server: 107.173.27.219
   port: 6666
@@ -171,67 +175,49 @@ proxies:
     path: /youtube
     headers:
       Host: 107.173.27.219
-- name: 'ARISTA #10'
-  type: vmess
-  server: 78.141.215.62
-  port: 443
-  uuid: afd45419-cffa-4f1b-990a-511aab6ee9ab
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 78.141.215.62
-  client-fingerprint: chrome
 - name: 'ARISTA #11'
   type: vmess
-  server: uservpn1.freedlmovies.tk
-  port: 443
-  uuid: 7d422fe5-eca7-4e37-89d5-1b71f656759a
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: uservpn1.freedlmovies.tk
-  client-fingerprint: chrome
-- name: 'ARISTA #12'
-  type: vmess
-  server: 9ada43675a77ad70.ssdhdd.fun
-  port: 23698
-  uuid: 5d840438-8bce-4048-9307-b8c1d7880bb9
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 9ada43675a77ad70.ssdhdd.fun
-  client-fingerprint: chrome
-- name: 'ARISTA #13'
-  type: vmess
-  server: 104.21.89.181
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   network: ws
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: accklsj.bufu.us.ci
+  servername: v2ray1.dozapp.xyz
   client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
   ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
+    path: /lMnsZUN4/
     headers:
-      Host: accklsj.bufu.us.ci
-- name: 'ARISTA #14'
+      Host: v2ray1.dozapp.xyz
+- name: 'ARISTA #12'
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: v2ray1.dozapp.xyz
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 'ARISTA #13'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -252,7 +238,7 @@ proxies:
     path: /d5c27b66-7d26-48ac-9fc1-2c0884406c18-vm
     headers:
       Host: suspected-deployment-studios-popular.trycloudflare.com
-- name: 'ARISTA #15'
+- name: 'ARISTA #14'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -273,7 +259,7 @@ proxies:
     path: /6a4e7e55-9f07-4c54-abdd-72b9820f4cb3-vm
     headers:
       Host: explicit-freeware-animation-greg.trycloudflare.com
-- name: 'ARISTA #16'
+- name: 'ARISTA #15'
   type: vmess
   server: cdn.31514926.xyz
   port: 443
@@ -294,7 +280,7 @@ proxies:
     path: /48d5eb0f-fd55-4357-baec-a68fa39a4b1b-vm
     headers:
       Host: admit-statute-live-undertaken.trycloudflare.com
-- name: 'ARISTA #17'
+- name: 'ARISTA #16'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -315,7 +301,7 @@ proxies:
     path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
     headers:
       Host: graph-keep-beds-catalog.trycloudflare.com
-- name: 'ARISTA #18'
+- name: 'ARISTA #17'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -336,7 +322,7 @@ proxies:
     path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
     headers:
       Host: vienna-bread-threats-amendment.trycloudflare.com
-- name: 'ARISTA #19'
+- name: 'ARISTA #18'
   type: vmess
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -357,7 +343,7 @@ proxies:
     path: /a2243c24-a82c-4098-bc4d-e85331a1e1d1-vm
     headers:
       Host: associations-bryan-manchester-latino.trycloudflare.com
-- name: 'ARISTA #20'
+- name: 'ARISTA #19'
   type: vmess
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -378,60 +364,6 @@ proxies:
     path: /6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76-vm
     headers:
       Host: attitude-interracial-country-gen.trycloudflare.com
-- name: 'ARISTA #21'
-  type: vmess
-  server: 91.99.185.216
-  port: 20086
-  uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 91.99.185.216
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.99.185.216
-- name: 'ARISTA #22'
-  type: vmess
-  server: 57.128.174.124
-  port: 2096
-  uuid: ae91113b-915f-4a56-b998-e52d8a12da39
-  alterId: 0
-  cipher: auto
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 57.128.174.124
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: api
-- name: 'ARISTA #23'
-  type: vmess
-  server: fr.connfull.org
-  port: 2053
-  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: fr.connfull.org
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -460,10 +392,6 @@ proxy-groups:
   - 'ARISTA #17'
   - 'ARISTA #18'
   - 'ARISTA #19'
-  - 'ARISTA #20'
-  - 'ARISTA #21'
-  - 'ARISTA #22'
-  - 'ARISTA #23'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
