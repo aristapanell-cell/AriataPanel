@@ -7,8 +7,8 @@ from datetime import datetime
 class BestIPProcessor:
     def __init__(self):
         self.output_dir = "best_ip"
-        self.source_url = "https://github.com/aristapanell-cell/ARISTA-MATRIX-PIPELINE/raw/refs/heads/main/output/best_ips.txt"
-        self.fields = ['ip', 'port', 'cdn', 'sni', 'country', 'type', 'city', 'provider', 'score', 'ttfb', 'proto', 'reliability', 'tcp']
+        self.source_url = "https://raw.githubusercontent.com/new493370/NewIp/refs/heads/main/output/best_ips.txt"
+        self.fields = ['ip', 'port', 'cdn', 'sni', 'country', 'type', 'city', 'provider', 'score', 'ttfb', 'proto', 'reliability']
         
     def ensure_output_dir(self):
         os.makedirs(self.output_dir, exist_ok=True)
@@ -44,10 +44,6 @@ class BestIPProcessor:
         score_match = re.search(r'\[SCORE=\s*([^\]]+)\]', line)
         if score_match:
             data['score'] = score_match.group(1).strip()
-        
-        tcp_match = re.search(r'\[TCP=\s*([^\]]+)\]', line)
-        if tcp_match:
-            data['tcp'] = tcp_match.group(1).strip()
         
         ttfb_match = re.search(r'\[TTFB=\s*([^\]]+)\]', line)
         if ttfb_match:
@@ -87,14 +83,6 @@ class BestIPProcessor:
         
         return data if data.get('ip') else None
     
-    def sort_key(self, item):
-        tcp_val = float(item.get('tcp', '999ms').replace('ms', '')) if item.get('tcp') and item.get('tcp') != '-' else 999
-        score_val = float(item.get('score', '0')) if item.get('score') and item.get('score') != '-' else 0
-        ttfb_val = float(item.get('ttfb', '9999ms').replace('ms', '')) if item.get('ttfb') and item.get('ttfb') != '-' else 9999
-        rel_val = float(item.get('reliability', '0')) if item.get('reliability') and item.get('reliability') != '-' else 0
-        proto_val = 2 if 'http/2' in item.get('proto', '').lower() else 1 if 'http/1.1' in item.get('proto', '').lower() else 0
-        return (tcp_val, -score_val, ttfb_val, -rel_val, -proto_val)
-    
     def process(self):
         self.ensure_output_dir()
         content = self.fetch_data()
@@ -122,8 +110,6 @@ class BestIPProcessor:
             self.create_empty_files()
             return
         
-        parsed_data.sort(key=self.sort_key)
-        
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         
         ip_only = [item['ip'] for item in parsed_data if item.get('ip')]
@@ -137,8 +123,6 @@ class BestIPProcessor:
                 parts.append(f"[IP: {item['ip']}]")
             if item.get('port'):
                 parts.append(f"[PORT: {item['port']}]")
-            if item.get('tcp') and item['tcp'] != '-':
-                parts.append(f"[TCP: {item['tcp']}]")
             if item.get('cdn') and item['cdn'] != '-':
                 parts.append(f"[CDN: {item['cdn']}]")
             if item.get('sni') and item['sni'] != '-':
