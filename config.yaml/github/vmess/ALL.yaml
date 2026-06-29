@@ -1,6 +1,6 @@
 # GITHUB - VMESS - Tier ALL
-# Updated: 2026-06-28 19:04:26
-# Count: 8
+# Updated: 2026-06-29 02:17:20
+# Count: 9
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -92,20 +92,6 @@ proxies:
       Host: attitude-interracial-country-gen.trycloudflare.com
 - name: 'T.ME: @aristapnel #6'
   type: vmess
-  server: 65.109.218.60
-  port: 8088
-  uuid: 65488bcf-8573-44ee-9b4f-9abf4390acca
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 65.109.218.60
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #7'
-  type: vmess
   server: 107.173.27.219
   port: 6666
   uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
@@ -122,7 +108,7 @@ proxies:
     path: /youtube
     headers:
       Host: 107.173.27.219
-- name: 'T.ME: @aristapnel #8'
+- name: 'T.ME: @aristapnel #7'
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -140,6 +126,41 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+- name: 'T.ME: @aristapnel #8'
+  type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: 6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: attitude-interracial-country-gen.trycloudflare.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  ws-opts:
+    path: /6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76-vm
+    headers:
+      Host: attitude-interracial-country-gen.trycloudflare.com
+- name: 'T.ME: @aristapnel #9'
+  type: vmess
+  server: 65.109.186.44
+  port: 433
+  uuid: 0cdfc4e0-67aa-40a9-8749-387bf9e11fd9
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: 65.109.186.44
+  client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -157,6 +178,7 @@ proxy-groups:
   - 'T.ME: @aristapnel #6'
   - 'T.ME: @aristapnel #7'
   - 'T.ME: @aristapnel #8'
+  - 'T.ME: @aristapnel #9'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
