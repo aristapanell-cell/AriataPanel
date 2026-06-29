@@ -1,5 +1,5 @@
 // COMBINED - SS - Tier 100
-// Updated: 2026-06-29 15:33:07
+// Updated: 2026-06-29 19:50:25
 // Count: 4
 
 {
@@ -52,15 +52,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #1",
-      "server": "109.107.182.229",
-      "server_port": 51544,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4d1nVpqJVp5oq2W4D0Ljy4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "ARISTA #10",
+      "tag": "ARISTA #11",
       "server": "admin.c1.havij.co",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -68,7 +60,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #11",
+      "tag": "ARISTA #12",
       "server": "series-a1.samanehha.co",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -76,11 +68,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #46",
+      "tag": "ARISTA #29",
       "server": "20.234.9.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "i6qj1Qi9bKvFfIM0"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "ARISTA #32",
+      "server": "109.107.182.229",
+      "server_port": 51544,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4d1nVpqJVp5oq2W4D0Ljy4"
     },
     {
       "type": "direct",
@@ -94,10 +94,10 @@
       "type": "urltest",
       "tag": "🚀 ARISTA AUTO BEST",
       "outbounds": [
-        "ARISTA #1",
-        "ARISTA #10",
         "ARISTA #11",
-        "ARISTA #46"
+        "ARISTA #12",
+        "ARISTA #29",
+        "ARISTA #32"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",
@@ -109,10 +109,10 @@
       "type": "urltest",
       "tag": "🎯 ARISTA MANUAL TESTED",
       "outbounds": [
-        "ARISTA #1",
-        "ARISTA #10",
         "ARISTA #11",
-        "ARISTA #46"
+        "ARISTA #12",
+        "ARISTA #29",
+        "ARISTA #32"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",

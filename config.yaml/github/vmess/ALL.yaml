@@ -1,6 +1,6 @@
 # GITHUB - VMESS - Tier ALL
-# Updated: 2026-06-29 15:29:30
-# Count: 10
+# Updated: 2026-06-29 19:46:37
+# Count: 6
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
@@ -71,27 +71,23 @@ proxies:
   - http/1.1
 - name: 'T.ME: @aristapnel #5'
   type: vmess
-  server: 107.173.27.219
-  port: 6666
-  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: auto
-  network: ws
+  cipher: aes-128-gcm
+  network: tcp
   tls: false
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 107.173.27.219
+  servername: 67.220.85.46
   client-fingerprint: chrome
-  ws-opts:
-    path: /youtube
-    headers:
-      Host: 107.173.27.219
 - name: 'T.ME: @aristapnel #6'
   type: vmess
-  server: 65.109.186.44
-  port: 433
-  uuid: 0cdfc4e0-67aa-40a9-8749-387bf9e11fd9
+  server: 81.30.108.63
+  port: 1020
+  uuid: 2a4feda0-0522-468f-b18f-2e4487f7a724
   alterId: 0
   cipher: auto
   network: tcp
@@ -99,66 +95,7 @@ proxies:
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 65.109.186.44
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #7'
-  type: vmess
-  server: French.r.gamingservice.ir
-  port: 8443
-  uuid: 6d85750e-4ea7-abf2-4626-539e12b433e1
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: French.r.gamingservice.ir
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #8'
-  type: vmess
-  server: 104.252.111.199
-  port: 29094
-  uuid: 1176b07e-35ea-491e-aeec-d7a7912c6162
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 104.252.111.199
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #9'
-  type: vmess
-  server: 172.64.155.209
-  port: 2053
-  uuid: 722555ab-161f-4ed2-ad18-086429b73ff0
-  alterId: 0
-  cipher: auto
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: gErtOw1.lOolOolOolOo.cOM
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'T.ME: @aristapnel #10'
-  type: vmess
-  server: 65.109.186.44
-  port: 433
-  uuid: dee2bb32-00b9-4e54-8287-5b33d22fedb2
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 65.109.186.44
+  servername: 81.30.108.63
   client-fingerprint: chrome
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
@@ -175,10 +112,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #4'
   - 'T.ME: @aristapnel #5'
   - 'T.ME: @aristapnel #6'
-  - 'T.ME: @aristapnel #7'
-  - 'T.ME: @aristapnel #8'
-  - 'T.ME: @aristapnel #9'
-  - 'T.ME: @aristapnel #10'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204

@@ -1,26 +1,30 @@
 # GITHUB - VLESS - Tier 200
-# Updated: 2026-06-29 15:29:30
+# Updated: 2026-06-29 19:46:37
 # Count: 200
 
 proxies:
 - name: 'T.ME: @aristapnel #1'
   type: vless
-  server: 65.108.231.185
-  port: 443
-  uuid: 440766d1-858f-4719-84f5-c2de6f6227b2
+  server: 45.198.87.207
+  port: 8443
+  uuid: 360c46b7-afe1-4e86-bfe1-ba09b5fcd8a6
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: api.avito.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #2'
   type: vless
-  server: 45.194.10.49
+  server: 45.194.10.199
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -39,9 +43,9 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #3'
   type: vless
-  server: 45.194.10.25
+  server: 45.198.87.102
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
@@ -54,11 +58,11 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #4'
   type: vless
-  server: 45.194.10.182
+  server: 45.194.10.180
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -77,26 +81,9 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #5'
   type: vless
-  server: 217.13.111.42
-  port: 443
-  uuid: ed6f01ea-bba8-41f9-b2db-bf8f6e210307
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: max.ru
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
-- name: 'T.ME: @aristapnel #6'
-  type: vless
-  server: 45.194.10.219
+  server: 45.198.87.122
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
@@ -109,11 +96,30 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #6'
+  type: vless
+  server: 45.198.87.23
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #7'
   type: vless
-  server: 45.194.10.128
+  server: 45.194.10.174
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -132,7 +138,7 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #8'
   type: vless
-  server: 45.194.10.114
+  server: 45.194.10.180
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -151,9 +157,9 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #9'
   type: vless
-  server: 45.198.87.234
+  server: 45.194.10.112
   port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
@@ -166,11 +172,11 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #10'
   type: vless
-  server: 45.194.10.127
+  server: 45.194.10.225
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -189,7 +195,7 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #11'
   type: vless
-  server: 45.194.10.144
+  server: 45.194.10.135
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -208,45 +214,45 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #12'
   type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: e5d427b7-f58b-4f31-a774-c12cd5917de5
+  server: 45.194.10.157
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: api.yandex.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #13'
   type: vless
-  server: 195.181.166.73
-  port: 443
-  uuid: 92e41c23-4b39-464a-bbff-63ef84f317da
+  server: 45.198.87.135
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: api-maps.yandex.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: UtAnh-HlChjh3afrhycDmeOSFs7cZBjIJx0qG7NB5Rc
-    short-id: b419319c
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #14'
   type: vless
-  server: 45.194.10.161
+  server: 45.194.10.80
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -265,7 +271,7 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #15'
   type: vless
-  server: 45.194.10.240
+  server: 45.194.10.173
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -284,10 +290,10 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #16'
   type: vless
-  server: 45.194.10.134
+  server: 45.194.10.71
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: raw
+  network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
@@ -303,7 +309,7 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #17'
   type: vless
-  server: 45.194.10.103
+  server: 45.194.10.85
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -322,47 +328,28 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #18'
   type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 8b663ef5-8de4-4288-8c54-bacae4fe6637
+  server: 45.198.87.61
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: max.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #19'
   type: vless
-  server: cherry-nll-01.live
+  server: 45.198.87.49
   port: 8443
-  uuid: 0047a8bc-0025-4d45-899b-c75c669f3ede
-  network: raw
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: LT_0j3zQkaqgtJHvyaG24xz0IfmXUswVCTeC75Qsgjo
-    short-id: 6f15101ff2cc4887
-- name: 'T.ME: @aristapnel #20'
-  type: vless
-  server: 45.194.10.8
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  uuid: 360c46b7-afe1-4e86-bfe1-ba09b5fcd8a6
   network: tcp
   tls: true
   udp: true
@@ -375,11 +362,30 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #20'
+  type: vless
+  server: 45.198.87.200
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #21'
   type: vless
-  server: 45.194.10.91
+  server: 45.194.10.68
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -398,7 +404,26 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #22'
   type: vless
-  server: 45.194.10.203
+  server: 45.198.87.129
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #23'
+  type: vless
+  server: 45.194.10.238
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -415,28 +440,9 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #23'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 3ceb2e3a-dc4d-435b-8048-0252ff68341d
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
 - name: 'T.ME: @aristapnel #24'
   type: vless
-  server: 45.198.87.60
+  server: 45.198.87.33
   port: 8443
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
@@ -455,28 +461,28 @@ proxies:
     short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #25'
   type: vless
-  server: 87.228.101.57
+  server: 185.77.231.80
   port: 443
-  uuid: 43f343d8-f62a-4c22-8edf-3f99cfdd6667
-  network: tcp
+  uuid: b02262ee-d4e8-44c5-b08b-2dba07d1eec7
+  network: raw
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: rutube.ru
+  servername: www.ozon.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
+    public-key: J1HIxQSniHBlaSUXTLTWyUUpiaeyE8MWmA2evyFZbFQ
+    short-id: 1a
 - name: 'T.ME: @aristapnel #26'
   type: vless
-  server: 45.194.10.181
+  server: 45.198.87.69
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
@@ -489,13 +495,13 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #27'
   type: vless
-  server: 45.194.10.158
+  server: 45.198.87.243
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
@@ -508,32 +514,32 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #28'
   type: vless
-  server: 87.228.101.211
+  server: 144.31.90.161
   port: 443
-  uuid: 1684c8ea-dab9-4ed4-9ed4-7dadb520c178
-  network: tcp
+  uuid: b56b0646-6f2f-45e1-9c9b-cd98dd1ad2dd
+  network: raw
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 5post-gate.x5.ru
+  servername: vk.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
+    public-key: My4NYF1x_I4nnRhgQXjpKl6BQVtgBWklHP6a3ejmOxU
+    short-id: 1a66e6ad
 - name: 'T.ME: @aristapnel #29'
   type: vless
-  server: 45.194.10.147
+  server: 45.198.87.53
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
@@ -546,30 +552,30 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #30'
   type: vless
-  server: 45.194.10.25
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  server: 94.183.170.3
+  port: 443
+  uuid: 17550015-678f-43ad-b0d2-65c0a829bedb
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: storage.yandex.net
+  servername: ee.cloudload.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: -g4of4WXB_tZXwESYpRXmCh310I_ikI8tVcHgBsIDR8
+    short-id: a1ab5a56bc42a1
 - name: 'T.ME: @aristapnel #31'
   type: vless
-  server: 45.194.10.200
+  server: 45.194.10.59
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -588,7 +594,7 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #32'
   type: vless
-  server: 45.194.10.105
+  server: 45.194.10.203
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -607,28 +613,27 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #33'
   type: vless
-  server: 87.228.101.57
+  server: 91.107.182.183
   port: 443
-  uuid: 1e9565c6-c3b0-46d1-b3c4-fe226f42b74f
+  uuid: 1103575f-adfe-40e8-91af-1d5f51657de8
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 5post-gate.x5.ru
+  servername: www.amazon.com
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
+    public-key: 0xHLZ27Mx9U2C9WOf4vhRmn8HufL6XoCaDbpkFg5Zwk
+    short-id: f7
 - name: 'T.ME: @aristapnel #34'
   type: vless
-  server: 45.194.10.250
+  server: 45.198.87.129
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
@@ -641,71 +646,71 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #35'
   type: vless
-  server: 193.168.198.116
-  port: 443
-  uuid: 8cd89109-edfb-4d8e-a838-6e00b98d74a5
+  server: 45.198.87.111
+  port: 8443
+  uuid: 360c46b7-afe1-4e86-bfe1-ba09b5fcd8a6
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: platform-api.max.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: 9F7JxyyP-TNLt0dY2xOB0_34I8W0xXIpFY7rZ7-L0Gg
-    short-id: 0a6ba2716a409da6
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #36'
   type: vless
-  server: 217.217.247.251
-  port: 443
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
+  server: 45.198.87.23
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: enterprisekitten.com
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #37'
   type: vless
-  server: 45.194.10.125
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  server: 45.134.217.196
+  port: 443
+  uuid: 039a1658-e86e-475f-a3a4-67cc249acada
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: storage.yandex.net
+  servername: gr1.panel11.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: rYwYudDb69CwjAJNw5KTFqJnRwwADgDMDpjv9KESjEY
+    short-id: f5c14a97040a38bf
 - name: 'T.ME: @aristapnel #38'
   type: vless
-  server: 45.194.10.98
+  server: 45.198.87.52
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: raw
   tls: true
   udp: true
   skip-cert-verify: false
@@ -717,49 +722,49 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #39'
   type: vless
-  server: 45.194.10.131
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  server: 217.13.104.154
+  port: 443
+  uuid: 64bc8910-bc0f-453e-b3f3-a101a5dce03e
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: storage.yandex.net
+  servername: travel.yandex.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 33554379411b3219
 - name: 'T.ME: @aristapnel #40'
   type: vless
-  server: 45.194.10.24
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  server: 51.158.206.20
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: storage.yandex.net
+  servername: fuck.rkn
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
 - name: 'T.ME: @aristapnel #41'
   type: vless
-  server: 45.194.10.61
+  server: 45.194.10.239
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -778,7 +783,7 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #42'
   type: vless
-  server: 45.194.10.176
+  server: 45.194.10.3
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -797,7 +802,7 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #43'
   type: vless
-  server: 45.194.10.37
+  server: 45.194.10.148
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -816,46 +821,45 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #44'
   type: vless
-  server: 185.8.51.20
-  port: 2053
-  uuid: 2947e655-6da6-4f90-b983-4deb8b5bc539
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  grpc-opts:
-    grpc-service-name: xyz
-  reality-opts:
-    public-key: r44-29dhInxzD-1JIMYuQMrbhieWsLm00BEHXn-6ggg
-    short-id: 6ba85179e30d4fc2
-- name: 'T.ME: @aristapnel #45'
-  type: vless
-  server: 77.90.52.36
-  port: 443
-  uuid: 60300afa-3366-4ae3-959a-7b50438acebb
+  server: 45.194.10.149
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: de5.wequ.host
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: sL-WH6OA3-ed-5vxu5wWuTmQ-8Y4Fbfpx24kkgu3s1M
-    short-id: 17b3b79c
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #45'
+  type: vless
+  server: 45.194.10.147
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #46'
   type: vless
-  server: 45.198.87.158
+  server: 45.198.87.154
   port: 8443
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
@@ -874,7 +878,26 @@ proxies:
     short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #47'
   type: vless
-  server: 45.198.87.147
+  server: 45.194.10.138
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #48'
+  type: vless
+  server: 45.198.87.56
   port: 8443
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
@@ -891,62 +914,44 @@ proxies:
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #48'
-  type: vless
-  server: 194.164.217.139
-  port: 448
-  uuid: d61b4e1b-4745-484f-8362-18537825a7af
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.samsung.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo
-    short-id: 05fdaa8a05be46a9
 - name: 'T.ME: @aristapnel #49'
   type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 634612dc-4819-40ce-937e-36e4263f36f9
+  server: 45.194.10.233
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 5post-gate.x5.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #50'
   type: vless
-  server: it1.fixpr.top
-  port: 443
-  uuid: 0aedd22f-7763-4c64-a92d-4f5188595dc5
+  server: 45.194.10.216
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: it1.fixpr.top
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: 5MeY0iQ6_VsjpEOW9rTZa-6NSwQ8dLwwV0_jHNrspic
-    short-id: 2400287bee759a09
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #51'
   type: vless
   server: 45.198.87.23
@@ -987,44 +992,43 @@ proxies:
     short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #53'
   type: vless
-  server: 45.198.87.6
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  server: test.warm-forge.test-cdn-kkk.com
+  port: 443
+  uuid: 0305b974-3c5b-418e-be2e-d752fa4050db
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: storage.yandex.net
+  servername: lon.eu-ffast.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
+    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
+    short-id: '50'
 - name: 'T.ME: @aristapnel #54'
   type: vless
-  server: 23.26.37.119
-  port: 8443
-  uuid: dcba77d7-bb59-4802-b32c-37fd7011fca4
+  server: 217.13.111.42
+  port: 443
+  uuid: ed6f01ea-bba8-41f9-b2db-bf8f6e210307
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: google.com
+  servername: max.ru
   client-fingerprint: chrome
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: 3ca620a7ed5f3196
+    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
 - name: 'T.ME: @aristapnel #55'
   type: vless
-  server: 45.194.10.136
+  server: 45.194.10.123
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -1043,26 +1047,26 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #56'
   type: vless
-  server: se.node.vpn.elorium.net
-  port: 443
-  uuid: 509dec94-cc08-4351-9ce8-811e76e092c3
+  server: 45.194.10.253
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: console.cloud.yandex.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: DbpNCOTF5G7L5lGDBUtoiUNsZ_eoKwUgZX__Xhu4nEc
-    short-id: e988a0675d6b4483
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #57'
   type: vless
-  server: 45.194.10.57
+  server: 45.194.10.181
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -1081,7 +1085,7 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #58'
   type: vless
-  server: 45.194.10.227
+  server: 45.194.10.187
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -1100,26 +1104,26 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #59'
   type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 1684c8ea-dab9-4ed4-9ed4-7dadb520c178
+  server: 45.194.10.115
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: api-maps.yandex.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #60'
   type: vless
-  server: 45.194.10.97
+  server: 45.194.10.153
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -1138,9 +1142,9 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #61'
   type: vless
-  server: 45.198.87.61
+  server: 45.194.10.241
   port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
@@ -1153,52 +1157,48 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #62'
   type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: be79e15e-5788-494c-a482-3fc67226ff38
+  server: 45.194.10.90
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: 5post-gate.x5.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #63'
   type: vless
-  server: 217.13.104.130
+  server: netherlands2.yaponchik.online
   port: 443
-  uuid: 9db29659-b68e-466e-988a-6627572c2478
-  network: http
+  uuid: bad8b3b7-db29-471a-8048-db44de8ee548
+  network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: chat.speedload.ru
+  servername: metrika.yandex.ru
   client-fingerprint: chrome
+  flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
-  http-opts:
-    method: GET
-    path:
-    - '%2F'
-    headers:
-      Host:
-      - chat.speedload.ru
+  reality-opts:
+    public-key: ivuGlXpSo3wVyKwSjTeyN-SzAz-4Ir5RnMJuOY7Ohiw
 - name: 'T.ME: @aristapnel #64'
   type: vless
-  server: 45.198.87.27
+  server: 45.198.87.218
   port: 8443
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
@@ -1217,2082 +1217,24 @@ proxies:
     short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #65'
   type: vless
-  server: 62.113.43.195
-  port: 443
-  uuid: 9c90fe0f-6cf2-48d2-85a5-962643b84323
+  server: 45.198.87.181
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: ads.x5.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
-    short-id: abbcd128
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
 - name: 'T.ME: @aristapnel #66'
-  type: vless
-  server: 45.194.10.100
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-- name: 'T.ME: @aristapnel #67'
-  type: vless
-  server: 62.113.43.195
-  port: 443
-  uuid: e03285e8-1e35-4813-96ed-37affc844482
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: eh.vk.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
-    short-id: abbcd128
-- name: 'T.ME: @aristapnel #68'
-  type: vless
-  server: 45.194.10.195
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #69'
-  type: vless
-  server: 45.194.10.210
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-- name: 'T.ME: @aristapnel #70'
-  type: vless
-  server: 45.194.10.139
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #71'
-  type: vless
-  server: 45.194.10.32
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #72'
-  type: vless
-  server: 45.194.10.119
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #73'
-  type: vless
-  server: 45.194.10.184
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #74'
-  type: vless
-  server: 45.194.10.13
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #75'
-  type: vless
-  server: 45.194.10.4
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #76'
-  type: vless
-  server: 45.198.87.153
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #77'
-  type: vless
-  server: 217.13.104.128
-  port: 443
-  uuid: 0ee2d410-3e64-4c41-a571-3e5d2b5b8982
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: sun6-22.userapi.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: -cDQPpiRCwOtfQ22cdCd3NkDlqpubdklZXaFGhwUfS8
-    short-id: a20d3ed244c76426
-- name: 'T.ME: @aristapnel #78'
-  type: vless
-  server: 45.194.10.131
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #79'
-  type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 10414354-44ba-4546-9787-3640b59c3383
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #80'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: c25d94a5-7ac8-41f1-86f1-512a4098df19
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #81'
-  type: vless
-  server: 45.198.87.111
-  port: 8443
-  uuid: 360c46b7-afe1-4e86-bfe1-ba09b5fcd8a6
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #82'
-  type: vless
-  server: 45.194.10.252
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #83'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: be49df4e-159e-4bf6-a96d-c2a3c24bd21e
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #84'
-  type: vless
-  server: 45.198.87.24
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #85'
-  type: vless
-  server: 31.129.42.122
-  port: 443
-  uuid: 0c73a33a-601a-4e5f-a881-5da52ca0859b
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: dZwaeGvFS34wVBQOQ5q1c9xs8t1HHu2h9CdxnTGeuAw
-    short-id: 11a33a97aa
-- name: 'T.ME: @aristapnel #86'
-  type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 64788c76-08ae-4da8-a44f-a456a967a0aa
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: m.vk.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #87'
-  type: vless
-  server: 45.194.10.32
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #88'
-  type: vless
-  server: 45.198.87.194
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #89'
-  type: vless
-  server: 45.194.10.107
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #90'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 3c29726e-383e-4f1b-8d62-c59bbfafd219
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #91'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 0e63af60-33af-4e54-aa5f-69b213228b09
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #92'
-  type: vless
-  server: 45.194.10.157
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #93'
-  type: vless
-  server: 45.194.10.96
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #94'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 8b663ef5-8de4-4288-8c54-bacae4fe6637
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #95'
-  type: vless
-  server: 217.13.104.154
-  port: 443
-  uuid: dd9c0ccd-1aeb-4f2d-9ab1-5f6996518c77
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: travel.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: 2476f063981ffd92
-- name: 'T.ME: @aristapnel #96'
-  type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 64788c76-08ae-4da8-a44f-a456a967a0aa
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #97'
-  type: vless
-  server: 165.231.193.20
-  port: 443
-  uuid: c43c1a42-27a8-47e3-a3c3-3abb72475e53
-  network: http
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: stats.vk-portal.net
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - stats.vk-portal.net
-  reality-opts:
-    public-key: XBBVeMURFu7jmYJ9MZwjEWgfQlGTnRs0B5So5Fy7jWs
-    short-id: 992f3294e2336744
-- name: 'T.ME: @aristapnel #98'
-  type: vless
-  server: 45.194.10.122
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #99'
-  type: vless
-  server: 217.217.247.250
-  port: 443
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: enterprisekitten.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: 'T.ME: @aristapnel #100'
-  type: vless
-  server: 45.194.10.95
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #101'
-  type: vless
-  server: 45.194.10.70
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #102'
-  type: vless
-  server: 45.194.10.80
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #103'
-  type: vless
-  server: 45.194.10.165
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #104'
-  type: vless
-  server: 45.194.10.182
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #105'
-  type: vless
-  server: 45.194.10.236
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #106'
-  type: vless
-  server: vl1.webnetvpn.xyz
-  port: 443
-  uuid: e3be59a5-6d25-404f-9bb0-714bb2b5c211
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: vl1.webnetvpn.xyz
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: eR-qOLguGv1TnEPTF0U9HhlCpBWQR14xuC0hFJnMClQ
-    short-id: 7636f5b1e0ed4275
-- name: 'T.ME: @aristapnel #107'
-  type: vless
-  server: 45.198.87.32
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #108'
-  type: vless
-  server: 144.31.131.38
-  port: 8443
-  uuid: 4cc2379d-9a8c-4270-9723-39ff75b8f564
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: prod.pl-node-02.security-sbrf.ru
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: ivSYLLXu-f4slJOLrlZxhnq0nAAaCW-ct6ptzVUJxUs
-    short-id: db04ce8bdb8900f1
-- name: 'T.ME: @aristapnel #109'
-  type: vless
-  server: lv.faygo.bot
-  port: 443
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: enterprisekitten.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: 'T.ME: @aristapnel #110'
-  type: vless
-  server: 31.129.42.37
-  port: 443
-  uuid: 0b599129-dad8-408d-9213-d78f1c9f1159
-  network: http
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.datapull.cc
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  http-opts:
-    method: GET
-    path:
-    - '%2Fapi%2Fv2%2F'
-    headers:
-      Host:
-      - api.datapull.cc
-- name: 'T.ME: @aristapnel #111'
-  type: vless
-  server: 45.194.10.57
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #112'
-  type: vless
-  server: 45.194.10.137
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #113'
-  type: vless
-  server: 31.129.42.37
-  port: 443
-  uuid: ce86ea58-0646-40aa-b688-12261d580835
-  network: http
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.datapull.cc
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  http-opts:
-    method: GET
-    path:
-    - '%2Fapi%2Fv2%2F'
-    headers:
-      Host:
-      - api.datapull.cc
-- name: 'T.ME: @aristapnel #114'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 634612dc-4819-40ce-937e-36e4263f36f9
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: max.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #115'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 634612dc-4819-40ce-937e-36e4263f36f9
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #116'
-  type: vless
-  server: 87.120.165.186
-  port: 443
-  uuid: 9463dae0-cb92-4d8e-93ae-b690456c35fe
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: zhkzPCg_9uF4Q3HKnT4hGBjGDUdvviqY28XSvfqIbj0
-    short-id: 45ba24f124ad1f14
-- name: 'T.ME: @aristapnel #117'
-  type: vless
-  server: 45.194.10.137
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #118'
-  type: vless
-  server: 45.195.110.104
-  port: 8443
-  uuid: f2390f38-ec10-4c25-a726-c0709b77330f
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 66-fz0xjwauydj29EfFKyPHjJ2CIGaGSsJ6hsB--zAc
-    short-id: 6ecdb111a4e57f94
-- name: 'T.ME: @aristapnel #119'
-  type: vless
-  server: 45.194.10.111
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #120'
-  type: vless
-  server: 45.194.10.138
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #121'
-  type: vless
-  server: 45.198.87.30
-  port: 8443
-  uuid: d91397a6-aa9c-4ce3-903e-81c50e14fdaf
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #122'
-  type: vless
-  server: 45.194.10.156
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #123'
-  type: vless
-  server: 45.194.10.209
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #124'
-  type: vless
-  server: 45.194.10.79
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #125'
-  type: vless
-  server: 45.194.10.234
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #126'
-  type: vless
-  server: 45.194.10.91
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #127'
-  type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 244b3ff2-deb4-474b-8bd7-a8b66ba8f62f
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rutube.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #128'
-  type: vless
-  server: 45.194.10.129
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #129'
-  type: vless
-  server: 45.194.10.20
-  port: 8443
-  uuid: d70f104e-03a3-45d1-bf30-29dc6f35447d
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #130'
-  type: vless
-  server: 45.194.10.79
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #131'
-  type: vless
-  server: 45.194.10.78
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #132'
-  type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 0d2a031c-209b-4a0e-aa42-f5c890597c23
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #133'
-  type: vless
-  server: 217.13.104.154
-  port: 443
-  uuid: 74b6eee7-898d-4f32-9987-a035210ec5e2
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: travel.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: 33554379411b3219
-- name: 'T.ME: @aristapnel #134'
-  type: vless
-  server: 45.198.87.13
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #135'
-  type: vless
-  server: 45.194.10.102
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #136'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 43657a08-8bfe-4b04-9672-fcd67338a03f
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #137'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 3ebe975f-2c0b-4d2a-ad92-0e838f7a1b11
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #138'
-  type: vless
-  server: 45.194.10.115
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #139'
-  type: vless
-  server: 45.194.10.200
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #140'
-  type: vless
-  server: 45.194.10.173
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #141'
-  type: vless
-  server: 45.194.10.109
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #142'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: e05475ca-6d23-475d-abbc-9e1a88cc4403
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: 5post-gate.x5.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #143'
-  type: vless
-  server: 45.194.10.147
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #144'
-  type: vless
-  server: 62.113.43.195
-  port: 443
-  uuid: 3b7f3528-2eb8-4003-bf08-cdd774391727
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: eh.vk.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: RJETAkoZ6lowmwc5f0HtPy00c3dfojqQuypriLExXRE
-    short-id: abbcd128
-- name: 'T.ME: @aristapnel #145'
-  type: vless
-  server: 45.194.10.66
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #146'
-  type: vless
-  server: us01-vlr01.tcp-reset-club.net
-  port: 443
-  uuid: 0eb4ea60-bdd0-46c2-b2a0-fdb3c7a37318
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: hls-svod.itunes.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 8453e5fd9af927
-- name: 'T.ME: @aristapnel #147'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 87e958f6-45ab-43f6-8f28-4f022e6288b9
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #148'
-  type: vless
-  server: 45.194.10.149
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #149'
-  type: vless
-  server: 45.194.10.73
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #150'
-  type: vless
-  server: 45.194.10.108
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #151'
-  type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 0d2a031c-209b-4a0e-aa42-f5c890597c23
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rutube.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #152'
-  type: vless
-  server: 45.194.10.251
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #153'
-  type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 52dd7cb9-081f-4e98-8c0d-648675debf65
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
-- name: 'T.ME: @aristapnel #154'
-  type: vless
-  server: 45.196.31.88
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #155'
-  type: vless
-  server: 154.222.9.219
-  port: 8443
-  uuid: f552a78e-400c-4332-8265-8e5da1c21eeb
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 5be97fb85093a3a9
-- name: 'T.ME: @aristapnel #156'
-  type: vless
-  server: 45.194.10.241
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #157'
-  type: vless
-  server: 45.194.10.46
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #158'
-  type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 8063bea5-dda5-476e-a8fa-6998d45dc54f
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #159'
-  type: vless
-  server: 45.194.10.233
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #160'
-  type: vless
-  server: 45.194.10.52
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #161'
-  type: vless
-  server: 217.13.104.130
-  port: 443
-  uuid: 4fe214fb-048e-431f-b939-4518dc9df6a2
-  network: http
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: chat.speedload.ru
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  http-opts:
-    method: GET
-    path:
-    - '%2F'
-    headers:
-      Host:
-      - chat.speedload.ru
-- name: 'T.ME: @aristapnel #162'
-  type: vless
-  server: 45.198.87.143
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #163'
-  type: vless
-  server: 45.194.10.67
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #164'
-  type: vless
-  server: 87.228.101.57
-  port: 443
-  uuid: 61b91ec8-a24b-4753-a986-bd9acb7e56a4
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
-    short-id: be6abde66d48cd13
-- name: 'T.ME: @aristapnel #165'
-  type: vless
-  server: 212.11.29.129
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #166'
-  type: vless
-  server: 45.194.10.200
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #167'
-  type: vless
-  server: 45.194.10.62
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #168'
-  type: vless
-  server: 45.194.10.158
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #169'
-  type: vless
-  server: 45.194.10.238
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #170'
-  type: vless
-  server: at.fast-cone.com
-  port: 443
-  uuid: cf30deec-917f-4b1a-bb01-c48527cbc83a
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: at.fast-cone.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: Lq8lVW-_htJisywo8x4xbzaZGI5a7UZyvLjChObY5WQ
-    short-id: '80'
-- name: 'T.ME: @aristapnel #171'
-  type: vless
-  server: rezerv21.yunus.guru
-  port: 443
-  uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: rezerv21.yunus.guru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: Qsx1iAU8A1meJ2Pz8QbEcX1iGckyw4f6-mxZ3ZyJ8HI
-    short-id: e2b15b73af31a6a4
-- name: 'T.ME: @aristapnel #172'
-  type: vless
-  server: 91.107.150.18
-  port: 443
-  uuid: 39eb6d15-e27a-4f2e-b865-b49a15b2d5f6
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: play.google.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: m0laydpddP-MhAgDbMB_QGrSk4-nrIvDSoIHK_Q8Uy4
-    short-id: a796a1f52722b3a5
-- name: 'T.ME: @aristapnel #173'
-  type: vless
-  server: 45.198.87.87
-  port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #174'
   type: vless
   server: 45.198.87.50
   port: 8443
@@ -3311,9 +1253,9 @@ proxies:
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #175'
+- name: 'T.ME: @aristapnel #67'
   type: vless
-  server: 45.198.87.188
+  server: 45.198.87.56
   port: 8443
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
@@ -3330,103 +1272,47 @@ proxies:
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #176'
+- name: 'T.ME: @aristapnel #68'
   type: vless
-  server: fast.gazladder.work
-  port: 443
-  uuid: 2e146372-aafa-42e6-aaa6-b2a7185225ce
+  server: 45.198.87.61
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: fast.gazladder.work
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
-    short-id: b415b8d7a6106ace
-- name: 'T.ME: @aristapnel #177'
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #69'
   type: vless
-  server: 52.237.89.171
-  port: 443
-  uuid: 61f7a0ac-7500-42f1-b27b-e85cb16d6afa
+  server: 45.198.87.30
+  port: 8443
+  uuid: d91397a6-aa9c-4ce3-903e-81c50e14fdaf
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: www.cloudflare.com
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: Oe1AXeDO0L6_NXhNtjh3SQHOvCkfHrVZFzg1ASl4RhQ
-    short-id: 3292498d
-- name: 'T.ME: @aristapnel #178'
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #70'
   type: vless
-  server: 93.115.25.40
-  port: 443
-  uuid: 9463dae0-cb92-4d8e-93ae-b690456c35fe
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: web.max.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: TZHS23NEm_dQqVRkfKVTPM5nPir6-R9Jq21BMkWvf3g
-    short-id: 12af42a948ad5b45
-- name: 'T.ME: @aristapnel #179'
-  type: vless
-  server: 38.244.137.198
-  port: 443
-  uuid: 09748875-9da3-440e-9809-9752e1dda1e4
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: google.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: QXGsw1KqljvUiarkvFdBs3T1TeUQq4skwHFlsmbj31o
-    short-id: 365c07ed
-- name: 'T.ME: @aristapnel #180'
-  type: vless
-  server: 217.217.244.130
-  port: 443
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: enterprisekitten.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-- name: 'T.ME: @aristapnel #181'
-  type: vless
-  server: 45.194.10.38
+  server: 45.194.10.149
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3443,9 +1329,9 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #182'
+- name: 'T.ME: @aristapnel #71'
   type: vless
-  server: 45.194.10.148
+  server: 45.194.10.232
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3462,11 +1348,315 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #183'
+- name: 'T.ME: @aristapnel #72'
   type: vless
-  server: 152.233.43.71
+  server: 45.194.10.131
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #73'
+  type: vless
+  server: 154.91.157.222
+  port: 8443
+  uuid: a65d1817-49a5-449f-81b8-37e6e179dc57
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: rbc.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: _0HnraldEtXmJMu7t3nEm8VmQXkMWF7dX1Dmz5KceSw
+    short-id: e3152b486a086f4e
+- name: 'T.ME: @aristapnel #74'
+  type: vless
+  server: 45.194.10.246
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #75'
+  type: vless
+  server: 45.194.10.184
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #76'
+  type: vless
+  server: 45.194.10.229
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #77'
+  type: vless
+  server: 45.194.10.246
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #78'
+  type: vless
+  server: 45.198.87.184
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #79'
+  type: vless
+  server: 45.194.10.101
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #80'
+  type: vless
+  server: 45.194.10.240
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #81'
+  type: vless
+  server: 45.194.10.35
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #82'
+  type: vless
+  server: 45.198.87.103
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #83'
+  type: vless
+  server: 45.194.10.210
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #84'
+  type: vless
+  server: 45.194.10.144
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #85'
+  type: vless
+  server: 45.194.10.232
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #86'
+  type: vless
+  server: 87.228.101.57
   port: 443
-  uuid: 92e41c23-4b39-464a-bbff-63ef84f317da
+  uuid: 0bb5e699-fece-42b1-b51c-9480c00ed957
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: m.vk.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
+    short-id: 664b8a28e735af5f
+- name: 'T.ME: @aristapnel #87'
+  type: vless
+  server: 45.194.10.155
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #88'
+  type: vless
+  server: 87.228.101.57
+  port: 443
+  uuid: 0bb5e699-fece-42b1-b51c-9480c00ed957
   network: tcp
   tls: true
   udp: true
@@ -3479,11 +1669,11 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: DaQjKlJbC2ksBaItYb0fjt1xkIcxRh_STIQ4rkrydjY
-    short-id: 7db44191
-- name: 'T.ME: @aristapnel #184'
+    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
+    short-id: be6abde66d48cd13
+- name: 'T.ME: @aristapnel #89'
   type: vless
-  server: 45.194.10.112
+  server: 45.194.10.171
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3500,9 +1690,9 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #185'
+- name: 'T.ME: @aristapnel #90'
   type: vless
-  server: 45.194.10.176
+  server: 45.194.10.169
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3519,9 +1709,66 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #186'
+- name: 'T.ME: @aristapnel #91'
   type: vless
-  server: 45.198.87.235
+  server: 45.194.10.144
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #92'
+  type: vless
+  server: 45.194.10.229
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #93'
+  type: vless
+  server: 45.194.10.149
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #94'
+  type: vless
+  server: 45.198.87.54
   port: 8443
   uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
@@ -3538,7 +1785,485 @@ proxies:
   reality-opts:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #187'
+- name: 'T.ME: @aristapnel #95'
+  type: vless
+  server: 45.194.10.180
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #96'
+  type: vless
+  server: 45.198.87.207
+  port: 8443
+  uuid: 360c46b7-afe1-4e86-bfe1-ba09b5fcd8a6
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #97'
+  type: vless
+  server: 45.194.10.218
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #98'
+  type: vless
+  server: 45.194.10.233
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #99'
+  type: vless
+  server: 45.194.10.96
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #100'
+  type: vless
+  server: 45.198.87.13
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  alpn:
+  - h2
+  - http/1.1
+- name: 'T.ME: @aristapnel #101'
+  type: vless
+  server: 45.194.10.98
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #102'
+  type: vless
+  server: 45.196.31.143
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #103'
+  type: vless
+  server: 45.194.10.200
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #104'
+  type: vless
+  server: 45.194.10.128
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #105'
+  type: vless
+  server: 45.198.87.207
+  port: 8443
+  uuid: 360c46b7-afe1-4e86-bfe1-ba09b5fcd8a6
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #106'
+  type: vless
+  server: 45.198.87.27
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #107'
+  type: vless
+  server: 45.194.10.133
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #108'
+  type: vless
+  server: 45.194.10.85
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #109'
+  type: vless
+  server: 45.194.10.240
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #110'
+  type: vless
+  server: 45.194.10.128
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #111'
+  type: vless
+  server: 45.194.10.204
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #112'
+  type: vless
+  server: 45.194.10.250
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #113'
+  type: vless
+  server: 45.194.10.147
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #114'
+  type: vless
+  server: 45.195.111.167
+  port: 443
+  uuid: 43df00c9-f209-4773-b1cc-48e175bfb606
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: f4b4a6365558ea2e
+- name: 'T.ME: @aristapnel #115'
+  type: vless
+  server: 45.198.87.12
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #116'
+  type: vless
+  server: test.grey-lance.test-cdn-kkk.com
+  port: 9443
+  uuid: 76fb0ae1-3d4c-4497-8d3c-feb18c4782a8
+  network: http
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sun6-21.userapi.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  http-opts:
+    method: GET
+    path:
+    - '%2F'
+    headers:
+      Host:
+      - sun6-21.userapi.com
+  reality-opts:
+    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
+    short-id: '50'
+- name: 'T.ME: @aristapnel #117'
+  type: vless
+  server: 141.133.175.194
+  port: 443
+  uuid: b6f29f8d-016e-4f30-b57f-c0cdafab2a40
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
+    short-id: 6ba85179e30d4fc2
+- name: 'T.ME: @aristapnel #118'
+  type: vless
+  server: 217.13.104.128
+  port: 443
+  uuid: 9db29659-b68e-466e-988a-6627572c2478
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: sun6-22.userapi.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: -cDQPpiRCwOtfQ22cdCd3NkDlqpubdklZXaFGhwUfS8
+    short-id: a20d3ed244c76426
+- name: 'T.ME: @aristapnel #119'
+  type: vless
+  server: 45.194.10.215
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #120'
   type: vless
   server: 45.194.10.52
   port: 8443
@@ -3557,9 +2282,9 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #188'
+- name: 'T.ME: @aristapnel #121'
   type: vless
-  server: 45.194.10.106
+  server: 45.194.10.128
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3576,11 +2301,29 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #189'
+- name: 'T.ME: @aristapnel #122'
   type: vless
-  server: 45.194.10.243
+  server: 57.128.30.154
+  port: 56626
+  uuid: aa9453dc-0e52-4628-8911-933c5286a9da
+  network: grpc
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: icloud.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: sVtMU2ZA5W6TLnBCZdgfXqDnOwWePrGVjSNnueDlYmM
+    short-id: abbb6e5e07cdf34b
+- name: 'T.ME: @aristapnel #123'
+  type: vless
+  server: 45.198.87.194
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
   network: tcp
   tls: true
   udp: true
@@ -3592,9 +2335,125 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 'T.ME: @aristapnel #190'
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #124'
   type: vless
-  server: 45.194.10.243
+  server: 45.198.87.67
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #125'
+  type: vless
+  server: 45.198.87.69
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #126'
+  type: vless
+  server: hk.wequ.host
+  port: 443
+  uuid: 60300afa-3366-4ae3-959a-7b50438acebb
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: hk.wequ.host
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7pD1hCAsY7SBk7XkhzhnkcpkQMisvjlUiIcDS_xsCT8
+    short-id: b81ee2c8
+- name: 'T.ME: @aristapnel #127'
+  type: vless
+  server: 194.164.217.139
+  port: 448
+  uuid: d61b4e1b-4745-484f-8362-18537825a7af
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: fjPED4_A_EQrL8PAuBUi9ChoNbY2OC4mUl7r8zaLoxo
+    short-id: 05fdaa8a05be46a9
+- name: 'T.ME: @aristapnel #128'
+  type: vless
+  server: 45.198.87.27
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #129'
+  type: vless
+  server: 45.198.87.13
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #130'
+  type: vless
+  server: 45.194.10.240
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3611,9 +2470,9 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #191'
+- name: 'T.ME: @aristapnel #131'
   type: vless
-  server: 45.194.10.138
+  server: 45.194.10.76
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3630,9 +2489,9 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #192'
+- name: 'T.ME: @aristapnel #132'
   type: vless
-  server: 45.194.10.3
+  server: 45.194.10.166
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3649,9 +2508,9 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #193'
+- name: 'T.ME: @aristapnel #133'
   type: vless
-  server: 45.194.10.49
+  server: 45.194.10.152
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3668,7 +2527,458 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #194'
+- name: 'T.ME: @aristapnel #134'
+  type: vless
+  server: 45.194.10.184
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #135'
+  type: vless
+  server: 45.194.10.103
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #136'
+  type: vless
+  server: 37.9.4.128
+  port: 443
+  uuid: 9fef4223-5a14-450d-9280-8bd950cb1d8d
+  network: http
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: api1.madapp.cc
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  http-opts:
+    method: GET
+    path:
+    - '%2Fapi%2Fv2%2F'
+    headers:
+      Host:
+      - api1.madapp.cc
+- name: 'T.ME: @aristapnel #137'
+  type: vless
+  server: 38.244.137.198
+  port: 443
+  uuid: 09748875-9da3-440e-9809-9752e1dda1e4
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: google.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: QXGsw1KqljvUiarkvFdBs3T1TeUQq4skwHFlsmbj31o
+    short-id: 365c07ed
+- name: 'T.ME: @aristapnel #138'
+  type: vless
+  server: 45.194.10.224
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #139'
+  type: vless
+  server: 45.194.10.5
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #140'
+  type: vless
+  server: 45.194.10.68
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #141'
+  type: vless
+  server: cdg-1.fromblancwithlove.com
+  port: 8443
+  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: cdg-1.fromblancwithlove.com
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  - http/1.1
+- name: 'T.ME: @aristapnel #142'
+  type: vless
+  server: 141.133.175.194
+  port: 443
+  uuid: b6f29f8d-016e-4f30-b57f-c0cdafab2a40
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
+    short-id: 6ba85179e30d4fc2
+- name: 'T.ME: @aristapnel #143'
+  type: vless
+  server: ako.pagate.top
+  port: 443
+  uuid: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  network: raw
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: ako.pagate.top
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  alpn:
+  - h2
+  - http/1.1
+- name: 'T.ME: @aristapnel #144'
+  type: vless
+  server: 87.228.101.211
+  port: 443
+  uuid: a42c6044-25e6-4db5-bb74-463b1ef05f5c
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: rutube.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
+    short-id: 664b8a28e735af5f
+- name: 'T.ME: @aristapnel #145'
+  type: vless
+  server: 45.194.10.255
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #146'
+  type: vless
+  server: 45.194.10.147
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #147'
+  type: vless
+  server: 45.194.10.147
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #148'
+  type: vless
+  server: 45.194.10.150
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #149'
+  type: vless
+  server: 45.194.10.157
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #150'
+  type: vless
+  server: 45.194.10.76
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #151'
+  type: vless
+  server: 45.194.10.158
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #152'
+  type: vless
+  server: 45.194.10.241
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #153'
+  type: vless
+  server: 45.194.10.253
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #154'
+  type: vless
+  server: 45.194.10.94
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #155'
+  type: vless
+  server: 45.194.10.126
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #156'
+  type: vless
+  server: 45.194.10.166
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #157'
+  type: vless
+  server: 45.198.87.207
+  port: 8443
+  uuid: 360c46b7-afe1-4e86-bfe1-ba09b5fcd8a6
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #158'
   type: vless
   server: 45.194.10.56
   port: 8443
@@ -3687,25 +2997,9 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #195'
+- name: 'T.ME: @aristapnel #159'
   type: vless
-  server: 45.194.10.236
-  port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: storage.yandex.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-- name: 'T.ME: @aristapnel #196'
-  type: vless
-  server: 45.194.10.39
+  server: 45.194.10.99
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3722,9 +3016,708 @@ proxies:
   reality-opts:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
-- name: 'T.ME: @aristapnel #197'
+- name: 'T.ME: @aristapnel #160'
+  type: vless
+  server: 45.194.10.209
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #161'
+  type: vless
+  server: 45.194.10.137
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #162'
+  type: vless
+  server: 45.194.10.146
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #163'
+  type: vless
+  server: 45.194.10.182
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #164'
+  type: vless
+  server: 45.194.10.144
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #165'
+  type: vless
+  server: 45.198.87.52
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #166'
+  type: vless
+  server: 45.194.10.130
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #167'
+  type: vless
+  server: 45.194.10.132
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #168'
+  type: vless
+  server: 45.194.10.205
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #169'
+  type: vless
+  server: 45.194.10.146
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #170'
+  type: vless
+  server: 45.198.87.244
+  port: 8443
+  uuid: 0b342486-d7c8-46fd-893a-5901225089d4
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #171'
+  type: vless
+  server: 45.194.10.164
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #172'
+  type: vless
+  server: 45.194.10.251
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #173'
+  type: vless
+  server: 45.194.10.236
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+- name: 'T.ME: @aristapnel #174'
+  type: vless
+  server: 45.194.10.97
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #175'
+  type: vless
+  server: 45.194.10.163
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #176'
+  type: vless
+  server: 87.228.101.211
+  port: 443
+  uuid: 87e958f6-45ab-43f6-8f28-4f022e6288b9
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: api.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
+    short-id: 664b8a28e735af5f
+- name: 'T.ME: @aristapnel #177'
+  type: vless
+  server: 45.194.10.216
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #178'
+  type: vless
+  server: 45.198.87.181
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #179'
+  type: vless
+  server: 45.194.10.204
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #180'
+  type: vless
+  server: 45.194.10.138
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #181'
+  type: vless
+  server: 45.198.87.34
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #182'
+  type: vless
+  server: 45.194.10.204
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision3https://@freev2configs
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #183'
+  type: vless
+  server: 45.194.10.184
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #184'
   type: vless
   server: 45.194.10.8
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+- name: 'T.ME: @aristapnel #185'
+  type: vless
+  server: 45.194.10.37
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #186'
+  type: vless
+  server: 45.194.10.142
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #187'
+  type: vless
+  server: 45.194.10.139
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #188'
+  type: vless
+  server: 45.198.87.188
+  port: 8443
+  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #189'
+  type: vless
+  server: 45.198.87.244
+  port: 8443
+  uuid: 0b342486-d7c8-46fd-893a-5901225089d4
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+- name: 'T.ME: @aristapnel #190'
+  type: vless
+  server: 45.194.10.25
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #191'
+  type: vless
+  server: 45.194.10.128
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #192'
+  type: vless
+  server: 45.194.10.229
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #193'
+  type: vless
+  server: 45.194.10.234
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #194'
+  type: vless
+  server: 45.194.10.180
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #195'
+  type: vless
+  server: 45.194.10.122
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+- name: 'T.ME: @aristapnel #196'
+  type: vless
+  server: 87.228.101.57
+  port: 443
+  uuid: bb3d04f1-aade-4cbd-82b1-2af42a7ba8ca
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: api-maps.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+  reality-opts:
+    public-key: kDGigLxn2RUJ8HqhPVUb8pRAcjn5zMhR0-QrORmbIDk
+    short-id: be6abde66d48cd13
+- name: 'T.ME: @aristapnel #197'
+  type: vless
+  server: 45.194.10.149
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
@@ -3743,9 +3736,25 @@ proxies:
     short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #198'
   type: vless
-  server: 45.198.87.193
+  server: 45.194.10.147
   port: 8443
-  uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: false
+  tcp-fast-open: true
+  servername: storage.yandex.net
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  alpn:
+  - h2
+  - http/1.1
+- name: 'T.ME: @aristapnel #199'
+  type: vless
+  server: 45.194.10.234
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
@@ -3758,46 +3767,27 @@ proxies:
   - h2
   - http/1.1
   reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: 'T.ME: @aristapnel #199'
-  type: vless
-  server: 95.85.246.58
-  port: 8448
-  uuid: 329f5c49-c8a1-46e0-8e4d-79b0bebdc59e
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: false
-  tcp-fast-open: true
-  servername: hd.kinopoisk.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  alpn:
-  - h2
-  - http/1.1
-  reality-opts:
-    public-key: h9UaYbYpywLQ3QkOw99nR6HTmyDUaKrdkt7gZJwayCQ
-    short-id: 1c4a8f6e
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 - name: 'T.ME: @aristapnel #200'
   type: vless
-  server: 87.228.101.211
-  port: 443
-  uuid: 8b663ef5-8de4-4288-8c54-bacae4fe6637
+  server: 45.194.10.250
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: false
   tcp-fast-open: true
-  servername: rutube.ru
+  servername: storage.yandex.net
   client-fingerprint: chrome
   flow: xtls-rprx-vision
   alpn:
   - h2
   - http/1.1
   reality-opts:
-    public-key: HhzAvJmqEjt_CeifAJmDfg7DgeD2t2cvzWqvyyPSVz0
-    short-id: 664b8a28e735af5f
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
