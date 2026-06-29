@@ -1,6 +1,6 @@
 // GITHUB - VMESS - Tier ALL
-// Updated: 2026-06-29 02:20:56
-// Count: 9
+// Updated: 2026-06-29 07:08:27
+// Count: 11
 
 {
   "log": {
@@ -213,6 +213,46 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "T.ME: @aristapnel #10",
+      "server": "212.193.3.192",
+      "server_port": 110,
+      "uuid": "e45d0329-1ad1-4124-a928-e9fc82628cff",
+      "security": "auto",
+      "tls": {
+        "enabled": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "T.ME: @aristapnel #11",
+      "server": "linkbt.gozar8.ir",
+      "server_port": 443,
+      "uuid": "b34dc88e-5235-441a-89f9-faf73d34ae62",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "linkbt.gozar8.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "alpn": [
+          "h2",
+          "http/1.1",
+          "h3"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "linkbt.gozar8.ir"
+        }
+      }
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },
@@ -232,7 +272,9 @@
         "T.ME: @aristapnel #6",
         "T.ME: @aristapnel #7",
         "T.ME: @aristapnel #8",
-        "T.ME: @aristapnel #9"
+        "T.ME: @aristapnel #9",
+        "T.ME: @aristapnel #10",
+        "T.ME: @aristapnel #11"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",
@@ -252,7 +294,9 @@
         "T.ME: @aristapnel #6",
         "T.ME: @aristapnel #7",
         "T.ME: @aristapnel #8",
-        "T.ME: @aristapnel #9"
+        "T.ME: @aristapnel #9",
+        "T.ME: @aristapnel #10",
+        "T.ME: @aristapnel #11"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",

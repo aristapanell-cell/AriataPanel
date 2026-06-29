@@ -1,20 +1,9 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-06-29 02:17:17
-# Count: 4
+# Updated: 2026-06-29 07:04:20
+# Count: 3
 
 proxies:
 - name: 'ARISTA #1'
-  type: hysteria2
-  server: 191.101.238.183
-  port: 54040
-  password: q3tf4lsdoqpgpo4x
-  sni: 191.101.238.183
-  skip-cert-verify: false
-  fast-open: true
-  client-fingerprint: chrome
-  obfs: salamander
-  obfs-password: '%40JynMarket'
-- name: 'ARISTA #3'
   type: hysteria2
   server: 65.109.177.191
   port: 443
@@ -25,7 +14,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #4'
+- name: 'ARISTA #2'
   type: hysteria2
   server: 65.109.177.191
   port: 443
@@ -36,7 +25,7 @@ proxies:
   client-fingerprint: chrome
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #5'
+- name: 'ARISTA #3'
   type: hysteria2
   server: 57.128.108.123
   port: 443
@@ -57,9 +46,8 @@ proxy-groups:
   timeout: 3000
   proxies: &id001
   - 'ARISTA #1'
+  - 'ARISTA #2'
   - 'ARISTA #3'
-  - 'ARISTA #4'
-  - 'ARISTA #5'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
