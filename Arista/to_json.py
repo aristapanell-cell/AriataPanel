@@ -104,7 +104,7 @@ class ConfigToJSONConverter:
         tls = {
             "enabled": True,
             "server_name": self.clean_host(self.get_first(qs, "sni", host)),
-            "insecure": False,
+            "insecure": True,
             "utls": {
                 "enabled": True,
                 "fingerprint": fp
@@ -402,7 +402,7 @@ class ConfigToJSONConverter:
                 tls_config = {
                     "enabled": True,
                     "server_name": p.hostname,
-                    "insecure": True
+                    "insecure": True,
                 }
             config = {
                 "type": "hysteria2",
@@ -582,7 +582,7 @@ class ConfigToJSONConverter:
 
                 "rules": [
                     {
-                        "action": "sniff"
+                        "action": "sniff",
                     },
                     {
                         "protocol": "dns",
