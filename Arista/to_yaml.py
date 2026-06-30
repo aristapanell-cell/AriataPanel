@@ -8,6 +8,16 @@ import uuid
 from datetime import datetime
 from urllib.parse import urlparse, unquote
 
+class ClashDumper(yaml.SafeDumper):
+    pass
+
+def str_presenter(dumper, data):
+    if re.fullmatch(r'[0-9a-f]{2,16}', data):
+        return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='"')
+    return dumper.represent_scalar('tag:yaml.org,2002:str', data)
+
+ClashDumper.add_representer(str, str_presenter)
+
 class ConfigToYAMLConverter:
     def __init__(self):
         self.categories = [
@@ -268,7 +278,7 @@ class ConfigToYAMLConverter:
                 if params.get('sid'):
                     sid = params['sid']
                     if re.match(r'^[0-9a-fA-F]{2,16}$', sid):
-                        reality_opts['short-id'] = sid.lower()
+                        reality_opts['short-id'] = str(sid.lower())
                 if params.get('spider-x'):
                     reality_opts['spider-x'] = params['spider-x']
                 config['reality-opts'] = reality_opts
@@ -617,7 +627,7 @@ class ConfigToYAMLConverter:
                     f.write(f"# {source_name.upper()} - {category.upper()} - Tier {tier_name}\n")
                     f.write(f"# Updated: {timestamp}\n")
                     f.write(f"# Count: {len(converted_configs)}\n\n")
-                    yaml.dump(yaml_content, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+                    yaml.dump(yaml_content, f, Dumper=ClashDumper, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
         self.convert_all_tiers(source_dir, output_dir, source_name)
         self.generate_summary_yaml(source_dir, output_dir, source_name)
@@ -657,7 +667,7 @@ class ConfigToYAMLConverter:
                     f.write(f"# {source_name.upper()} - ALL - Tier {tier_name}\n")
                     f.write(f"# Updated: {timestamp}\n")
                     f.write(f"# Count: {len(converted_configs)}\n\n")
-                    yaml.dump(yaml_content, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+                    yaml.dump(yaml_content, f, Dumper=ClashDumper, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
     def generate_summary_yaml(self, source_dir, output_dir, source_name):
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -696,7 +706,7 @@ class ConfigToYAMLConverter:
         with open(output_filename, 'w', encoding='utf-8') as f:
             f.write(f"# {source_name.upper()} YAML Conversion Summary\n")
             f.write(f"# Updated: {timestamp}\n\n")
-            yaml.dump(summary_data, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+            yaml.dump(summary_data, f, Dumper=ClashDumper, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
     def convert_all(self):
         sources = [
@@ -777,7 +787,7 @@ class ConfigToYAMLConverter:
                 f.write(f"# MASTER YAML - ALL CONFIGURATIONS\n")
                 f.write(f"# Updated: {timestamp}\n")
                 f.write(f"# Total Proxies: {len(all_proxies)}\n\n")
-                yaml.dump(master_content, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+                yaml.dump(master_content, f, Dumper=ClashDumper, default_flow_style=False, allow_unicode=True, sort_keys=False)
 
 def main():
     print("=" * 60)
