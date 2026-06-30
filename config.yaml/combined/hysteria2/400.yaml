@@ -1,5 +1,5 @@
 # COMBINED - HYSTERIA2 - Tier 400
-# Updated: 2026-06-30 21:06:26
+# Updated: 2026-06-30 22:06:02
 # Count: 399
 
 mixed-port: 7890
@@ -50,16 +50,6 @@ rules:
 proxies:
 - name: 'ARISTA #1'
   type: hysteria2
-  server: 191.101.238.183
-  port: 54040
-  password: q3tf4lsdoqpgpo4x
-  sni: 191.101.238.183
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: '@JynMarket'
-- name: 'ARISTA #3'
-  type: hysteria2
   server: 130.49.161.70
   port: 443
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
@@ -68,26 +58,36 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 'ARISTA #2'
+  type: hysteria2
+  server: nrealistic.nn-foto.ru
+  port: 1935
+  password: 653m8mmiy7048p0f
+  sni: nrealistic.nn-foto.ru
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: lhfl2z9mjngb7csh
+- name: 'ARISTA #3'
+  type: hysteria2
+  server: 2.26.49.16
+  port: 443
+  password: 653m8mmiy7048p0f
+  sni: social.klipp.su
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: 3sv5vpdl9xr84lyb
 - name: 'ARISTA #4'
   type: hysteria2
-  server: 65.20.114.95
-  port: 443
-  password: V2rayyNGvpn
-  sni: www.oracle.com
+  server: 191.101.238.183
+  port: 54040
+  password: q3tf4lsdoqpgpo4x
+  sni: 191.101.238.183
   skip-cert-verify: true
   fast-open: true
   obfs: salamander
-  obfs-password: t-me-v2rayyngvpn
-- name: 'ARISTA #5'
-  type: hysteria2
-  server: 143.14.59.229
-  port: 443
-  password: t-me-V2RayyNGvpn
-  sni: www.oracle.com
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: t-me-V2RayyNGvpn
+  obfs-password: '@JynMarket'
 - name: 'ARISTA #6'
   type: hysteria2
   server: 80.66.81.78
@@ -98,7 +98,27 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-- name: 'T.ME: @aristapnel #7'
+- name: 'ARISTA #7'
+  type: hysteria2
+  server: 65.20.114.95
+  port: 443
+  password: V2rayyNGvpn
+  sni: www.oracle.com
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: t-me-v2rayyngvpn
+- name: 'ARISTA #8'
+  type: hysteria2
+  server: 143.14.59.229
+  port: 443
+  password: t-me-V2RayyNGvpn
+  sni: www.oracle.com
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: t-me-V2RayyNGvpn
+- name: 'T.ME: @aristapnel #9'
   type: hysteria2
   server: hy2.aspidnet.xyz
   port: 443
@@ -108,22 +128,6 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 'T.ME: @aristapnel #8'
-  type: hysteria2
-  server: wlte.nimarko.org
-  port: 8465
-  password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: itit.nimarko.org
-  skip-cert-verify: true
-  fast-open: true
-- name: 'T.ME: @aristapnel #9'
-  type: hysteria2
-  server: wlte.nimarko.org
-  port: 8465
-  password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: itit.nimarko.org
-  skip-cert-verify: true
-  fast-open: true
 - name: 'T.ME: @aristapnel #10'
   type: hysteria2
   server: wlte.nimarko.org
@@ -222,18 +226,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #22'
   type: hysteria2
-  server: wlte8.nimarko.org
-  port: 8450
+  server: wlte.nimarko.org
+  port: 8465
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing6.nimarko.org
+  sni: itit.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #23'
   type: hysteria2
-  server: wlte8.nimarko.org
-  port: 8450
+  server: wlte.nimarko.org
+  port: 8465
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing6.nimarko.org
+  sni: itit.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #24'
@@ -334,18 +338,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #36'
   type: hysteria2
-  server: wlte9.nimarko.org
-  port: 8451
+  server: wlte8.nimarko.org
+  port: 8450
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing7.nimarko.org
+  sni: testing6.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #37'
   type: hysteria2
-  server: wlte9.nimarko.org
-  port: 8451
+  server: wlte8.nimarko.org
+  port: 8450
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing7.nimarko.org
+  sni: testing6.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #38'
@@ -422,18 +426,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #47'
   type: hysteria2
-  server: 46.254.18.107
-  port: 443
-  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
-  sni: newlte.kihsuyhf8jkiugsxb.cfd
+  server: wlte9.nimarko.org
+  port: 8451
+  password: c059a786-3a03-4300-9ace-4f9cda0f360c
+  sni: testing7.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #48'
   type: hysteria2
-  server: 46.254.18.107
-  port: 443
-  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
-  sni: newlte.kihsuyhf8jkiugsxb.cfd
+  server: wlte9.nimarko.org
+  port: 8451
+  password: c059a786-3a03-4300-9ace-4f9cda0f360c
+  sni: testing7.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #49'
@@ -782,18 +786,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #92'
   type: hysteria2
-  server: wlte3.nimarko.org
-  port: 8444
-  password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing8.nimarko.org
+  server: 46.254.18.107
+  port: 443
+  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
+  sni: newlte.kihsuyhf8jkiugsxb.cfd
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #93'
   type: hysteria2
-  server: wlte3.nimarko.org
-  port: 8444
-  password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing8.nimarko.org
+  server: 46.254.18.107
+  port: 443
+  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
+  sni: newlte.kihsuyhf8jkiugsxb.cfd
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #94'
@@ -870,18 +874,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #103'
   type: hysteria2
-  server: wlte.nimarko.org
-  port: 8465
+  server: wlte3.nimarko.org
+  port: 8444
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: itit.nimarko.org
+  sni: testing8.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #104'
   type: hysteria2
-  server: wlte.nimarko.org
-  port: 8465
+  server: wlte3.nimarko.org
+  port: 8444
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: itit.nimarko.org
+  sni: testing8.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #105'
@@ -1086,18 +1090,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #130'
   type: hysteria2
-  server: wlte8.nimarko.org
-  port: 8450
+  server: wlte.nimarko.org
+  port: 8465
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing6.nimarko.org
+  sni: itit.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #131'
   type: hysteria2
-  server: wlte8.nimarko.org
-  port: 8450
+  server: wlte.nimarko.org
+  port: 8465
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing6.nimarko.org
+  sni: itit.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #132'
@@ -1174,18 +1178,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #141'
   type: hysteria2
-  server: 46.254.18.107
-  port: 443
-  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
-  sni: newlte.kihsuyhf8jkiugsxb.cfd
+  server: wlte8.nimarko.org
+  port: 8450
+  password: c059a786-3a03-4300-9ace-4f9cda0f360c
+  sni: testing6.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #142'
   type: hysteria2
-  server: 46.254.18.107
-  port: 443
-  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
-  sni: newlte.kihsuyhf8jkiugsxb.cfd
+  server: wlte8.nimarko.org
+  port: 8450
+  password: c059a786-3a03-4300-9ace-4f9cda0f360c
+  sni: testing6.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #143'
@@ -1310,13 +1314,29 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #158'
   type: hysteria2
+  server: 46.254.18.107
+  port: 443
+  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
+  sni: newlte.kihsuyhf8jkiugsxb.cfd
+  skip-cert-verify: true
+  fast-open: true
+- name: 'T.ME: @aristapnel #159'
+  type: hysteria2
+  server: 46.254.18.107
+  port: 443
+  password: 0dd50f72-bf39-4b59-b183-61b3fa52df57
+  sni: newlte.kihsuyhf8jkiugsxb.cfd
+  skip-cert-verify: true
+  fast-open: true
+- name: 'T.ME: @aristapnel #160'
+  type: hysteria2
   server: helsinki02.m247-fi-02.live
   port: 8449
   password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
   sni: sni.fi-m247-02.com
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #159'
+- name: 'T.ME: @aristapnel #161'
   type: hysteria2
   server: tw.rosisi.xyz
   port: 4443
@@ -1324,7 +1344,7 @@ proxies:
   sni: tw.rosisi.xyz
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #160'
+- name: 'T.ME: @aristapnel #162'
   type: hysteria2
   server: 103.115.109.49
   port: 443
@@ -1332,28 +1352,12 @@ proxies:
   sni: 103.115.109.49
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #161'
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-  fast-open: true
-- name: 'T.ME: @aristapnel #162'
-  type: hysteria2
-  server: 103.115.109.49
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
-  skip-cert-verify: true
-  fast-open: true
 - name: 'T.ME: @aristapnel #163'
   type: hysteria2
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #164'
@@ -1465,7 +1469,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #178'
@@ -1489,7 +1493,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #181'
@@ -1497,7 +1501,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #182'
@@ -1505,7 +1509,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #183'
@@ -1513,7 +1517,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #184'
@@ -1521,7 +1525,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #185'
@@ -1529,7 +1533,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #186'
@@ -1569,23 +1573,23 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #191'
   type: hysteria2
-  server: 888275.cherry-nll-01.live
-  port: 8449
-  password: 0047a8bc-0025-4d45-899b-c75c669f3ede
-  sni: sni.nl01-cherry.online
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #192'
   type: hysteria2
-  server: 888275.cherry-nll-01.live
-  port: 8449
-  password: 0047a8bc-0025-4d45-899b-c75c669f3ede
-  sni: sni.nl01-cherry.online
+  server: 103.115.109.49
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #193'
@@ -1702,34 +1706,34 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #207'
   type: hysteria2
+  server: 888275.cherry-nll-01.live
+  port: 8449
+  password: 0047a8bc-0025-4d45-899b-c75c669f3ede
+  sni: sni.nl01-cherry.online
+  skip-cert-verify: true
+  fast-open: true
+- name: 'T.ME: @aristapnel #208'
+  type: hysteria2
+  server: 888275.cherry-nll-01.live
+  port: 8449
+  password: 0047a8bc-0025-4d45-899b-c75c669f3ede
+  sni: sni.nl01-cherry.online
+  skip-cert-verify: true
+  fast-open: true
+- name: 'T.ME: @aristapnel #209'
+  type: hysteria2
   server: uk.rosisi.xyz
   port: 1001
   password: 6ee88597-c540-4aaf-8114-aa2c0b20c27f
   sni: uk.rosisi.xyz
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #208'
+- name: 'T.ME: @aristapnel #210'
   type: hysteria2
   server: us01.rosisi.xyz
   port: 4443
   password: 6ee88597-c540-4aaf-8114-aa2c0b20c27f
   sni: us01.rosisi.xyz
-  skip-cert-verify: true
-  fast-open: true
-- name: 'T.ME: @aristapnel #209'
-  type: hysteria2
-  server: 134.195.101.199
-  port: 443
-  password: f872264a-664a-4b6a-84e8-516a39099860
-  sni: www.apple.com
-  skip-cert-verify: true
-  fast-open: true
-- name: 'T.ME: @aristapnel #210'
-  type: hysteria2
-  server: 134.195.101.199
-  port: 443
-  password: f872264a-664a-4b6a-84e8-516a39099860
-  sni: www.apple.com
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #211'
@@ -1742,26 +1746,26 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #212'
   type: hysteria2
-  server: us.rosisi.xyz
-  port: 1000
-  password: 6ee88597-c540-4aaf-8114-aa2c0b20c27f
-  sni: us.rosisi.xyz
+  server: 134.195.101.199
+  port: 443
+  password: f872264a-664a-4b6a-84e8-516a39099860
+  sni: www.apple.com
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #213'
   type: hysteria2
-  server: 202.146.222.174
+  server: 134.195.101.199
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  password: f872264a-664a-4b6a-84e8-516a39099860
+  sni: www.apple.com
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #214'
   type: hysteria2
-  server: 202.146.222.174
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  server: us.rosisi.xyz
+  port: 1000
+  password: 6ee88597-c540-4aaf-8114-aa2c0b20c27f
+  sni: us.rosisi.xyz
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #215'
@@ -1769,7 +1773,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #216'
@@ -1777,7 +1781,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #217'
@@ -1785,7 +1789,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #218'
@@ -1793,7 +1797,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #219'
@@ -1945,7 +1949,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #238'
@@ -1961,7 +1965,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: 202.146.222.174
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #240'
@@ -2041,7 +2045,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #250'
@@ -2057,7 +2061,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #252'
@@ -2153,7 +2157,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #264'
@@ -2169,7 +2173,7 @@ proxies:
   server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #266'
@@ -2222,18 +2226,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #272'
   type: hysteria2
-  server: 103.115.109.49
+  server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #273'
   type: hysteria2
-  server: 103.115.109.49
+  server: 202.146.222.174
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #274'
@@ -2305,7 +2309,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #283'
@@ -2313,7 +2317,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #284'
@@ -2329,7 +2333,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #286'
@@ -2353,7 +2357,7 @@ proxies:
   server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/WangCai2🇨🇳
+  sni: https://t.me/WangCai2
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #289'
@@ -2422,18 +2426,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #297'
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #298'
   type: hysteria2
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #299'
@@ -2926,18 +2930,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #360'
   type: hysteria2
-  server: 134.195.101.199
+  server: vpn-tw-002.fastervpn.world
   port: 443
-  password: f872264a-664a-4b6a-84e8-516a39099860
-  sni: www.apple.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #361'
   type: hysteria2
-  server: 134.195.101.199
+  server: vpn-tw-002.fastervpn.world
   port: 443
-  password: f872264a-664a-4b6a-84e8-516a39099860
-  sni: www.apple.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #362'
@@ -2950,26 +2954,26 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #363'
   type: hysteria2
-  server: wlte3.nimarko.org
-  port: 8444
-  password: c059a786-3a03-4300-9ace-4f9cda0f360c
-  sni: testing8.nimarko.org
+  server: 134.195.101.199
+  port: 443
+  password: f872264a-664a-4b6a-84e8-516a39099860
+  sni: www.apple.com
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #364'
   type: hysteria2
-  server: 23.166.40.27
+  server: 134.195.101.199
   port: 443
-  password: 9794d18f-9280-3553-a7a5-a23da75aca76
-  sni: u691611u2e827823s79.sspcccdn.xyz
+  password: f872264a-664a-4b6a-84e8-516a39099860
+  sni: www.apple.com
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #365'
   type: hysteria2
-  server: 23.166.40.27
-  port: 443
-  password: 9794d18f-9280-3553-a7a5-a23da75aca76
-  sni: u691611u2e827823s79.sspcccdn.xyz
+  server: wlte3.nimarko.org
+  port: 8444
+  password: c059a786-3a03-4300-9ace-4f9cda0f360c
+  sni: testing8.nimarko.org
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #366'
@@ -3070,18 +3074,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #378'
   type: hysteria2
-  server: 103.173.155.158
+  server: 23.166.40.27
   port: 443
   password: 9794d18f-9280-3553-a7a5-a23da75aca76
-  sni: u691611u2dd066f2s226.sspcccdn.xyz
+  sni: u691611u2e827823s79.sspcccdn.xyz
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #379'
   type: hysteria2
-  server: 103.173.155.158
+  server: 23.166.40.27
   port: 443
   password: 9794d18f-9280-3553-a7a5-a23da75aca76
-  sni: u691611u2dd066f2s226.sspcccdn.xyz
+  sni: u691611u2e827823s79.sspcccdn.xyz
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #380'
@@ -3094,18 +3098,18 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #381'
   type: hysteria2
-  server: srvhy1.ezcon24.online
-  port: 8443
-  password: 97d290a0-acec-4aae-b8cf-c7111a5a6397
-  sni: srvhy1.ezcon24.online
+  server: 103.173.155.158
+  port: 443
+  password: 9794d18f-9280-3553-a7a5-a23da75aca76
+  sni: u691611u2dd066f2s226.sspcccdn.xyz
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #382'
   type: hysteria2
-  server: srvhy1.ezcon24.online
-  port: 8443
-  password: 97d290a0-acec-4aae-b8cf-c7111a5a6397
-  sni: srvhy1.ezcon24.online
+  server: 103.173.155.158
+  port: 443
+  password: 9794d18f-9280-3553-a7a5-a23da75aca76
+  sni: u691611u2dd066f2s226.sspcccdn.xyz
   skip-cert-verify: true
   fast-open: true
 - name: 'T.ME: @aristapnel #383'
@@ -3214,13 +3218,29 @@ proxies:
   fast-open: true
 - name: 'T.ME: @aristapnel #396'
   type: hysteria2
+  server: srvhy1.ezcon24.online
+  port: 8443
+  password: 97d290a0-acec-4aae-b8cf-c7111a5a6397
+  sni: srvhy1.ezcon24.online
+  skip-cert-verify: true
+  fast-open: true
+- name: 'T.ME: @aristapnel #397'
+  type: hysteria2
+  server: srvhy1.ezcon24.online
+  port: 8443
+  password: 97d290a0-acec-4aae-b8cf-c7111a5a6397
+  sni: srvhy1.ezcon24.online
+  skip-cert-verify: true
+  fast-open: true
+- name: 'T.ME: @aristapnel #398'
+  type: hysteria2
   server: wlte3.nimarko.org
   port: 8444
   password: c059a786-3a03-4300-9ace-4f9cda0f360c
   sni: testing8.nimarko.org
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #397'
+- name: 'T.ME: @aristapnel #399'
   type: hysteria2
   server: 23.166.40.27
   port: 443
@@ -3228,7 +3248,7 @@ proxies:
   sni: u691611u2e827823s79.sspcccdn.xyz
   skip-cert-verify: true
   fast-open: true
-- name: 'T.ME: @aristapnel #398'
+- name: 'T.ME: @aristapnel #400'
   type: hysteria2
   server: nrealistic.nn-foto.ru
   port: 1935
@@ -3238,22 +3258,6 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: lhfl2z9mjngb7csh
-- name: 'T.ME: @aristapnel #399'
-  type: hysteria2
-  server: 130.61.50.75
-  port: 6443
-  password: zhangyang
-  sni: dash.cloudflare.com
-  skip-cert-verify: true
-  fast-open: true
-- name: 'T.ME: @aristapnel #400'
-  type: hysteria2
-  server: 130.61.50.75
-  port: 6443
-  password: zhangyang
-  sni: https://www.calmloud.com
-  skip-cert-verify: true
-  fast-open: true
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -3264,12 +3268,12 @@ proxy-groups:
   timeout: 3000
   proxies: &id001
   - 'ARISTA #1'
+  - 'ARISTA #2'
   - 'ARISTA #3'
   - 'ARISTA #4'
-  - 'ARISTA #5'
   - 'ARISTA #6'
-  - 'T.ME: @aristapnel #7'
-  - 'T.ME: @aristapnel #8'
+  - 'ARISTA #7'
+  - 'ARISTA #8'
   - 'T.ME: @aristapnel #9'
   - 'T.ME: @aristapnel #10'
   - 'T.ME: @aristapnel #11'
