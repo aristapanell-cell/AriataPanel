@@ -1,5 +1,5 @@
 # GITHUB - SS - Tier ALL
-# Updated: 2026-06-30 19:33:10
+# Updated: 2026-06-30 19:48:17
 # Count: 59
 
 mixed-port: 7890
@@ -14,11 +14,16 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-  - 1.1.1.1
-  - 8.8.8.8
+  - 178.22.122.100
+  - 185.51.200.2
+  - 10.202.10.202
   nameserver:
+  - https://dns.shecan.ir/dns-query
+  - https://dns.403.online/dns-query
+  - https://dns.begzar.ir/dns-query
+  - tls://dns.shecan.ir
+  - tls://dns.403.online
   - https://1.1.1.1/dns-query
-  - https://1.0.0.1/dns-query
   - https://8.8.8.8/dns-query
   - tls://1.1.1.1
   - tls://8.8.8.8
@@ -45,10 +50,10 @@ rules:
 proxies:
 - name: 'T.ME: @aristapnel #1'
   type: ss
-  server: 37.202.229.21
-  port: 2020
-  cipher: 2022-blake3-aes-256-gcm
-  password: DdxMsxFs1QMcwhPcy88cSZBtZZXTq3xYek3pi0RMYp0=:q/AZYSYhEg3BslnF2nusibhuFDahKO8hI6kg/HkIJLg=
+  server: p4.hoomankh.info
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rC5NNJ5kFygMGmeTwMMIPKC5b-j8YBfH
   udp: true
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #2'

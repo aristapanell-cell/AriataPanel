@@ -1,5 +1,5 @@
 # COMBINED - HYSTERIA2 - Tier 100
-# Updated: 2026-06-30 19:33:02
+# Updated: 2026-06-30 19:48:06
 # Count: 99
 
 mixed-port: 7890
@@ -14,11 +14,16 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   default-nameserver:
-  - 1.1.1.1
-  - 8.8.8.8
+  - 178.22.122.100
+  - 185.51.200.2
+  - 10.202.10.202
   nameserver:
+  - https://dns.shecan.ir/dns-query
+  - https://dns.403.online/dns-query
+  - https://dns.begzar.ir/dns-query
+  - tls://dns.shecan.ir
+  - tls://dns.403.online
   - https://1.1.1.1/dns-query
-  - https://1.0.0.1/dns-query
   - https://8.8.8.8/dns-query
   - tls://1.1.1.1
   - tls://8.8.8.8
@@ -45,26 +50,6 @@ rules:
 proxies:
 - name: 'ARISTA #1'
   type: hysteria2
-  server: 130.49.161.70
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 'ARISTA #2'
-  type: hysteria2
-  server: 80.66.81.78
-  port: 9443
-  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-  sni: tunel1.washing.help
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-- name: 'ARISTA #3'
-  type: hysteria2
   server: 65.109.177.191
   port: 443
   password: t-me-V2RayyNGvpn
@@ -73,7 +58,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #4'
+- name: 'ARISTA #2'
   type: hysteria2
   server: 57.128.108.123
   port: 443
@@ -83,7 +68,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #5'
+- name: 'ARISTA #3'
   type: hysteria2
   server: 65.20.114.95
   port: 443
@@ -93,7 +78,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: t-me-v2rayyngvpn
-- name: 'ARISTA #6'
+- name: 'ARISTA #4'
   type: hysteria2
   server: 143.14.59.229
   port: 443
@@ -103,7 +88,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
-- name: 'ARISTA #7'
+- name: 'ARISTA #5'
   type: hysteria2
   server: 191.101.238.183
   port: 54040
@@ -113,6 +98,26 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: '@JynMarket'
+- name: 'ARISTA #7'
+  type: hysteria2
+  server: 80.66.81.78
+  port: 9443
+  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
+  sni: tunel1.washing.help
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
+- name: 'ARISTA #8'
+  type: hysteria2
+  server: 130.49.161.70
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 'T.ME: @aristapnel #9'
   type: hysteria2
   server: hy2.aspidnet.xyz
@@ -865,8 +870,8 @@ proxy-groups:
   - 'ARISTA #3'
   - 'ARISTA #4'
   - 'ARISTA #5'
-  - 'ARISTA #6'
   - 'ARISTA #7'
+  - 'ARISTA #8'
   - 'T.ME: @aristapnel #9'
   - 'T.ME: @aristapnel #10'
   - 'T.ME: @aristapnel #11'
