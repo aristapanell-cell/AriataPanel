@@ -1,73 +1,49 @@
 # TELEGRAM - VMESS - Tier ALL
-# Updated: 2026-06-30 18:57:04
+# Updated: 2026-06-30 19:20:14
 # Count: 22
 
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 1.1.1.1
+  - 8.8.8.8
+  nameserver:
+  - https://1.1.1.1/dns-query
+  - https://1.0.0.1/dns-query
+  - https://8.8.8.8/dns-query
+  - tls://1.1.1.1
+  - tls://8.8.8.8
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    TLS:
+      ports:
+      - 443
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080
+      - 8880
+    QUIC:
+      ports:
+      - 443
+      - 8443
+rules:
+- MATCH,🎯 ARISTA CORE
 proxies:
 - name: 'ARISTA #1'
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: v2ray1.dozapp.xyz
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 'ARISTA #2'
-  type: vmess
-  server: 9ada43675a77ad70.ssdhdd.fun
-  port: 23698
-  uuid: 5d840438-8bce-4048-9307-b8c1d7880bb9
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 9ada43675a77ad70.ssdhdd.fun
-- name: 'ARISTA #3'
-  type: vmess
-  server: 185.16.110.212
-  port: 8880
-  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 185.16.110.212
-  ws-opts:
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: TG.WangCai2.s4.db-link02.top
-- name: 'ARISTA #4'
-  type: vmess
-  server: site.hooracoffee.ir
-  port: 443
-  uuid: ed954dba-5ad5-4688-8174-247944361c38
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: site.hooracoffee.ir
-  ws-opts:
-    path: /www
-    headers:
-      Host: site.hooracoffee.ir
-- name: 'ARISTA #5'
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -84,7 +60,7 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: jp01.a0a.xyz
-- name: 'ARISTA #6'
+- name: 'ARISTA #2'
   type: vmess
   server: 57.151.100.27
   port: 10086
@@ -97,7 +73,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 57.151.100.27
-- name: 'ARISTA #7'
+- name: 'ARISTA #3'
   type: vmess
   server: 65.109.186.44
   port: 433
@@ -110,7 +86,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 65.109.186.44
-- name: 'ARISTA #8'
+- name: 'ARISTA #4'
   type: vmess
   server: 216.106.183.35
   port: 22324
@@ -124,7 +100,7 @@ proxies:
   tcp-fast-open: true
   servername: 216.106.183.35
   client-fingerprint: chrome
-- name: 'ARISTA #9'
+- name: 'ARISTA #5'
   type: vmess
   server: 47.251.91.241
   port: 42899
@@ -137,7 +113,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 47.251.91.241
-- name: 'ARISTA #10'
+- name: 'ARISTA #6'
   type: vmess
   server: 138.252.100.85
   port: 18746
@@ -152,7 +128,7 @@ proxies:
   servername: 138.252.100.85
   ws-opts:
     path: /
-- name: 'ARISTA #11'
+- name: 'ARISTA #7'
   type: vmess
   server: 47.244.120.197
   port: 44867
@@ -167,7 +143,7 @@ proxies:
   servername: 47.244.120.197
   ws-opts:
     path: /arki?ed=2048
-- name: 'ARISTA #12'
+- name: 'ARISTA #8'
   type: vmess
   server: 172.104.80.66
   port: 22324
@@ -180,7 +156,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 172.104.80.66
-- name: 'ARISTA #13'
+- name: 'ARISTA #9'
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -197,7 +173,82 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+- name: 'ARISTA #10'
+  type: vmess
+  server: 107.173.27.219
+  port: 6666
+  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 107.173.27.219
+  ws-opts:
+    path: /youtube
+- name: 'ARISTA #11'
+  type: vmess
+  server: 78.141.215.62
+  port: 443
+  uuid: afd45419-cffa-4f1b-990a-511aab6ee9ab
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 78.141.215.62
+- name: 'ARISTA #12'
+  type: vmess
+  server: 9ada43675a77ad70.ssdhdd.fun
+  port: 23698
+  uuid: 5d840438-8bce-4048-9307-b8c1d7880bb9
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 9ada43675a77ad70.ssdhdd.fun
+- name: 'ARISTA #13'
+  type: vmess
+  server: 185.16.110.212
+  port: 8880
+  uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 185.16.110.212
+  ws-opts:
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: TG.WangCai2.s4.db-link02.top
 - name: 'ARISTA #14'
+  type: vmess
+  server: site.hooracoffee.ir
+  port: 443
+  uuid: ed954dba-5ad5-4688-8174-247944361c38
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: site.hooracoffee.ir
+  ws-opts:
+    path: /www
+    headers:
+      Host: site.hooracoffee.ir
+- name: 'ARISTA #15'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -215,7 +266,7 @@ proxies:
     path: /6a4e7e55-9f07-4c54-abdd-72b9820f4cb3-vm
     headers:
       Host: explicit-freeware-animation-greg.trycloudflare.com
-- name: 'ARISTA #15'
+- name: 'ARISTA #16'
   type: vmess
   server: cdn.31514926.xyz
   port: 443
@@ -233,7 +284,7 @@ proxies:
     path: /48d5eb0f-fd55-4357-baec-a68fa39a4b1b-vm
     headers:
       Host: admit-statute-live-undertaken.trycloudflare.com
-- name: 'ARISTA #16'
+- name: 'ARISTA #17'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -251,7 +302,7 @@ proxies:
     path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
     headers:
       Host: graph-keep-beds-catalog.trycloudflare.com
-- name: 'ARISTA #17'
+- name: 'ARISTA #18'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -269,7 +320,7 @@ proxies:
     path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
     headers:
       Host: vienna-bread-threats-amendment.trycloudflare.com
-- name: 'ARISTA #18'
+- name: 'ARISTA #19'
   type: vmess
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -287,7 +338,7 @@ proxies:
     path: /a2243c24-a82c-4098-bc4d-e85331a1e1d1-vm
     headers:
       Host: associations-bryan-manchester-latino.trycloudflare.com
-- name: 'ARISTA #19'
+- name: 'ARISTA #20'
   type: vmess
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -305,24 +356,11 @@ proxies:
     path: /6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76-vm
     headers:
       Host: attitude-interracial-country-gen.trycloudflare.com
-- name: 'ARISTA #20'
-  type: vmess
-  server: 47.251.91.241
-  port: 42899
-  uuid: 0925b355-2bcd-4eae-9720-d2709e4f7e36
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 47.251.91.241
 - name: 'ARISTA #21'
   type: vmess
-  server: 78.141.215.62
-  port: 443
-  uuid: afd45419-cffa-4f1b-990a-511aab6ee9ab
+  server: 3.71.8.174
+  port: 1002
+  uuid: b0c1845b-41fe-431e-9639-79373afec94c
   alterId: 0
   cipher: auto
   network: tcp
@@ -330,22 +368,24 @@ proxies:
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 78.141.215.62
+  servername: 3.71.8.174
 - name: 'ARISTA #22'
   type: vmess
-  server: 107.173.27.219
-  port: 6666
-  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   network: ws
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 107.173.27.219
+  servername: v2ray1.dozapp.xyz
   ws-opts:
-    path: /youtube
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test

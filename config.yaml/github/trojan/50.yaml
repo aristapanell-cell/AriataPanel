@@ -1,7 +1,47 @@
 # GITHUB - TROJAN - Tier 50
-# Updated: 2026-06-30 18:57:07
+# Updated: 2026-06-30 19:20:17
 # Count: 50
 
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 1.1.1.1
+  - 8.8.8.8
+  nameserver:
+  - https://1.1.1.1/dns-query
+  - https://1.0.0.1/dns-query
+  - https://8.8.8.8/dns-query
+  - tls://1.1.1.1
+  - tls://8.8.8.8
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  override-destination: true
+  sniff:
+    TLS:
+      ports:
+      - 443
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080
+      - 8880
+    QUIC:
+      ports:
+      - 443
+      - 8443
+rules:
+- MATCH,🎯 ARISTA CORE
 proxies:
 - name: 'T.ME: @aristapnel #1'
   type: trojan
@@ -523,7 +563,7 @@ proxies:
   servername: 130.94.94.15
 - name: 'T.ME: @aristapnel #41'
   type: trojan
-  server: 209.33.166.199
+  server: 156.226.169.179
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -531,13 +571,29 @@ proxies:
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: tjsp.hhxaf.cc.cd
+  servername: hhcm.hhxaf.cc.cd
   client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: tjsp.hhxaf.cc.cd
+      Host: hhcm.hhxaf.cc.cd
 - name: 'T.ME: @aristapnel #42'
+  type: trojan
+  server: 89.208.251.72
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: hhcm.hhxaf.cc.cd
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+- name: 'T.ME: @aristapnel #43'
   type: trojan
   server: 103.208.85.4
   port: 443
@@ -549,25 +605,9 @@ proxies:
   tcp-fast-open: true
   servername: 103.208.85.4
   client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #43'
-  type: trojan
-  server: space.byu.id.yxls.eu.cc
-  port: 443
-  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: space.byu.id.yxls.eu.cc
-  client-fingerprint: chrome
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: space.byu.id.yxls.eu.cc
 - name: 'T.ME: @aristapnel #44'
   type: trojan
-  server: 146.235.16.191
+  server: 142.91.108.54
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -582,50 +622,6 @@ proxies:
     headers:
       Host: tjsp.hhxaf.cc.cd
 - name: 'T.ME: @aristapnel #45'
-  type: trojan
-  server: 37.123.194.251
-  port: 443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: tjsp.hhxaf.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #46'
-  type: trojan
-  server: 66.42.51.60
-  port: 8443
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: hhcm.hhxaf.cc.cd
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #47'
-  type: trojan
-  server: 83.228.251.69
-  port: 443
-  password: SoftNetConnect
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 'T.ME: @aristapnel #48'
   type: trojan
   server: 199.181.197.176
   port: 443
@@ -642,9 +638,9 @@ proxies:
     path: /MiTiVPN=fL
     headers:
       Host: 95r.ir
-- name: 'T.ME: @aristapnel #49'
+- name: 'T.ME: @aristapnel #46'
   type: trojan
-  server: 161.248.63.77
+  server: 151.241.129.141
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -652,15 +648,32 @@ proxies:
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: hhcm.hhxaf.cc.cd
-  client-fingerprint: chrome
+  servername: tjsp.hhxaf.cc.cd
   ws-opts:
     path: /
     headers:
-      Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #50'
+      Host: tjsp.hhxaf.cc.cd
+- name: 'T.ME: @aristapnel #47'
   type: trojan
-  server: 23.156.153.57
+  server: 151.101.56.6
+  port: 443
+  password: MiTiVPN
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: ssl.fastly.com
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /MiTiVPN=fL
+    headers:
+      Host: esalat-mitivpn.global.ssl.fastly.net
+- name: 'T.ME: @aristapnel #48'
+  type: trojan
+  server: 62.3.15.203
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -674,6 +687,35 @@ proxies:
     path: /
     headers:
       Host: tjsp.hhxaf.cc.cd
+- name: 'T.ME: @aristapnel #49'
+  type: trojan
+  server: 198.62.62.162
+  port: 443
+  password: MiTiVPN
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 95r.ir
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /MiTiVPN=NL
+    headers:
+      Host: 95r.ir
+- name: 'T.ME: @aristapnel #50'
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  password: BxceQaOe
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 119.246.1.143
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
