@@ -134,6 +134,52 @@ class ConfigToYAMLConverter:
         except:
             return None
 
+    def build_base_config(self):
+        return {
+            "mixed-port": 7890,
+            "allow-lan": False,
+            "mode": "rule",
+            "log-level": "info",
+            "ipv6": False,
+            "dns": {
+                "enable": True,
+                "listen": "0.0.0.0:1053",
+                "ipv6": False,
+                "enhanced-mode": "fake-ip",
+                "fake-ip-range": "198.18.0.1/16",
+                "default-nameserver": [
+                    "1.1.1.1",
+                    "8.8.8.8"
+                ],
+                "nameserver": [
+                    "https://1.1.1.1/dns-query",
+                    "https://1.0.0.1/dns-query",
+                    "https://8.8.8.8/dns-query",
+                    "tls://1.1.1.1",
+                    "tls://8.8.8.8"
+                ]
+            },
+            "sniffer": {
+                "enable": True,
+                "parse-pure-ip": True,
+                "override-destination": True,
+                "sniff": {
+                    "TLS": {
+                        "ports": [443, 8443]
+                    },
+                    "HTTP": {
+                        "ports": [80, 8080, 8880]
+                    },
+                    "QUIC": {
+                        "ports": [443, 8443]
+                    }
+                }
+            },
+            "rules": [
+                "MATCH,🎯 ARISTA CORE"
+            ]
+        }
+
     def vless_to_clashmeta(self, url_str, index):
         try:
             url = urlparse(url_str)
@@ -559,10 +605,9 @@ class ConfigToYAMLConverter:
             for tier_name, converted_configs in converted_by_tier.items():
                 output_filename = os.path.join(output_cat_dir, f"{tier_name}.yaml")
                 proxy_groups = self.build_proxy_groups(converted_configs)
-                yaml_content = {
-                    'proxies': converted_configs,
-                    'proxy-groups': proxy_groups
-                }
+                yaml_content = self.build_base_config()
+                yaml_content["proxies"] = converted_configs
+                yaml_content["proxy-groups"] = proxy_groups
                 with open(output_filename, 'w', encoding='utf-8') as f:
                     f.write(f"# {source_name.upper()} - {category.upper()} - Tier {tier_name}\n")
                     f.write(f"# Updated: {timestamp}\n")
@@ -600,10 +645,9 @@ class ConfigToYAMLConverter:
 
                 output_filename = os.path.join(output_all_dir, f"{tier_name}.yaml")
                 proxy_groups = self.build_proxy_groups(converted_configs)
-                yaml_content = {
-                    'proxies': converted_configs,
-                    'proxy-groups': proxy_groups
-                }
+                yaml_content = self.build_base_config()
+                yaml_content["proxies"] = converted_configs
+                yaml_content["proxy-groups"] = proxy_groups
                 with open(output_filename, 'w', encoding='utf-8') as f:
                     f.write(f"# {source_name.upper()} - ALL - Tier {tier_name}\n")
                     f.write(f"# Updated: {timestamp}\n")
@@ -721,10 +765,9 @@ class ConfigToYAMLConverter:
         if all_proxies:
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             proxy_groups = self.build_proxy_groups(all_proxies)
-            master_content = {
-                'proxies': all_proxies,
-                'proxy-groups': proxy_groups
-            }
+            master_content = self.build_base_config()
+            master_content["proxies"] = all_proxies
+            master_content["proxy-groups"] = proxy_groups
             with open(master_file, 'w', encoding='utf-8') as f:
                 f.write(f"# MASTER YAML - ALL CONFIGURATIONS\n")
                 f.write(f"# Updated: {timestamp}\n")
