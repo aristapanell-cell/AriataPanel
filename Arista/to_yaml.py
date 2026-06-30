@@ -137,15 +137,19 @@ class ConfigToYAMLConverter:
     def vless_to_clashmeta(self, url_str, index):
         try:
             url = urlparse(url_str)
-            params = dict(pair.split('=') for pair in url.query.split('&') if '=' in pair)
-            if params.get('security') == 'reality':
-                if not params.get('pbk') or not params.get('pbk', '').strip():
-                    return None
+            params = {}
+            if url.query:
+                for pair in url.query.split('&'):
+                    if '=' in pair:
+                        key, value = pair.split('=', 1)
+                        params[key] = unquote(value)
 
             original_name = self.get_original_tag(url_str) or "VLESS"
             config_name = f"{original_name} #{index + 1}"
+            
             network_type = params.get('type', 'tcp')
-            tls_enabled = params.get('security') in ['tls', 'reality']
+            security = params.get('security', 'none')
+            tls_enabled = security in ['tls', 'reality']
             final_server = url.hostname or ''
             final_sni = params.get('sni') or params.get('host') or url.hostname or ''
 
@@ -158,11 +162,11 @@ class ConfigToYAMLConverter:
                 'network': network_type,
                 'tls': tls_enabled,
                 'udp': True,
-                'skip-cert-verify': False,
-                'tcp-fast-open': True,
-                'servername': final_sni,
-                'client-fingerprint': 'chrome'
+                'skip-cert-verify': True
             }
+
+            if params.get('tcp-fast-open') == 'true':
+                config['tcp-fast-open'] = True
 
             if params.get('flow'):
                 config['flow'] = params['flow']
@@ -170,18 +174,26 @@ class ConfigToYAMLConverter:
             if params.get('packet-encoding'):
                 config['packet-encoding'] = params['packet-encoding']
 
-            if tls_enabled:
-                config['alpn'] = ['h2', 'http/1.1']
+            if params.get('alpn'):
+                config['alpn'] = params['alpn'].split(',')
+
+            if params.get('fp'):
+                config['client-fingerprint'] = params['fp']
+            elif params.get('client-fingerprint'):
+                config['client-fingerprint'] = params['client-fingerprint']
+
+            if tls_enabled and final_sni:
+                config['servername'] = final_sni
 
             if network_type == 'ws':
-                config['ws-opts'] = {
-                    'path': params.get('path', '/'),
-                    'headers': {
-                        'Host': params.get('host') or final_sni
-                    },
-                    'max-early-data': int(params.get('maxEarlyData') or 2048),
-                    'early-data-header-name': params.get('earlyDataHeaderName') or 'Sec-WebSocket-Protocol'
-                }
+                ws_opts = {'path': params.get('path', '/')}
+                if params.get('host'):
+                    ws_opts['headers'] = {'Host': params['host']}
+                if params.get('maxEarlyData'):
+                    ws_opts['max-early-data'] = int(params['maxEarlyData'])
+                if params.get('earlyDataHeaderName'):
+                    ws_opts['early-data-header-name'] = params['earlyDataHeaderName']
+                config['ws-opts'] = ws_opts
 
             if network_type == 'grpc':
                 if params.get('serviceName'):
@@ -190,22 +202,25 @@ class ConfigToYAMLConverter:
                     }
 
             if network_type == 'http':
-                config['http-opts'] = {
+                http_opts = {
                     'method': params.get('method') or 'GET',
-                    'path': [params.get('path') or '/'],
-                    'headers': {
-                        'Host': [params.get('host') or final_sni]
+                    'path': [params.get('path') or '/']
+                }
+                if params.get('host'):
+                    http_opts['headers'] = {
+                        'Host': [params['host']]
                     }
-                }
+                config['http-opts'] = http_opts
 
-            if params.get('security') == 'reality' and params.get('pbk'):
-                config['reality-opts'] = {
-                    'public-key': params['pbk']
-                }
+            if security == 'reality' and params.get('pbk'):
+                reality_opts = {'public-key': params['pbk']}
                 if params.get('sid'):
                     sid = params['sid']
                     if re.match(r'^[0-9a-fA-F]{2,16}$', sid):
-                        config['reality-opts']['short-id'] = sid.lower()
+                        reality_opts['short-id'] = sid.lower()
+                if params.get('spider-x'):
+                    reality_opts['spider-x'] = params['spider-x']
+                config['reality-opts'] = reality_opts
 
             return config
         except Exception as e:
@@ -274,21 +289,36 @@ class ConfigToYAMLConverter:
             if url_str.startswith('hy2://'):
                 url_str = url_str.replace('hy2://', 'hysteria2://')
             url = urlparse(url_str)
-            params = dict(pair.split('=') for pair in url.query.split('&') if '=' in pair)
+            params = {}
+            if url.query:
+                for pair in url.query.split('&'):
+                    if '=' in pair:
+                        key, value = pair.split('=', 1)
+                        params[key] = unquote(value)
+            
             original_name = self.get_original_tag(url_str) or "Hysteria2"
             config_name = f"{original_name} #{index + 1}"
+
+            password = url.username or params.get('auth', '')
 
             config = {
                 'name': config_name,
                 'type': 'hysteria2',
                 'server': url.hostname or '',
                 'port': int(url.port) if url.port else 443,
-                'password': url.username or '',
+                'password': password,
                 'sni': url.hostname or '',
-                'skip-cert-verify': False,
-                'fast-open': True,
-                'client-fingerprint': 'chrome'
+                'skip-cert-verify': True,
+                'fast-open': True
             }
+
+            if params.get('sni'):
+                config['sni'] = params['sni']
+
+            if params.get('fp'):
+                config['client-fingerprint'] = params['fp']
+            elif params.get('client-fingerprint'):
+                config['client-fingerprint'] = params['client-fingerprint']
 
             if params.get('obfs') and params.get('obfs-password'):
                 config['obfs'] = params['obfs']
@@ -328,28 +358,32 @@ class ConfigToYAMLConverter:
                 'network': network_type,
                 'tls': tls_enabled,
                 'udp': True,
-                'skip-cert-verify': False,
-                'tcp-fast-open': True,
-                'servername': vmess_config.get('sni') or vmess_config.get('add') or '',
-                'client-fingerprint': 'chrome'
+                'skip-cert-verify': True,
+                'tcp-fast-open': True
             }
 
-            if tls_enabled:
-                config['alpn'] = ['h2', 'http/1.1']
+            if vmess_config.get('sni'):
+                config['servername'] = vmess_config['sni']
+            elif vmess_config.get('add'):
+                config['servername'] = vmess_config['add']
+
+            if vmess_config.get('fp'):
+                config['client-fingerprint'] = vmess_config['fp']
+
+            if tls_enabled and vmess_config.get('alpn'):
+                config['alpn'] = vmess_config['alpn'].split(',')
 
             if network_type == 'ws':
-                config['ws-opts'] = {
-                    'path': vmess_config.get('path') or '/',
-                    'headers': {
-                        'Host': vmess_config.get('host') or vmess_config.get('add') or ''
-                    }
-                }
+                ws_opts = {'path': vmess_config.get('path') or '/'}
+                if vmess_config.get('host'):
+                    ws_opts['headers'] = {'Host': vmess_config['host']}
+                config['ws-opts'] = ws_opts
 
             if network_type == 'h2':
-                config['h2-opts'] = {
-                    'host': [vmess_config.get('host') or vmess_config.get('add') or ''],
-                    'path': vmess_config.get('path') or '/'
-                }
+                h2_opts = {'path': vmess_config.get('path') or '/'}
+                if vmess_config.get('host'):
+                    h2_opts['host'] = [vmess_config['host']]
+                config['h2-opts'] = h2_opts
 
             if network_type == 'grpc':
                 config['grpc-opts'] = {
@@ -363,7 +397,13 @@ class ConfigToYAMLConverter:
     def trojan_to_clashmeta(self, trojan_url, index):
         try:
             url = urlparse(trojan_url)
-            params = dict(pair.split('=') for pair in url.query.split('&') if '=' in pair)
+            params = {}
+            if url.query:
+                for pair in url.query.split('&'):
+                    if '=' in pair:
+                        key, value = pair.split('=', 1)
+                        params[key] = unquote(value)
+            
             original_name = self.get_original_tag(trojan_url) or "Trojan"
             config_name = f"{original_name} #{index + 1}"
 
@@ -376,12 +416,26 @@ class ConfigToYAMLConverter:
                 'port': int(url.port) if url.port else 443,
                 'password': url.username or '',
                 'network': network_type,
+                'tls': True,
                 'udp': True,
-                'skip-cert-verify': False,
-                'tcp-fast-open': True,
-                'servername': params.get('sni') or params.get('host') or url.hostname or '',
-                'client-fingerprint': 'chrome'
+                'skip-cert-verify': True,
+                'tcp-fast-open': True
             }
+
+            if params.get('sni'):
+                config['servername'] = params['sni']
+            elif params.get('host'):
+                config['servername'] = params['host']
+            else:
+                config['servername'] = url.hostname or ''
+
+            if params.get('fp'):
+                config['client-fingerprint'] = params['fp']
+            elif params.get('client-fingerprint'):
+                config['client-fingerprint'] = params['client-fingerprint']
+
+            if params.get('alpn'):
+                config['alpn'] = params['alpn'].split(',')
 
             if network_type == 'grpc':
                 config['grpc-opts'] = {
@@ -389,12 +443,12 @@ class ConfigToYAMLConverter:
                 }
 
             if network_type == 'ws':
-                config['ws-opts'] = {
-                    'path': params.get('path') or '/',
-                    'headers': {
-                        'Host': params.get('sni') or url.hostname or ''
-                    }
-                }
+                ws_opts = {'path': params.get('path') or '/'}
+                if params.get('host'):
+                    ws_opts['headers'] = {'Host': params['host']}
+                elif params.get('sni'):
+                    ws_opts['headers'] = {'Host': params['sni']}
+                config['ws-opts'] = ws_opts
 
             return config
         except:
