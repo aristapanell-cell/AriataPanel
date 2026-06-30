@@ -148,12 +148,17 @@ class ConfigToYAMLConverter:
                 "enhanced-mode": "fake-ip",
                 "fake-ip-range": "198.18.0.1/16",
                 "default-nameserver": [
-                    "1.1.1.1",
-                    "8.8.8.8"
+                    "178.22.122.100",
+                    "185.51.200.2",
+                    "10.202.10.202"
                 ],
                 "nameserver": [
+                    "https://dns.shecan.ir/dns-query",
+                    "https://dns.403.online/dns-query",
+                    "https://dns.begzar.ir/dns-query",
+                    "tls://dns.shecan.ir",
+                    "tls://dns.403.online",
                     "https://1.1.1.1/dns-query",
-                    "https://1.0.0.1/dns-query",
                     "https://8.8.8.8/dns-query",
                     "tls://1.1.1.1",
                     "tls://8.8.8.8"
