@@ -1,5 +1,5 @@
 # GITHUB - ALL - Tier 50
-# Updated: 2026-07-01 14:10:05
+# Updated: 2026-07-01 17:10:20
 # Count: 50
 
 mixed-port: 7890
@@ -50,6 +50,21 @@ rules:
 proxies:
 - name: 'T.ME: @aristapnel #1'
   type: trojan
+  server: 172.66.44.211
+  port: 443
+  password: humanity
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: www.multiplydose.com
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+- name: 'T.ME: @aristapnel #2'
+  type: trojan
   server: 104.17.131.88
   port: 443
   password: humanity
@@ -64,33 +79,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.gossipglove.com
-- name: 'T.ME: @aristapnel #2'
-  type: trojan
-  server: 172.66.44.211
-  port: 443
-  password: humanity
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: www.multiplydose.com
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
 - name: 'T.ME: @aristapnel #3'
-  type: trojan
-  server: 144.31.55.35
-  port: 28126
-  password: oJRk-2+NoHJ3N4frj_O2.0CzT+WAgdcs7b
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: www.game-bridge.click
-- name: 'T.ME: @aristapnel #4'
   type: trojan
   server: 104.21.40.34
   port: 443
@@ -105,18 +94,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #5'
-  type: trojan
-  server: 185.137.157.59
-  port: 443
-  password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: www.lateralio.click
-- name: 'T.ME: @aristapnel #6'
+- name: 'T.ME: @aristapnel #4'
   type: trojan
   server: 172.64.147.166
   port: 443
@@ -131,7 +109,7 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #7'
+- name: 'T.ME: @aristapnel #5'
   type: trojan
   server: 104.21.40.34
   port: 443
@@ -146,46 +124,87 @@ proxies:
     path: /assignment
     headers:
       Host: www.multiplydose.com
-- name: 'T.ME: @aristapnel #8'
+- name: 'T.ME: @aristapnel #6'
   type: trojan
-  server: 185.137.157.250
+  server: 45.130.125.126
   port: 443
-  password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: fra250.clientfirewall.click
-- name: 'T.ME: @aristapnel #9'
-  type: trojan
-  server: 185.137.157.154
-  port: 443
-  password: n-S5Kuz58YgwljisuLEJltip2OWf1ourWz
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: fra154.clientfirewall.click
-- name: 'T.ME: @aristapnel #10'
-  type: trojan
-  server: 104.21.18.41
-  port: 443
-  password: MiTiVPN
+  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
   network: ws
   tls: true
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: linkkon-w.ir
+  servername: space.byu.id.yxls.eu.cc
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+- name: 'T.ME: @aristapnel #7'
+  type: trojan
+  server: 104.17.121.43
+  port: 443
+  password: humanity
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: www.calmlunch.com
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 'T.ME: @aristapnel #8'
+  type: trojan
+  server: 45.130.125.160
+  port: 443
+  password: humanity
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: www.calmloud.com
   client-fingerprint: chrome
   alpn:
   - http/1.1
   ws-opts:
-    path: /cdn=mitivpn
+    path: /assignment
     headers:
-      Host: linkkon-w.ir
+      Host: www.calmloud.com
+- name: 'T.ME: @aristapnel #9'
+  type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: 0ab59a11983d4ce7862d156c164d927d
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: FAST-Route-DD4E2D.FREEfiReMO7964.WOrkeRS.DEV
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /eyJqdW5rIjoiajRMMndudHIiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIxMDkuMTIyLjE5OC4xMjciXX0=?ed=2560
+    headers:
+      Host: FAST-RouTE-Dd4E2d.fREefIREmO7964.wOrKerS.dev
+- name: 'T.ME: @aristapnel #10'
+  type: trojan
+  server: 104.16.174.121
+  port: 443
+  password: humanity
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: www.ignitelimit.com
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.ignitelimit.com
 - name: 'T.ME: @aristapnel #11'
   type: hysteria2
   server: hy2.aspidnet.xyz
@@ -286,29 +305,13 @@ proxies:
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #23'
   type: ss
-  server: 193.29.139.227
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #24'
-  type: ss
-  server: 82.38.31.11
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #25'
-  type: ss
   server: 193.29.139.235
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #26'
+- name: 'T.ME: @aristapnel #24'
   type: ss
   server: 193.29.139.204
   port: 8080
@@ -316,23 +319,7 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
   tcp-fast-open: true
-- name: 'T.ME: @aristapnel #27'
-  type: ss
-  server: 193.29.139.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #28'
-  type: ss
-  server: 82.38.31.35
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  tcp-fast-open: true
-- name: 'T.ME: @aristapnel #29'
+- name: 'T.ME: @aristapnel #25'
   type: ss
   server: 94.156.250.148
   port: 7001
@@ -340,41 +327,47 @@ proxies:
   password: RexnBgU7EV5ADxG
   udp: true
   tcp-fast-open: true
+- name: 'T.ME: @aristapnel #26'
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #27'
+  type: ss
+  server: 20.223.136.202
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: HeC2HzINHb4SUY8S
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #28'
+  type: ss
+  server: 62.133.60.43
+  port: 36456
+  cipher: chacha20-ietf-poly1305
+  password: AHFn8RPF2GSxX4BX9i9a16
+  udp: true
+  tcp-fast-open: true
+- name: 'T.ME: @aristapnel #29'
+  type: ss
+  server: 89.185.84.185
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: zyzuJ2H4Tp5Cr8T9nnPKv2
+  udp: true
+  tcp-fast-open: true
 - name: 'T.ME: @aristapnel #30'
   type: ss
-  server: 51.254.142.162
-  port: 8388
+  server: 62.133.60.43
+  port: 36456
   cipher: chacha20-ietf-poly1305
-  password: bjnrInsnyNlbYotSv9ykgy
+  password: OV8W2iqb56WrreJE0psqm5
   udp: true
   tcp-fast-open: true
 - name: 'T.ME: @aristapnel #31'
-  type: vmess
-  server: 89.167.82.102
-  port: 8880
-  uuid: 48eabd37-500d-403f-8e8f-715d1e17bffd
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 89.167.82.102
-- name: 'T.ME: @aristapnel #32'
-  type: vmess
-  server: uk5.taskflowhub.org
-  port: 2053
-  uuid: 89371dfc-2618-40d7-a558-693ff4f7f1eb
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: uk5.taskflowhub.org
-- name: 'T.ME: @aristapnel #33'
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -391,24 +384,22 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-- name: 'T.ME: @aristapnel #34'
+- name: 'T.ME: @aristapnel #32'
   type: vmess
-  server: atiins.com.tr
-  port: 443
-  uuid: 97775936-05ea-4fea-8562-e9eb98559790
+  server: 138.252.100.85
+  port: 18746
+  uuid: 5cae7714-9c61-4c5c-876e-c45a1cb13be4
   alterId: 0
   cipher: auto
-  network: tcp
-  tls: true
+  network: ws
+  tls: false
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: atiins.com.tr
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  - http/1.1
-- name: 'T.ME: @aristapnel #35'
+  servername: 138.252.100.85
+  ws-opts:
+    path: /
+- name: 'T.ME: @aristapnel #33'
   type: vmess
   server: 45.89.107.51
   port: 20521
@@ -423,7 +414,7 @@ proxies:
   servername: 45.89.107.51
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #36'
+- name: 'T.ME: @aristapnel #34'
   type: vmess
   server: 8.218.17.136
   port: 4728
@@ -438,7 +429,7 @@ proxies:
   servername: 8.218.17.136
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #37'
+- name: 'T.ME: @aristapnel #35'
   type: vmess
   server: 209.126.84.189
   port: 443
@@ -455,7 +446,7 @@ proxies:
     path: /vmessws
     headers:
       Host: 209.126.84.189
-- name: 'T.ME: @aristapnel #38'
+- name: 'T.ME: @aristapnel #36'
   type: vmess
   server: 62.146.235.193
   port: 28011
@@ -468,7 +459,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 62.146.235.193
-- name: 'T.ME: @aristapnel #39'
+- name: 'T.ME: @aristapnel #37'
   type: vmess
   server: n1744454498.lie5d.cyou
   port: 443
@@ -485,7 +476,7 @@ proxies:
     path: /
     headers:
       Host: n1744454498.lie5d.cyou
-- name: 'T.ME: @aristapnel #40'
+- name: 'T.ME: @aristapnel #38'
   type: vmess
   server: 5.196.29.123
   port: 2082
@@ -502,6 +493,36 @@ proxies:
     path: /
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 'T.ME: @aristapnel #39'
+  type: vmess
+  server: n1744454501.4u9ma.icu
+  port: 443
+  uuid: bed7b743-6bf8-46a2-b346-c60e60919220
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: n1744454501.4u9ma.icu
+  ws-opts:
+    path: /
+    headers:
+      Host: n1744454501.4u9ma.icu
+- name: 'T.ME: @aristapnel #40'
+  type: vmess
+  server: 164.138.202.55
+  port: 50475
+  uuid: f6c4588d-193d-47e1-9a50-2f42968c3820
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 164.138.202.55
 - name: 'T.ME: @aristapnel #41'
   type: vless
   server: 94.131.123.167
