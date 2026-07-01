@@ -10,7 +10,7 @@ import os
 import asyncio
 import aiohttp
 from datetime import datetime, timezone, timedelta
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs, unquote
 from bs4 import BeautifulSoup
 
 class TelegramConfigExtractor:
@@ -867,6 +867,12 @@ class TelegramConfigExtractor:
             if not config_str.startswith('ss://'):
                 return config_str
             
+            config_str = config_str.strip()
+            
+            if '#' in config_str:
+                base, tag = config_str.split('#', 1)
+                config_str = base + "#" + unquote(tag)
+            
             parts = config_str.split('#', 1)
             base_part = parts[0][5:]
             
@@ -978,19 +984,120 @@ class TelegramConfigExtractor:
         else:
             return f"{config_str}#{tag}"
     
+    def normalize_config(self, config):
+        if isinstance(config, dict):
+            return config
+        if config.startswith("vmess://"):
+            vm = self.decode_vmess(config)
+            if vm:
+                vm.pop("ps", None)
+                return vm
+            return None
+        try:
+            p = urlparse(config)
+            result = {
+                "scheme": p.scheme,
+                "server": p.hostname or "",
+                "port": p.port or 0,
+                "user": unquote(p.username or ""),
+                "path": unquote(p.path or "")
+            }
+            query = parse_qs(p.query)
+            for k in sorted(query):
+                result[k] = query[k][0]
+            return result
+        except:
+            return None
+    
+    def build_unique_key(self, obj):
+        if not obj:
+            return ""
+        proto = obj.get("scheme") or "vmess"
+        if proto == "vmess":
+            fields = [
+                obj.get("add",""),
+                str(obj.get("port","")),
+                obj.get("id",""),
+                obj.get("net",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("tls",""),
+                obj.get("sni","")
+            ]
+        elif proto == "vless":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("security",""),
+                obj.get("type",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("sni",""),
+                obj.get("flow","")
+            ]
+        elif proto == "trojan":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("security",""),
+                obj.get("type",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("sni","")
+            ]
+        elif proto == "ss":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("method","")
+            ]
+        elif proto in ("hysteria2","hy2"):
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("obfs-password",""),
+                obj.get("sni","")
+            ]
+        elif proto == "tuic":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("congestion_control",""),
+                obj.get("sni","")
+            ]
+        elif proto == "wireguard":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("key",""),
+                obj.get("address","")
+            ]
+        else:
+            fields = sorted(obj.items())
+        return json.dumps(fields, sort_keys=True, ensure_ascii=False)
+    
     def deduplicate(self, configs):
-        unique_configs = []
-        seen_hashes = set()
-        
+        unique = []
+        seen = set()
         for config in configs:
-            config_hash = hashlib.md5(config.encode()).hexdigest()
-            if config_hash not in seen_hashes and config_hash not in self.config_hash_cache:
-                seen_hashes.add(config_hash)
-                self.config_hash_cache[config_hash] = datetime.now(timezone.utc)
-                unique_configs.append(config)
+            obj = self.normalize_config(config)
+            if obj is None:
+                continue
+            key = self.build_unique_key(obj)
+            md5 = hashlib.md5(key.encode()).hexdigest()
+            if md5 not in seen and md5 not in self.config_hash_cache:
+                seen.add(md5)
+                self.config_hash_cache[md5] = datetime.now(timezone.utc)
+                unique.append(config)
         
         self.cleanup_old_hash_cache()
-        return unique_configs
+        return unique
     
     def cleanup_old_hash_cache(self):
         cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
