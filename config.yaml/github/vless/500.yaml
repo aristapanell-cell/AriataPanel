@@ -1,5 +1,5 @@
 # GITHUB - VLESS - Tier 500
-# Updated: 2026-07-01 07:07:22
+# Updated: 2026-07-01 11:57:38
 # Count: 500
 
 mixed-port: 7890
@@ -5761,21 +5761,6 @@ proxies:
       Host: rapid-hat-441d.platovpn.workers.dev
 - name: 'T.ME: @aristapnel #428'
   type: vless
-  server: 62.152.60.76
-  port: 443
-  uuid: 02f22f61-e150-4d8e-aea0-13bfb6de3df9
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  alpn:
-  - h2
-  client-fingerprint: qq
-  servername: home.kiwds.site
-  grpc-opts:
-    grpc-service-name: trojan-grpc
-- name: 'T.ME: @aristapnel #429'
-  type: vless
   server: ov-italy1.09vpn.com
   port: 80
   uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
@@ -5785,7 +5770,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /vless/
-- name: 'T.ME: @aristapnel #430'
+- name: 'T.ME: @aristapnel #429'
   type: vless
   server: 47.253.226.114
   port: 443
@@ -5799,7 +5784,81 @@ proxies:
   servername: www.cloudflare.com
   reality-opts:
     public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+- name: 'T.ME: @aristapnel #430'
+  type: vless
+  server: 45.197.134.50
+  port: 8443
+  uuid: 05a01432-0302-439f-a88d-8442cd27b7d5
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: 8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc
+    short-id: "445ab326fc7c90ac"
 - name: 'T.ME: @aristapnel #431'
+  type: vless
+  server: 104.16.72.101
+  port: 2096
+  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: sp.linuxdododo.ccwu.cc
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: sp.linuxdododo.ccwu.cc
+- name: 'T.ME: @aristapnel #432'
+  type: vless
+  server: 104.16.72.2
+  port: 2096
+  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: sp.linuxdododo.ccwu.cc
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: sp.linuxdododo.ccwu.cc
+- name: 'T.ME: @aristapnel #433'
+  type: vless
+  server: 104.16.72.70
+  port: 2096
+  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: sp.linuxdododo.ccwu.cc
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: sp.linuxdododo.ccwu.cc
+- name: 'T.ME: @aristapnel #434'
+  type: vless
+  server: 104.18.153.10
+  port: 2096
+  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: sp.linuxdododo.ccwu.cc
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: sp.linuxdododo.ccwu.cc
+- name: 'T.ME: @aristapnel #435'
   type: vless
   server: 104.18.47.140
   port: 2096
@@ -5814,7 +5873,7 @@ proxies:
     path: /proxyip=ProxyIP.JP.cmliussss.netfp=random
     headers:
       Host: sp.linuxdododo.ccwu.cc
-- name: 'T.ME: @aristapnel #432'
+- name: 'T.ME: @aristapnel #436'
   type: vless
   server: 162.159.40.181
   port: 2096
@@ -5829,95 +5888,7 @@ proxies:
     path: /proxyip=ProxyIP.JP.cmliussss.net
     headers:
       Host: sp.linuxdododo.ccwu.cc
-- name: 'T.ME: @aristapnel #433'
-  type: vless
-  server: 185.91.54.126
-  port: 8445
-  uuid: 0735131d-2f16-4c5c-bad6-1cd0d4e7b41d
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: qq
-  servername: 360.yandex.ru
-  grpc-opts:
-    grpc-service-name: ns
-  reality-opts:
-    public-key: -22oLFCHao66M820QocQMqCdKF0ckLuVYMtcth92vjk
-- name: 'T.ME: @aristapnel #434'
-  type: vless
-  server: 31.129.42.234
-  port: 8443
-  uuid: 0735131d-2f16-4c5c-bad6-1cd0d4e7b41d
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: qq
-  servername: 360.yandex.ru
-  grpc-opts:
-    grpc-service-name: ns
-  reality-opts:
-    public-key: ZpXBddDY5CBXaRTnUz4lM4xs_KBVX4CPulN-q9AqhAI
-- name: 'T.ME: @aristapnel #435'
-  type: vless
-  server: 46.254.16.156
-  port: 443
-  uuid: 0735131d-2f16-4c5c-bad6-1cd0d4e7b41d
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  servername: ads.x5.ru
-  reality-opts:
-    public-key: 6NHx7OBkTEppAb58ke8XhLDoBrutczt_JPUWP_h9DRE
-    short-id: "7e2a9d4c5f18b0"
-- name: 'T.ME: @aristapnel #436'
-  type: vless
-  server: 5.188.114.229
-  port: 443
-  uuid: 0735131d-2f16-4c5c-bad6-1cd0d4e7b41d
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: qq
-  servername: id.pervye.ru
-  grpc-opts:
-    grpc-service-name: ns
-  reality-opts:
-    public-key: zQ7GV57ECS0ySfuPX-cueA3Dw2tb-BP3nz0crOKfb30
 - name: 'T.ME: @aristapnel #437'
-  type: vless
-  server: 84.201.150.157
-  port: 443
-  uuid: 0735131d-2f16-4c5c-bad6-1cd0d4e7b41d
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: qq
-  servername: ads.x5.ru
-  reality-opts:
-    public-key: oqRus6Z_Q1jqJaTEPu7ENbRL0-XKOw54K0jwCCGLtEk
-    short-id: "5d8e1a9c4f72b3"
-- name: 'T.ME: @aristapnel #438'
-  type: vless
-  server: 87.228.101.33
-  port: 8444
-  uuid: 0735131d-2f16-4c5c-bad6-1cd0d4e7b41d
-  network: grpc
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  client-fingerprint: qq
-  servername: 360.yandex.ru
-  grpc-opts:
-    grpc-service-name: ns
-  reality-opts:
-    public-key: -22oLFCHao66M820QocQMqCdKF0ckLuVYMtcth92vjk
-- name: 'T.ME: @aristapnel #439'
   type: vless
   server: 172.64.32.75
   port: 443
@@ -5931,7 +5902,7 @@ proxies:
     path: /odiyfws
     headers:
       Host: octopusss.net
-- name: 'T.ME: @aristapnel #440'
+- name: 'T.ME: @aristapnel #438'
   type: vless
   server: 188.114.96.3
   port: 2053
@@ -5948,7 +5919,7 @@ proxies:
     path: /eyJqdW5rIjoiUHQ4YzBma3IxczlPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed
     headers:
       Host: weathered-math-1f8b.amiralighasempor010.workers.dev
-- name: 'T.ME: @aristapnel #441'
+- name: 'T.ME: @aristapnel #439'
   type: vless
   server: 194.87.131.105
   port: 443
@@ -5963,7 +5934,21 @@ proxies:
   reality-opts:
     public-key: mrdwYKeDH1Zj4EPov28I9cd3lQB7ZZFn_g7frYIsARY
     short-id: "99410f96248aac87"
-- name: 'T.ME: @aristapnel #442'
+- name: 'T.ME: @aristapnel #440'
+  type: vless
+  server: 199.127.61.190
+  port: 443
+  uuid: 08590927-afe6-0064-a4d0-5396b9f3910d
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  servername: www.nvidia.com
+  reality-opts:
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+- name: 'T.ME: @aristapnel #441'
   type: vless
   server: ov-canada1.09vpn.com
   port: 8443
@@ -5975,7 +5960,82 @@ proxies:
   servername: ov-canada1.09vpn.com
   ws-opts:
     path: /vless/
+- name: 'T.ME: @aristapnel #442'
+  type: vless
+  server: 161.35.217.79
+  port: 2087
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
 - name: 'T.ME: @aristapnel #443'
+  type: vless
+  server: 188.166.121.10
+  port: 2096
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #444'
+  type: vless
+  server: 188.166.166.243
+  port: 443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #445'
+  type: vless
+  server: 188.166.52.251
+  port: 2083
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #446'
+  type: vless
+  server: 188.166.69.138
+  port: 443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #447'
   type: vless
   server: 193.233.251.202
   port: 443
@@ -5988,7 +6048,82 @@ proxies:
   servername: vpn47.cc.cd
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #444'
+- name: 'T.ME: @aristapnel #448'
+  type: vless
+  server: 209.38.46.202
+  port: 8443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #449'
+  type: vless
+  server: 57.128.176.87
+  port: 443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #450'
+  type: vless
+  server: 64.226.95.244
+  port: 8443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #451'
+  type: vless
+  server: 82.64.152.55
+  port: 20304
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #452'
+  type: vless
+  server: 88.216.223.37
+  port: 8443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: 'T.ME: @aristapnel #453'
   type: vless
   server: 138.124.52.85
   port: 443
@@ -6002,7 +6137,7 @@ proxies:
   reality-opts:
     public-key: K7v4Rsxa-9lBsD_IQrzXREfIME_bFmwELHQAE3Yp1ng
     short-id: "b9988c11"
-- name: 'T.ME: @aristapnel #445'
+- name: 'T.ME: @aristapnel #454'
   type: vless
   server: 104.16.72.70
   port: 443
@@ -6016,7 +6151,7 @@ proxies:
     path: /ca-cl
     headers:
       Host: unnes.ac.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #446'
+- name: 'T.ME: @aristapnel #455'
   type: vless
   server: 104.17.121.98
   port: 443
@@ -6030,7 +6165,21 @@ proxies:
     path: /ca-cl
     headers:
       Host: unnes.ac.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #447'
+- name: 'T.ME: @aristapnel #456'
+  type: vless
+  server: 104.18.153.10
+  port: 443
+  uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  servername: unnes.ac.id.yxls.eu.cc
+  ws-opts:
+    path: /ca-cl
+    headers:
+      Host: unnes.ac.id.yxls.eu.cc
+- name: 'T.ME: @aristapnel #457'
   type: vless
   server: 91.193.58.77
   port: 443
@@ -6047,303 +6196,22 @@ proxies:
     path: /ca-cl
     headers:
       Host: unnes.ac.id.yxls.eu.cc
-- name: 'T.ME: @aristapnel #448'
-  type: vless
-  server: 176.109.85.77
-  port: 8443
-  uuid: 0e1be936-3309-4f67-8cfa-9fef72d2fdd8
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  servername: home.auxgfm.site
-  reality-opts:
-    public-key: IaVviIkeeqCGsUm2yvrcroGw4HWjawuwoOnpG4GCuwU
-    short-id: "dec4632b99673b00"
-- name: 'T.ME: @aristapnel #449'
-  type: vless
-  server: 46.254.18.60
-  port: 443
-  uuid: 0e278892-4c52-4214-9f7e-ba61577316d6
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  servername: yandex.ru
-  reality-opts:
-    public-key: PL09r78ubjFaOILv5x6HPsCZeTdwhlRb3tuDY5vASwQ
-- name: 'T.ME: @aristapnel #450'
-  type: vless
-  server: 5.178.85.132
-  port: 443
-  uuid: 0e278892-4c52-4214-9f7e-ba61577316d6
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  servername: yandex.ru
-  reality-opts:
-    public-key: WrPShaEtQUXeKeyWDuELzBsd_ygDsU-k2bL1Avi13xI
-- name: 'T.ME: @aristapnel #451'
-  type: vless
-  server: 178.154.215.113
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-4-1.legendary.ac
-  reality-opts:
-    public-key: E-nzKjkLlehnOE5Lub_r6tCOQcvnxVaSAETjFHESciw
-    short-id: "30e93292b543f308"
-- name: 'T.ME: @aristapnel #452'
-  type: vless
-  server: 178.154.227.129
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-4-2.nodes.ac
-  reality-opts:
-    public-key: Yoh3T5ra4qSt7RebGXUM1xB1HUdIQPSzoxJkfxk-eTk
-    short-id: "6cafe8ea554e106b"
-- name: 'T.ME: @aristapnel #453'
-  type: vless
-  server: 213.226.112.199
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-7-1.nodes.ac
-  reality-opts:
-    public-key: YuzT0sT_KDCQ6vvJDJAzBLXq3zi-1uAAzrAeB9q0xlU
-    short-id: "9de49921459cc008"
-- name: 'T.ME: @aristapnel #454'
-  type: vless
-  server: 213.226.112.208
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-7-3.nodes.ac
-  reality-opts:
-    public-key: OflUQ0RuzdBHAtITxja0ZPDKgxKLBS9Rh49OIdS-FDA
-    short-id: "5f8ee4861a68966f"
-- name: 'T.ME: @aristapnel #455'
-  type: vless
-  server: 213.226.112.213
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-7-5.nodes.ac
-  reality-opts:
-    public-key: sXOFKo2LTiE3qg7Z68FIiwTYvhNNSAOTx9AYMuUoUnk
-    short-id: "07d3a29177aefcb6"
-- name: 'T.ME: @aristapnel #456'
-  type: vless
-  server: 37.143.14.212
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-8-1.nodes.ac
-  reality-opts:
-    public-key: knrqm393ghxJNYj-4qu2BYpwpG5_zOG5h5-H7yyyR38
-    short-id: "0be28edc1b0278d6"
-- name: 'T.ME: @aristapnel #457'
-  type: vless
-  server: 37.9.4.224
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-2-1.legendary.ac
-  reality-opts:
-    public-key: uL4x8EbCl080G43kFlv8nbpEyseWi1Dc_bl8F7lWtm8
-    short-id: "aa03ec59c9695e91"
 - name: 'T.ME: @aristapnel #458'
   type: vless
-  server: 45.11.26.216
-  port: 8443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  servername: wl-7-2.nodes.ac
-  reality-opts:
-    public-key: XcKsq814Eci-OL3RwNbjvTMn73QzoczITlTSmnY-syI
-    short-id: "ba4ce2cb1029b0dd"
-- name: 'T.ME: @aristapnel #459'
-  type: vless
-  server: 45.11.26.233
-  port: 8443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-7-4.nodes.ac
-  reality-opts:
-    public-key: 68wQdK61R38B7NqXnaTh9KMgKx12UNiXLjVVnskVwGs
-    short-id: "cf17fba21273fe11"
-- name: 'T.ME: @aristapnel #460'
-  type: vless
-  server: 45.11.26.234
-  port: 8443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  servername: wl-7-6.nodes.ac
-  reality-opts:
-    public-key: QxW0nwrOXYHuEeL4PXObUDEackg-ebQ_9Vgl01IwsxM
-    short-id: "77173c666c84bec1"
-- name: 'T.ME: @aristapnel #461'
-  type: vless
-  server: 51.250.114.26
+  server: 109.120.188.54
   port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-6-2.nodes.ac
-  reality-opts:
-    public-key: HHmhCp_qS_hIgIniZwaNwqI5CFH2_QmES4dFO41BRWo
-    short-id: "64038de1ca7aad86"
-- name: 'T.ME: @aristapnel #462'
-  type: vless
-  server: 62.152.56.73
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  servername: wl-12.nodes.ac
-  reality-opts:
-    public-key: lh3qj3VX335HGH2T3xQ8RHZ4v3zEStbz6ENiPwkILSg
-    short-id: "cf43c0c197cd464a"
-- name: 'T.ME: @aristapnel #463'
-  type: vless
-  server: 62.152.58.114
-  port: 443
-  uuid: 0ef85012-24ce-4a29-a5b6-98ed955cb74c
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  servername: wl-13-1.nodes.ac
-  reality-opts:
-    public-key: jAJoyWJ4nMGai3H9BOa6QMUr2Vvpgqs8VipbaO5mCVU
-    short-id: "3130197867c23edb"
-- name: 'T.ME: @aristapnel #464'
-  type: vless
-  server: 158.160.128.13
-  port: 443
-  uuid: 0f539082-7607-4dcd-88d2-e05db342a1b8
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: yandex.ru
-  reality-opts:
-    public-key: CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY
-- name: 'T.ME: @aristapnel #465'
-  type: vless
-  server: 84.201.172.121
-  port: 443
-  uuid: 0f539082-7607-4dcd-88d2-e05db342a1b8
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: yandex.ru
-  reality-opts:
-    public-key: CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY
-- name: 'T.ME: @aristapnel #466'
-  type: vless
-  server: 194.55.239.155
-  port: 443
-  uuid: 127faed0-1e39-473f-83aa-ab2c7ee18112
+  uuid: 12acdd85-2964-4484-8db3-dfb97ed61c7c
   network: tcp
   tls: true
   udp: true
   skip-cert-verify: true
   flow: xtls-rprx-vision
   client-fingerprint: firefox
-  servername: frrr.sishka.network
+  servername: ads.x5.ru
   reality-opts:
-    public-key: HDITbyI2x0_Jyfwy0BX9wq0mngrv_rwPjqbfSMbm8WA
-    short-id: "372f5d843d33be18"
-- name: 'T.ME: @aristapnel #467'
-  type: vless
-  server: 195.209.87.198
-  port: 443
-  uuid: 127faed0-1e39-473f-83aa-ab2c7ee18112
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  alpn:
-  - http/1.1
-  client-fingerprint: edge
-  servername: s43362.cdn.ngenix.net
-  ws-opts:
-    path: /v1/data/sync/
-- name: 'T.ME: @aristapnel #468'
+    public-key: 4woJiVyGtLro6qRQdUcM2EJDHI3CLOeeE-knmSHk8lE
+    short-id: "1ca44564cda56661"
+- name: 'T.ME: @aristapnel #459'
   type: vless
   server: 109.120.189.154
   port: 443
@@ -6358,7 +6226,7 @@ proxies:
   reality-opts:
     public-key: KvQ0JuE-17nWMSvEnG9xdlqPWv3bZBn9JlDiLmyE-SE
     short-id: "6aa44564cda562bc"
-- name: 'T.ME: @aristapnel #469'
+- name: 'T.ME: @aristapnel #460'
   type: vless
   server: 51.250.108.107
   port: 443
@@ -6373,7 +6241,7 @@ proxies:
   reality-opts:
     public-key: FkyjJ-RLGIBWnsUQAuyfv-qReJSiuyb7qFnJS14ASgQ
     short-id: "27e53bbcab7593d7"
-- name: 'T.ME: @aristapnel #470'
+- name: 'T.ME: @aristapnel #461'
   type: vless
   server: 84.201.144.254
   port: 443
@@ -6388,7 +6256,7 @@ proxies:
   reality-opts:
     public-key: FkyjJ-RLGIBWnsUQAuyfv-qReJSiuyb7qFnJS14ASgQ
     short-id: "27e53bbcab7593d7"
-- name: 'T.ME: @aristapnel #471'
+- name: 'T.ME: @aristapnel #462'
   type: vless
   server: 216.24.57.6
   port: 8443
@@ -6403,7 +6271,77 @@ proxies:
     path: /
     headers:
       Host: kakoolnews.dontstealkakoolnews.workers.dev
-- name: 'T.ME: @aristapnel #472'
+- name: 'T.ME: @aristapnel #463'
+  type: vless
+  server: 104.16.72.101
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: 'T.ME: @aristapnel #464'
+  type: vless
+  server: 104.16.72.139
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: 'T.ME: @aristapnel #465'
+  type: vless
+  server: 104.16.72.2
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: 'T.ME: @aristapnel #466'
+  type: vless
+  server: 104.16.72.70
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: 'T.ME: @aristapnel #467'
+  type: vless
+  server: 104.18.153.10
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: 'T.ME: @aristapnel #468'
   type: vless
   server: 159.89.87.21
   port: 28190
@@ -6416,31 +6354,7 @@ proxies:
   servername: aws.amazon.com
   reality-opts:
     public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-- name: 'T.ME: @aristapnel #473'
-  type: vless
-  server: fastly.videobazi.com
-  port: 443
-  uuid: 175c6db9-4a69-4abc-8736-c3f72748b7a0
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  servername: default.ssl.fastly.net
-- name: 'T.ME: @aristapnel #474'
-  type: vless
-  server: 188.72.103.3
-  port: 443
-  uuid: 1ba74945-2753-46e9-bd60-6d564abf5675
-  network: xhttp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: edge
-  servername: grape.hotwigga.space
-- name: 'T.ME: @aristapnel #475'
+- name: 'T.ME: @aristapnel #469'
   type: vless
   server: suupermeat.ir
   port: 2035
@@ -6449,46 +6363,7 @@ proxies:
   tls: false
   udp: true
   skip-cert-verify: true
-- name: 'T.ME: @aristapnel #476'
-  type: vless
-  server: 176.109.85.77
-  port: 443
-  uuid: 1fef59b2-fa10-4226-83af-07dfa3271029
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  servername: home.auxgfm.site
-  reality-opts:
-    public-key: IaVviIkeeqCGsUm2yvrcroGw4HWjawuwoOnpG4GCuwU
-    short-id: "dec4632b99673b00"
-- name: 'T.ME: @aristapnel #477'
-  type: vless
-  server: 176.109.85.77
-  port: 8443
-  uuid: 1fef59b2-fa10-4226-83af-07dfa3271029
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  servername: home.auxgfm.site
-  reality-opts:
-    public-key: IaVviIkeeqCGsUm2yvrcroGw4HWjawuwoOnpG4GCuwU
-    short-id: "dec4632b99673b00"
-- name: 'T.ME: @aristapnel #478'
-  type: vless
-  server: 199.232.78.159
-  port: 80
-  uuid: 203fea15-b8f7-46cf-bd6a-a59811589308
-  network: xhttp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-- name: 'T.ME: @aristapnel #479'
+- name: 'T.ME: @aristapnel #470'
   type: vless
   server: 172.64.149.54
   port: 443
@@ -6502,7 +6377,7 @@ proxies:
     path: /melobery
     headers:
       Host: nameless-dream-a133.ftmhkhtb.workers.dev
-- name: 'T.ME: @aristapnel #480'
+- name: 'T.ME: @aristapnel #471'
   type: vless
   server: 104.16.72.70
   port: 8443
@@ -6513,119 +6388,7 @@ proxies:
   skip-cert-verify: true
   client-fingerprint: firefox
   servername: sa.sorixset.ir
-- name: 'T.ME: @aristapnel #481'
-  type: vless
-  server: 84.201.157.147
-  port: 443
-  uuid: 2355736c-bd85-4015-9f11-8c7abc538bfb
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: yandex.ru
-  reality-opts:
-    public-key: WrPShaEtQUXeKeyWDuELzBsd_ygDsU-k2bL1Avi13xI
-- name: 'T.ME: @aristapnel #482'
-  type: vless
-  server: 158.160.192.93
-  port: 443
-  uuid: 237c228e-719f-44f6-bfe4-b7770b9ef049
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: yandex.ru
-  reality-opts:
-    public-key: WrPShaEtQUXeKeyWDuELzBsd_ygDsU-k2bL1Avi13xI
-- name: 'T.ME: @aristapnel #483'
-  type: vless
-  server: 185.130.114.211
-  port: 443
-  uuid: 237c228e-719f-44f6-bfe4-b7770b9ef049
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: yandex.ru
-  reality-opts:
-    public-key: CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY
-- name: 'T.ME: @aristapnel #484'
-  type: vless
-  server: 185.130.115.132
-  port: 443
-  uuid: 237c228e-719f-44f6-bfe4-b7770b9ef049
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: yandex.ru
-  reality-opts:
-    public-key: CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY
-- name: 'T.ME: @aristapnel #485'
-  type: vless
-  server: 84.201.159.182
-  port: 443
-  uuid: 237c228e-719f-44f6-bfe4-b7770b9ef049
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  servername: yandex.ru
-  reality-opts:
-    public-key: WrPShaEtQUXeKeyWDuELzBsd_ygDsU-k2bL1Avi13xI
-- name: 'T.ME: @aristapnel #486'
-  type: vless
-  server: 84.201.172.121
-  port: 443
-  uuid: 237c228e-719f-44f6-bfe4-b7770b9ef049
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: yandex.ru
-  reality-opts:
-    public-key: CF49-iS9dsHBwvqYFoDs_T3Me8TT0FpNW2kibGBkVXY
-- name: 'T.ME: @aristapnel #487'
-  type: vless
-  server: 89.208.210.165
-  port: 443
-  uuid: 237c228e-719f-44f6-bfe4-b7770b9ef049
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: yandex.ru
-  reality-opts:
-    public-key: WrPShaEtQUXeKeyWDuELzBsd_ygDsU-k2bL1Avi13xI
-- name: 'T.ME: @aristapnel #488'
-  type: vless
-  server: 89.208.210.216
-  port: 443
-  uuid: 237c228e-719f-44f6-bfe4-b7770b9ef049
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: yandex.ru
-  reality-opts:
-    public-key: WrPShaEtQUXeKeyWDuELzBsd_ygDsU-k2bL1Avi13xI
-- name: 'T.ME: @aristapnel #489'
+- name: 'T.ME: @aristapnel #472'
   type: vless
   server: zeus-panel-2vxg7a.kingworkerpeekconfig.workers.dev
   port: 2096
@@ -6640,7 +6403,22 @@ proxies:
     path: /
     headers:
       Host: zeus-panel-2vxg7a.kingworkerpeekconfig.workers.dev
-- name: 'T.ME: @aristapnel #490'
+- name: 'T.ME: @aristapnel #473'
+  type: vless
+  server: 195.208.65.195
+  port: 443
+  uuid: 24e4e119-260f-4566-90e8-a3657f07e7cf
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  servername: cdn-discover.truesight.store
+  ws-opts:
+    path: /v1/data/sync/
+- name: 'T.ME: @aristapnel #474'
   type: vless
   server: stockholm.wizard1.info
   port: 2045
@@ -6655,7 +6433,7 @@ proxies:
     grpc-service-name: xyz
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- name: 'T.ME: @aristapnel #491'
+- name: 'T.ME: @aristapnel #475'
   type: vless
   server: ov-france1.09vpn.com
   port: 80
@@ -6666,16 +6444,7 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /vless/
-- name: 'T.ME: @aristapnel #492'
-  type: vless
-  server: 132.243.213.174
-  port: 37037
-  uuid: 276733b9-25c8-47b0-b651-b18cd4909128
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-- name: 'T.ME: @aristapnel #493'
+- name: 'T.ME: @aristapnel #476'
   type: vless
   server: 188.114.97.7
   port: 8443
@@ -6690,7 +6459,7 @@ proxies:
     path: /sync
     headers:
       Host: fragrant-unit-d662.mmammatrix770088.workers.dev
-- name: 'T.ME: @aristapnel #494'
+- name: 'T.ME: @aristapnel #477'
   type: vless
   server: 107.189.5.203
   port: 444
@@ -6703,7 +6472,31 @@ proxies:
     path: /A2
     headers:
       Host: play.google.com
-- name: 'T.ME: @aristapnel #495'
+- name: 'T.ME: @aristapnel #478'
+  type: vless
+  server: 65.109.218.60
+  port: 55234
+  uuid: 2bcaee9a-6de8-4e8b-8e35-e815cbce866e
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+- name: 'T.ME: @aristapnel #479'
+  type: vless
+  server: 51.250.87.30
+  port: 443
+  uuid: 3283529b-3bc4-4e15-803a-7d5751a3df07
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  servername: ads.x5.ru
+  reality-opts:
+    public-key: MofBU4YalVzrV7O_T5OmaUA5BmkITNw8qbkVSeOMvTE
+    short-id: "33ebf55b473ae1dd"
+- name: 'T.ME: @aristapnel #480'
   type: vless
   server: 178.248.238.85
   port: 17443
@@ -6718,7 +6511,7 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: "43dcff53849b81e6"
-- name: 'T.ME: @aristapnel #496'
+- name: 'T.ME: @aristapnel #481'
   type: vless
   server: 109.120.185.230
   port: 443
@@ -6731,16 +6524,7 @@ proxies:
   servername: dipvpn.ru
   reality-opts:
     public-key: 1BdgrQ_esOEya01sDCBYK4MGpJgaUhssHQG-aWJkyFQ
-- name: 'T.ME: @aristapnel #497'
-  type: vless
-  server: 65.109.220.190
-  port: 443
-  uuid: 36253370-4b9d-443f-bfa9-e0e167a09876
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-- name: 'T.ME: @aristapnel #498'
+- name: 'T.ME: @aristapnel #482'
   type: vless
   server: 188.114.96.7
   port: 8443
@@ -6755,7 +6539,7 @@ proxies:
     path: /sync
     headers:
       Host: fragrant-unit-d662.mmammatrix770088.workers.dev
-- name: 'T.ME: @aristapnel #499'
+- name: 'T.ME: @aristapnel #483'
   type: vless
   server: 128.204.223.94
   port: 9815
@@ -6766,21 +6550,240 @@ proxies:
   skip-cert-verify: true
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #500'
+- name: 'T.ME: @aristapnel #484'
   type: vless
-  server: 62.152.60.76
+  server: 45.13.119.3
+  port: 8443
+  uuid: 3b715892-8610-4fdc-9086-647b36af5443
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  servername: play.google.com
+  reality-opts:
+    public-key: uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0
+    short-id: "6ba85179e30d4fc2"
+- name: 'T.ME: @aristapnel #485'
+  type: vless
+  server: ip2.iranphlox.ir
+  port: 2086
+  uuid: 3b715892-8610-4fdc-9086-647b36af5443
+  network: xhttp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+- name: 'T.ME: @aristapnel #486'
+  type: vless
+  server: 104.20.32.49
+  port: 2083
+  uuid: 3bad1d20-8601-49be-86a2-2141d21dec99
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: gentle-dream-6aa3.soh8khan13.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: gentle-dream-6aa3.soh8khan13.workers.dev
+- name: 'T.ME: @aristapnel #487'
+  type: vless
+  server: 5.188.140.142
   port: 443
-  uuid: 38473a25-042f-4e8a-b6fd-5c266521d0f8
-  network: grpc
+  uuid: 3c961418-8d35-4311-937a-8fa78dfe1f1c
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  servername: max.ru
+  reality-opts:
+    public-key: UpgSzFnhObX8H1xtvpWFVTT8Lv3XfVpf90_1Q7JjAj8
+- name: 'T.ME: @aristapnel #488'
+  type: vless
+  server: nkoihgf.dadashinet10.ir
+  port: 2044
+  uuid: 3dd64ee8-6e36-4f65-8b89-489e6530b877
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+- name: 'T.ME: @aristapnel #489'
+  type: vless
+  server: 45.194.10.103
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: "2cfb5a0ae8ab0cb0"
+- name: 'T.ME: @aristapnel #490'
+  type: vless
+  server: sc-thenetherlands1.09vpn.com
+  port: 80
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /vless/
+- name: 'T.ME: @aristapnel #491'
+  type: vless
+  server: nl.go-vpn.club
+  port: 443
+  uuid: 40de6299-d792-4868-8a82-411ead0aa943
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  servername: gateway.icloud.com
+  reality-opts:
+    public-key: L0acYoTxKR5ix7LXAmP10cy06n2JjgkXTojGjtWAqww
+    short-id: "ed7b9bdfedb9b8e5"
+- name: 'T.ME: @aristapnel #492'
+  type: vless
+  server: 65.109.218.60
+  port: 1010
+  uuid: 40fee7bd-0bfd-448b-8813-27a6713cf9ef
+  network: httpupgrade
+  tls: false
+  udp: true
+  skip-cert-verify: true
+- name: 'T.ME: @aristapnel #493'
+  type: vless
+  server: 104.21.82.201
+  port: 2087
+  uuid: 4454f3d1-6359-401b-b10c-81d0b3f0b7c2
+  network: ws
   tls: true
   udp: true
   skip-cert-verify: true
   alpn:
-  - h2
-  client-fingerprint: qq
-  servername: home.kiwds.site
-  grpc-opts:
-    grpc-service-name: trojan-grpc
+  - http/1.1
+  client-fingerprint: chrome
+  servername: V2NgFaST-MNBjhv.AkbarbikAr.WorKErs.DEVNPV_LEGEND
+  ws-opts:
+    path: /eyJqdW5rIjoiY0lZS1FrazRnIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: v2ngfast-mnbjhv.akbarbikar.workers.dev
+- name: 'T.ME: @aristapnel #494'
+  type: vless
+  server: 195.208.65.195
+  port: 443
+  uuid: 46856743-b431-4d07-bdc8-d93ff6301b22
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  servername: cdn-discover.truesight.store
+  ws-opts:
+    path: /v1/data/sync/
+- name: 'T.ME: @aristapnel #495'
+  type: vless
+  server: svg-2.onrender.com
+  port: 443
+  uuid: 47667ac5-ac51-7fc6-181f-65321ee2387b
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  servername: svg-2.onrender.com
+  ws-opts:
+    path: /ws/47667ac5-ac51-7fc6-181f-65321ee2387b
+    headers:
+      Host: svg-2.onrender.com
+- name: 'T.ME: @aristapnel #496'
+  type: vless
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: "01"
+- name: 'T.ME: @aristapnel #497'
+  type: vless
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: "01"
+- name: 'T.ME: @aristapnel #498'
+  type: vless
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: "01"
+- name: 'T.ME: @aristapnel #499'
+  type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: "01"
+- name: 'T.ME: @aristapnel #500'
+  type: vless
+  server: 15.204.97.214
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: "01"
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
