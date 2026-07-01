@@ -1,6 +1,6 @@
 # GITHUB - VMESS - Tier ALL
-# Updated: 2026-07-01 02:40:40
-# Count: 7
+# Updated: 2026-07-01 03:05:09
+# Count: 6
 
 mixed-port: 7890
 allow-lan: false
@@ -125,9 +125,9 @@ proxies:
     path: /
 - name: 'T.ME: @aristapnel #6'
   type: vmess
-  server: cg1c07.waimaojd.com
+  server: 172.67.198.187
   port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
   alterId: 0
   cipher: auto
   network: ws
@@ -135,24 +135,11 @@ proxies:
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: cg1c07.waimaojd.com
+  servername: xmivideo.cfd
   ws-opts:
-    path: /api/v1/graphql
+    path: /linkws
     headers:
-      Host: cg1c07.waimaojd.com
-- name: 'T.ME: @aristapnel #7'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 165.140.216.141
+      Host: xmivideo.cfd
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -168,7 +155,6 @@ proxy-groups:
   - 'T.ME: @aristapnel #4'
   - 'T.ME: @aristapnel #5'
   - 'T.ME: @aristapnel #6'
-  - 'T.ME: @aristapnel #7'
 - name: 🎬 ARISTA STREAM
   type: fallback
   url: http://www.gstatic.com/generate_204
