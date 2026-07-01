@@ -1,5 +1,5 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-06-30 22:06:08
+# Updated: 2026-07-01 02:40:36
 # Count: 7
 
 mixed-port: 7890
@@ -70,36 +70,6 @@ proxies:
   obfs-password: lhfl2z9mjngb7csh
 - name: 'ARISTA #3'
   type: hysteria2
-  server: 2.26.49.16
-  port: 443
-  password: 653m8mmiy7048p0f
-  sni: social.klipp.su
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: 3sv5vpdl9xr84lyb
-- name: 'ARISTA #4'
-  type: hysteria2
-  server: 191.101.238.183
-  port: 54040
-  password: q3tf4lsdoqpgpo4x
-  sni: 191.101.238.183
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: '@JynMarket'
-- name: 'ARISTA #6'
-  type: hysteria2
-  server: 80.66.81.78
-  port: 9443
-  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-  sni: tunel1.washing.help
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-- name: 'ARISTA #7'
-  type: hysteria2
   server: 65.20.114.95
   port: 443
   password: V2rayyNGvpn
@@ -108,7 +78,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: t-me-v2rayyngvpn
-- name: 'ARISTA #8'
+- name: 'ARISTA #4'
   type: hysteria2
   server: 143.14.59.229
   port: 443
@@ -118,6 +88,36 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: t-me-V2RayyNGvpn
+- name: 'ARISTA #5'
+  type: hysteria2
+  server: 191.101.238.183
+  port: 54040
+  password: q3tf4lsdoqpgpo4x
+  sni: 191.101.238.183
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: '@JynMarket'
+- name: 'ARISTA #7'
+  type: hysteria2
+  server: 2.26.49.16
+  port: 443
+  password: 653m8mmiy7048p0f
+  sni: social.klipp.su
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: 3sv5vpdl9xr84lyb
+- name: 'ARISTA #8'
+  type: hysteria2
+  server: 80.66.81.78
+  port: 9443
+  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
+  sni: tunel1.washing.help
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test
@@ -131,7 +131,7 @@ proxy-groups:
   - 'ARISTA #2'
   - 'ARISTA #3'
   - 'ARISTA #4'
-  - 'ARISTA #6'
+  - 'ARISTA #5'
   - 'ARISTA #7'
   - 'ARISTA #8'
 - name: 🎬 ARISTA STREAM
