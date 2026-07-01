@@ -1,5 +1,5 @@
 // TELEGRAM - SS - Tier 50
-// Updated: 2026-07-01 06:53:51
+// Updated: 2026-07-01 07:09:44
 // Count: 2
 
 {
@@ -16,23 +16,11 @@
       },
       {
         "type": "udp",
-        "tag": "google2",
-        "server": "8.8.4.4"
-      },
-      {
-        "type": "local",
-        "tag": "local"
+        "tag": "cloudflare",
+        "server": "1.1.1.1"
       }
     ],
-    "rules": [
-      {
-        "domain": [
-          "geosite:private"
-        ],
-        "action": "route",
-        "server": "local"
-      }
-    ],
+    "rules": [],
     "final": "google"
   },
   "inbounds": [
@@ -41,30 +29,32 @@
       "tag": "tun-in",
       "interface_name": "singbox-tun",
       "address": [
-        "172.19.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.19.0.1/30"
       ],
       "auto_route": true,
       "strict_route": true,
-      "stack": "mixed"
+      "stack": "system",
+      "sniff": false
     }
   ],
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #9",
+      "tag": "ARISTA #1",
       "server": "109.107.182.229",
       "server_port": 51544,
       "method": "chacha20-ietf-poly1305",
-      "password": "4d1nVpqJVp5oq2W4D0Ljy4"
+      "password": "4d1nVpqJVp5oq2W4D0Ljy4",
+      "domain_resolver": "google"
     },
     {
       "type": "shadowsocks",
-      "tag": "ARISTA #45",
+      "tag": "ARISTA #2",
       "server": "20.234.9.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
-      "password": "i6qj1Qi9bKvFfIM0"
+      "password": "i6qj1Qi9bKvFfIM0",
+      "domain_resolver": "google"
     },
     {
       "type": "direct",
@@ -78,43 +68,24 @@
       "type": "urltest",
       "tag": "🚀 ARISTA AUTO BEST",
       "outbounds": [
-        "ARISTA #9",
-        "ARISTA #45"
+        "ARISTA #1",
+        "ARISTA #2"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "2m",
       "tolerance": 30,
       "idle_timeout": "20m",
       "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "🎯 ARISTA MANUAL TESTED",
-      "outbounds": [
-        "ARISTA #9",
-        "ARISTA #45"
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50,
-      "idle_timeout": "20m",
-      "interrupt_exist_connections": true
     }
   ],
   "route": {
     "auto_detect_interface": true,
-    "default_domain_resolver": {
-      "server": "google",
-      "strategy": "prefer_ipv4"
-    },
+    "default_domain_resolver": "google",
     "final": "🚀 ARISTA AUTO BEST",
     "rules": [
       {
-        "action": "sniff"
-      },
-      {
         "protocol": "dns",
-        "action": "hijack-dns"
+        "outbound": "direct"
       }
     ]
   }
