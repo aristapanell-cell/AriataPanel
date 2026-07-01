@@ -1,5 +1,5 @@
 # GITHUB - TROJAN - Tier 250
-# Updated: 2026-07-01 11:57:38
+# Updated: 2026-07-01 14:10:02
 # Count: 250
 
 mixed-port: 7890
@@ -3572,7 +3572,18 @@ proxies:
       Host: www.creationlong.org
 - name: 'T.ME: @aristapnel #246'
   type: trojan
-  server: 199.255.96.11
+  server: 37.235.49.118
+  port: 443
+  password: p%3DXuu4jK_lJ9rOKw5%2B7BsW798DZ-01cv4S
+  network: tcp
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 37.235.49.118
+- name: 'T.ME: @aristapnel #247'
+  type: trojan
+  server: nexusmods.com
   port: 443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
@@ -3586,44 +3597,28 @@ proxies:
     path: /
     headers:
       Host: hhcm.hhxaf.cc.cd
-- name: 'T.ME: @aristapnel #247'
-  type: trojan
-  server: uk-1.tr202607.com
-  port: 443
-  password: LSS6HLnp7IeEEJUcox
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: uk-1.tr202607.com
 - name: 'T.ME: @aristapnel #248'
   type: trojan
-  server: 83.228.251.119
-  port: 42549
-  password: SoftNetConnect
-  network: tcp
+  server: 199.181.197.176
+  port: 443
+  password: MiTiVPN
+  network: ws
   tls: true
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: www.speedtest.net
-  client-fingerprint: chrome
+  servername: PioHosting.ir
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /MiTiVPN=fL
+    headers:
+      Host: PioHosting.ir
 - name: 'T.ME: @aristapnel #249'
   type: trojan
-  server: hyfuuf6.wsone.icu
-  port: 443
-  password: M7v%25w11Se%2A
-  network: tcp
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: hyfuuf6.wsone.icu
-- name: 'T.ME: @aristapnel #250'
-  type: trojan
-  server: 146.235.16.191
-  port: 443
+  server: 146.56.187.1
+  port: 8443
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   network: ws
   tls: true
@@ -3636,6 +3631,24 @@ proxies:
     path: /
     headers:
       Host: tjsp.hhxaf.cc.cd
+- name: 'T.ME: @aristapnel #250'
+  type: trojan
+  server: 45.131.4.115
+  port: 443
+  password: MITIVPN
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: PioHosting.ir
+  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  ws-opts:
+    path: /MiTiVPN=Usa
+    headers:
+      Host: PioHosting.ir
 proxy-groups:
 - name: 🚀 ARISTA LOW LATENCY
   type: url-test

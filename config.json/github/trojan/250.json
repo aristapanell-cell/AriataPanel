@@ -1,5 +1,5 @@
 // GITHUB - TROJAN - Tier 250
-// Updated: 2026-07-01 12:00:24
+// Updated: 2026-07-01 14:12:57
 // Count: 250
 
 {
@@ -4573,7 +4573,24 @@
     {
       "type": "trojan",
       "tag": "ARISTA #233",
-      "server": "199.255.96.11",
+      "server": "37.235.49.118",
+      "server_port": 443,
+      "password": "p=Xuu4jK_lJ9rOKw5+7BsW798DZ-01cv4S",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "37.235.49.118",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #234",
+      "server": "nexusmods.com",
       "server_port": 443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "domain_resolver": "google",
@@ -4596,60 +4613,36 @@
     },
     {
       "type": "trojan",
-      "tag": "ARISTA #234",
-      "server": "uk-1.tr202607.com",
-      "server_port": 443,
-      "password": "LSS6HLnp7IeEEJUcox",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk-1.tr202607.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "ARISTA #235",
-      "server": "83.228.251.119",
-      "server_port": 42549,
-      "password": "SoftNetConnect",
+      "server": "199.181.197.176",
+      "server_port": 443,
+      "password": "MiTiVPN",
       "domain_resolver": "google",
       "tls": {
         "enabled": true,
-        "server_name": "www.speedtest.net",
+        "server_name": "PioHosting.ir",
         "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/MiTiVPN=fL",
+        "headers": {
+          "Host": "PioHosting.ir"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "ARISTA #236",
-      "server": "hyfuuf6.wsone.icu",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "domain_resolver": "google",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "ARISTA #237",
-      "server": "146.235.16.191",
-      "server_port": 443,
+      "server": "146.56.187.1",
+      "server_port": 8443,
       "password": "eeb6823c-b926-4ea2-866a-5542edd26e59",
       "domain_resolver": "google",
       "tls": {
@@ -4666,6 +4659,33 @@
         "path": "/",
         "headers": {
           "Host": "tjsp.hhxaf.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "ARISTA #237",
+      "server": "45.131.4.115",
+      "server_port": 443,
+      "password": "MITIVPN",
+      "domain_resolver": "google",
+      "tls": {
+        "enabled": true,
+        "server_name": "PioHosting.ir",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/MiTiVPN=Usa",
+        "headers": {
+          "Host": "PioHosting.ir"
         }
       }
     },
