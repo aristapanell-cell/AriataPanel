@@ -1,6 +1,9 @@
 import os
 import hashlib
+import json
+import base64
 from datetime import datetime
+from urllib.parse import urlparse, parse_qs, unquote
 
 class ConfigCombiner:
     def __init__(self):
@@ -12,6 +15,113 @@ class ConfigCombiner:
         
         self.tiers = [50, 100, 150, 200, 250, 300, 400, 500, "ALL"]
         self.tier_cache = {}
+    
+    def decode_vmess(self, config_str):
+        try:
+            base64_part = config_str[8:]
+            if len(base64_part) % 4 != 0:
+                base64_part += '=' * (4 - len(base64_part) % 4)
+            return json.loads(base64.b64decode(base64_part).decode('utf-8'))
+        except:
+            return None
+    
+    def normalize_config(self, config):
+        if isinstance(config, dict):
+            return config
+        if config.startswith("vmess://"):
+            vm = self.decode_vmess(config)
+            if vm:
+                vm.pop("ps", None)
+                return vm
+            return None
+        try:
+            p = urlparse(config)
+            result = {
+                "scheme": p.scheme,
+                "server": p.hostname or "",
+                "port": p.port or 0,
+                "user": unquote(p.username or ""),
+                "path": unquote(p.path or "")
+            }
+            query = parse_qs(p.query)
+            for k in sorted(query):
+                result[k] = query[k][0]
+            return result
+        except:
+            return None
+    
+    def build_unique_key(self, obj):
+        if not obj:
+            return ""
+        proto = obj.get("scheme") or "vmess"
+        if proto == "vmess":
+            fields = [
+                obj.get("add",""),
+                str(obj.get("port","")),
+                obj.get("id",""),
+                obj.get("net",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("tls",""),
+                obj.get("sni","")
+            ]
+        elif proto == "vless":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("security",""),
+                obj.get("type",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("sni",""),
+                obj.get("flow","")
+            ]
+        elif proto == "trojan":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("security",""),
+                obj.get("type",""),
+                obj.get("host",""),
+                obj.get("path",""),
+                obj.get("sni","")
+            ]
+        elif proto == "ss":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("method","")
+            ]
+        elif proto in ("hysteria2","hy2"):
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("obfs-password",""),
+                obj.get("sni","")
+            ]
+        elif proto == "tuic":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("congestion_control",""),
+                obj.get("sni","")
+            ]
+        elif proto == "wireguard":
+            fields = [
+                obj.get("server",""),
+                str(obj.get("port","")),
+                obj.get("user",""),
+                obj.get("key",""),
+                obj.get("address","")
+            ]
+        else:
+            fields = sorted(obj.items())
+        return json.dumps(fields, sort_keys=True, ensure_ascii=False)
     
     def read_configs(self, filepath):
         if not os.path.exists(filepath):
@@ -31,7 +141,13 @@ class ConfigCombiner:
         seen_hashes = set()
         
         for config in configs:
-            config_hash = hashlib.md5(config.encode()).hexdigest()
+            obj = self.normalize_config(config)
+            if obj is None:
+                config_hash = hashlib.md5(config.encode()).hexdigest()
+            else:
+                key = self.build_unique_key(obj)
+                config_hash = hashlib.md5(key.encode()).hexdigest()
+            
             if config_hash not in seen_hashes:
                 seen_hashes.add(config_hash)
                 unique_configs.append(config)
@@ -92,7 +208,13 @@ class ConfigCombiner:
         seen = set()
         
         for c in merged:
-            h = hashlib.md5(c.encode()).hexdigest()
+            obj = self.normalize_config(c)
+            if obj is None:
+                h = hashlib.md5(c.encode()).hexdigest()
+            else:
+                key = self.build_unique_key(obj)
+                h = hashlib.md5(key.encode()).hexdigest()
+            
             if h not in seen:
                 seen.add(h)
                 result.append(c)
