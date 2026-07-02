@@ -1,5 +1,5 @@
 # COMBINED - VMESS - Tier 50
-# Updated: 2026-07-02 06:33:33
+# Updated: 2026-07-02 11:33:28
 # Count: 50
 
 mixed-port: 7890
@@ -50,6 +50,24 @@ rules:
 proxies:
 - name: 'ARISTA #1'
   type: vmess
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: 537a036f-a4ad-4051-80c4-011a46c62bb0
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: blogging-responsibility-recruiting-most.trycloudflare.com
+  client-fingerprint: chrome
+  ws-opts:
+    path: /537a036f-a4ad-4051-80c4-011a46c62bb0-vm
+    headers:
+      Host: blogging-responsibility-recruiting-most.trycloudflare.com
+- name: 'ARISTA #2'
+  type: vmess
   server: 185.16.110.212
   port: 8880
   uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5
@@ -65,20 +83,22 @@ proxies:
     path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
     headers:
       Host: TG.WangCai2.s4.db-link02.top
-- name: 'ARISTA #2'
+- name: 'ARISTA #3'
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 107.173.27.219
+  port: 6666
+  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
   alterId: 0
   cipher: auto
-  network: tcp
+  network: ws
   tls: false
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 216.106.183.35
-- name: 'ARISTA #3'
+  servername: 107.173.27.219
+  ws-opts:
+    path: /youtube
+- name: 'ARISTA #4'
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -95,7 +115,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-- name: 'ARISTA #4'
+- name: 'ARISTA #5'
   type: vmess
   server: 154.37.223.56
   port: 52080
@@ -108,7 +128,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 154.37.223.56
-- name: 'ARISTA #5'
+- name: 'ARISTA #6'
   type: vmess
   server: 57.151.100.27
   port: 10086
@@ -121,7 +141,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 57.151.100.27
-- name: 'ARISTA #6'
+- name: 'ARISTA #7'
   type: vmess
   server: 57.128.174.124
   port: 2096
@@ -140,7 +160,7 @@ proxies:
   - http/1.1
   grpc-opts:
     grpc-service-name: api
-- name: 'ARISTA #7'
+- name: 'ARISTA #8'
   type: vmess
   server: 47.250.149.51
   port: 50018
@@ -155,7 +175,7 @@ proxies:
   servername: 47.250.149.51
   ws-opts:
     path: /9665280c
-- name: 'ARISTA #8'
+- name: 'ARISTA #9'
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -168,7 +188,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 47.250.135.244
-- name: 'ARISTA #9'
+- name: 'ARISTA #10'
   type: vmess
   server: 61.245.11.60
   port: 80
@@ -185,7 +205,7 @@ proxies:
     path: /vmess/
     headers:
       Host: 61.245.11.60
-- name: 'ARISTA #10'
+- name: 'ARISTA #11'
   type: vmess
   server: 47.244.120.197
   port: 44867
@@ -200,7 +220,7 @@ proxies:
   servername: 47.244.120.197
   ws-opts:
     path: /arki?ed=2048
-- name: 'ARISTA #11'
+- name: 'ARISTA #12'
   type: vmess
   server: 47.250.45.234
   port: 8613
@@ -215,7 +235,7 @@ proxies:
   servername: 47.250.45.234
   ws-opts:
     path: /arki?ed=2048
-- name: 'ARISTA #12'
+- name: 'ARISTA #13'
   type: vmess
   server: 138.252.100.85
   port: 18746
@@ -230,41 +250,11 @@ proxies:
   servername: 138.252.100.85
   ws-opts:
     path: /
-- name: 'ARISTA #13'
-  type: vmess
-  server: 78.141.215.62
-  port: 443
-  uuid: afd45419-cffa-4f1b-990a-511aab6ee9ab
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 78.141.215.62
 - name: 'ARISTA #14'
   type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: v2ray1.dozapp.xyz
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 'ARISTA #15'
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   network: tcp
@@ -272,10 +262,10 @@ proxies:
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 140.238.2.250
-- name: 'ARISTA #16'
+  servername: 82.198.246.9
+- name: 'ARISTA #15'
   type: vmess
-  server: 84.17.41.2
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -285,23 +275,26 @@ proxies:
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 84.17.41.2
-- name: 'ARISTA #17'
+  servername: 134.195.196.211
+- name: 'ARISTA #16'
   type: vmess
-  server: 107.173.27.219
-  port: 6666
-  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
+  server: cf.scpnb.top
+  port: 443
+  uuid: d5c27b66-7d26-48ac-9fc1-2c0884406c18
   alterId: 0
   cipher: auto
   network: ws
-  tls: false
+  tls: true
   udp: true
   skip-cert-verify: true
   tcp-fast-open: true
-  servername: 107.173.27.219
+  servername: suspected-deployment-studios-popular.trycloudflare.com
+  client-fingerprint: chrome
   ws-opts:
-    path: /youtube
-- name: 'ARISTA #18'
+    path: /d5c27b66-7d26-48ac-9fc1-2c0884406c18-vm
+    headers:
+      Host: suspected-deployment-studios-popular.trycloudflare.com
+- name: 'ARISTA #17'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -319,7 +312,7 @@ proxies:
     path: /6a4e7e55-9f07-4c54-abdd-72b9820f4cb3-vm
     headers:
       Host: explicit-freeware-animation-greg.trycloudflare.com
-- name: 'ARISTA #19'
+- name: 'ARISTA #18'
   type: vmess
   server: cdn.31514926.xyz
   port: 443
@@ -337,7 +330,7 @@ proxies:
     path: /48d5eb0f-fd55-4357-baec-a68fa39a4b1b-vm
     headers:
       Host: admit-statute-live-undertaken.trycloudflare.com
-- name: 'ARISTA #20'
+- name: 'ARISTA #19'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -355,7 +348,7 @@ proxies:
     path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
     headers:
       Host: graph-keep-beds-catalog.trycloudflare.com
-- name: 'ARISTA #21'
+- name: 'ARISTA #20'
   type: vmess
   server: cf.scpnb.top
   port: 443
@@ -373,7 +366,7 @@ proxies:
     path: /7c84ae69-f0b3-47dc-83c5-e7b5f00f5bed-vm
     headers:
       Host: vienna-bread-threats-amendment.trycloudflare.com
-- name: 'ARISTA #22'
+- name: 'ARISTA #21'
   type: vmess
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -391,7 +384,7 @@ proxies:
     path: /a2243c24-a82c-4098-bc4d-e85331a1e1d1-vm
     headers:
       Host: associations-bryan-manchester-latino.trycloudflare.com
-- name: 'ARISTA #23'
+- name: 'ARISTA #22'
   type: vmess
   server: yg1.ygkkk.dpdns.org
   port: 443
@@ -409,7 +402,53 @@ proxies:
     path: /6a25f9ba-70a0-4d53-a2a9-19d8f1fcad76-vm
     headers:
       Host: attitude-interracial-country-gen.trycloudflare.com
-- name: 'T.ME: @aristapnel #24'
+- name: 'ARISTA #23'
+  type: vmess
+  server: 138.252.100.85
+  port: 18746
+  uuid: e314349a-7e56-4a3e-9318-eda62b5d6bd3
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 138.252.100.85
+  ws-opts:
+    path: /
+- name: 'ARISTA #24'
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: false
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: 67.220.72.237
+  client-fingerprint: chrome
+- name: 'ARISTA #25'
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  udp: true
+  skip-cert-verify: true
+  tcp-fast-open: true
+  servername: v2ray1.dozapp.xyz
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 'T.ME: @aristapnel #26'
   type: vmess
   server: 69.84.182.49
   port: 80
@@ -426,7 +465,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
-- name: 'T.ME: @aristapnel #25'
+- name: 'T.ME: @aristapnel #27'
   type: vmess
   server: 138.252.100.85
   port: 18746
@@ -441,7 +480,7 @@ proxies:
   servername: 138.252.100.85
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #26'
+- name: 'T.ME: @aristapnel #28'
   type: vmess
   server: 45.89.107.51
   port: 20521
@@ -456,7 +495,7 @@ proxies:
   servername: 45.89.107.51
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #27'
+- name: 'T.ME: @aristapnel #29'
   type: vmess
   server: 8.218.17.136
   port: 4728
@@ -471,7 +510,7 @@ proxies:
   servername: 8.218.17.136
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #28'
+- name: 'T.ME: @aristapnel #30'
   type: vmess
   server: 209.126.84.189
   port: 443
@@ -488,7 +527,7 @@ proxies:
     path: /vmessws
     headers:
       Host: 209.126.84.189
-- name: 'T.ME: @aristapnel #29'
+- name: 'T.ME: @aristapnel #31'
   type: vmess
   server: 62.146.235.193
   port: 28011
@@ -501,7 +540,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 62.146.235.193
-- name: 'T.ME: @aristapnel #30'
+- name: 'T.ME: @aristapnel #32'
   type: vmess
   server: n1744454498.lie5d.cyou
   port: 443
@@ -518,7 +557,7 @@ proxies:
     path: /
     headers:
       Host: n1744454498.lie5d.cyou
-- name: 'T.ME: @aristapnel #31'
+- name: 'T.ME: @aristapnel #33'
   type: vmess
   server: 5.196.29.123
   port: 2082
@@ -535,7 +574,7 @@ proxies:
     path: /
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 'T.ME: @aristapnel #32'
+- name: 'T.ME: @aristapnel #34'
   type: vmess
   server: n1744454501.4u9ma.icu
   port: 443
@@ -552,7 +591,7 @@ proxies:
     path: /
     headers:
       Host: n1744454501.4u9ma.icu
-- name: 'T.ME: @aristapnel #33'
+- name: 'T.ME: @aristapnel #35'
   type: vmess
   server: 164.138.202.55
   port: 50475
@@ -565,7 +604,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 164.138.202.55
-- name: 'T.ME: @aristapnel #34'
+- name: 'T.ME: @aristapnel #36'
   type: vmess
   server: 5.231.56.98
   port: 3721
@@ -580,7 +619,7 @@ proxies:
   servername: 5.231.56.98
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #35'
+- name: 'T.ME: @aristapnel #37'
   type: vmess
   server: nm7386.teeoomboom.de
   port: 443
@@ -597,7 +636,7 @@ proxies:
     path: /video/2upvxla.m3u8
     headers:
       Host: nm7386.teeoomboom.de
-- name: 'T.ME: @aristapnel #36'
+- name: 'T.ME: @aristapnel #38'
   type: vmess
   server: jl2klj.teeoomboom.de
   port: 443
@@ -614,7 +653,7 @@ proxies:
     path: /video/7mtc1f.m3u8
     headers:
       Host: jl2klj.teeoomboom.de
-- name: 'T.ME: @aristapnel #37'
+- name: 'T.ME: @aristapnel #39'
   type: vmess
   server: 216.36.115.182
   port: 48885
@@ -629,20 +668,7 @@ proxies:
   servername: 216.36.115.182
   ws-opts:
     path: /
-- name: 'T.ME: @aristapnel #38'
-  type: vmess
-  server: spt.reata.ir
-  port: 1050
-  uuid: b5b183b6-a4f0-41ad-a015-ba9f000ad7ed
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: spt.reata.ir
-- name: 'T.ME: @aristapnel #39'
+- name: 'T.ME: @aristapnel #40'
   type: vmess
   server: 45.92.70.236
   port: 22324
@@ -655,7 +681,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 45.92.70.236
-- name: 'T.ME: @aristapnel #40'
+- name: 'T.ME: @aristapnel #41'
   type: vmess
   server: 85.90.217.42
   port: 22324
@@ -668,7 +694,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 85.90.217.42
-- name: 'T.ME: @aristapnel #41'
+- name: 'T.ME: @aristapnel #42'
   type: vmess
   server: 67.220.85.46
   port: 18000
@@ -681,7 +707,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 67.220.85.46
-- name: 'T.ME: @aristapnel #42'
+- name: 'T.ME: @aristapnel #43'
   type: vmess
   server: 38.110.1.246
   port: 18000
@@ -694,7 +720,7 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.110.1.246
-- name: 'T.ME: @aristapnel #43'
+- name: 'T.ME: @aristapnel #44'
   type: vmess
   server: 38.91.107.49
   port: 18000
@@ -707,19 +733,6 @@ proxies:
   skip-cert-verify: true
   tcp-fast-open: true
   servername: 38.91.107.49
-- name: 'T.ME: @aristapnel #44'
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  udp: true
-  skip-cert-verify: true
-  tcp-fast-open: true
-  servername: 134.195.196.211
 - name: 'T.ME: @aristapnel #45'
   type: vmess
   server: 84.17.41.2
@@ -830,8 +843,8 @@ proxy-groups:
   - 'ARISTA #21'
   - 'ARISTA #22'
   - 'ARISTA #23'
-  - 'T.ME: @aristapnel #24'
-  - 'T.ME: @aristapnel #25'
+  - 'ARISTA #24'
+  - 'ARISTA #25'
   - 'T.ME: @aristapnel #26'
   - 'T.ME: @aristapnel #27'
   - 'T.ME: @aristapnel #28'
