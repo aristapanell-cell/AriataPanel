@@ -1,5 +1,5 @@
 # TELEGRAM - HYSTERIA2 - Tier ALL
-# Updated: 2026-07-01 22:18:06
+# Updated: 2026-07-02 02:15:50
 # Count: 4
 
 mixed-port: 7890
@@ -50,16 +50,6 @@ rules:
 proxies:
 - name: 'ARISTA #1'
   type: hysteria2
-  server: 191.101.238.183
-  port: 54040
-  password: q3tf4lsdoqpgpo4x
-  sni: 191.101.238.183
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: '@JynMarket'
-- name: 'ARISTA #2'
-  type: hysteria2
   server: 130.49.161.70
   port: 443
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
@@ -68,6 +58,16 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 'ARISTA #2'
+  type: hysteria2
+  server: 191.101.238.183
+  port: 54040
+  password: q3tf4lsdoqpgpo4x
+  sni: 191.101.238.183
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: '@JynMarket'
 - name: 'ARISTA #3'
   type: hysteria2
   server: 80.66.81.78
