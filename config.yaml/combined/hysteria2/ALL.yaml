@@ -1,5 +1,5 @@
 # COMBINED - HYSTERIA2 - Tier ALL
-# Updated: 2026-07-02 02:15:44
+# Updated: 2026-07-02 06:33:33
 # Count: 41
 
 mixed-port: 7890
@@ -50,16 +50,6 @@ rules:
 proxies:
 - name: 'ARISTA #1'
   type: hysteria2
-  server: 130.49.161.70
-  port: 443
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 'ARISTA #2'
-  type: hysteria2
   server: 191.101.238.183
   port: 54040
   password: q3tf4lsdoqpgpo4x
@@ -68,17 +58,7 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: '@JynMarket'
-- name: 'ARISTA #3'
-  type: hysteria2
-  server: 80.66.81.78
-  port: 9443
-  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
-  sni: tunel1.washing.help
-  skip-cert-verify: true
-  fast-open: true
-  obfs: salamander
-  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
-- name: 'ARISTA #4'
+- name: 'ARISTA #2'
   type: hysteria2
   server: nrealistic.nn-foto.ru
   port: 1935
@@ -88,6 +68,26 @@ proxies:
   fast-open: true
   obfs: salamander
   obfs-password: lhfl2z9mjngb7csh
+- name: 'ARISTA #3'
+  type: hysteria2
+  server: 130.49.161.70
+  port: 443
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 'ARISTA #4'
+  type: hysteria2
+  server: 80.66.81.78
+  port: 9443
+  password: rs2mR3g9bZiMloftx6lZQ59Um1Ld
+  sni: tunel1.washing.help
+  skip-cert-verify: true
+  fast-open: true
+  obfs: salamander
+  obfs-password: oMgvuBy5Lj5kYM57sGsnjpjNcSEQ
 - name: 'T.ME: @aristapnel #5'
   type: hysteria2
   server: hy2.aspidnet.xyz
